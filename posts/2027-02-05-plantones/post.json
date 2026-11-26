@@ -1,0 +1,11 @@
+{
+  "sector": "general",
+  "slides": [
+    {"type": "cover", "kicker": "HAZ LA CUENTA", "title": "Lo que te cuestan los clientes que *no aparecen*", "sub": "Spoiler: más de lo que crees."},
+    {"type": "stat", "big": "3", "title": "plantones a la semana", "body": "Un cliente que no viene, otro que se olvida, otro que avisa tarde."},
+    {"type": "stat", "big": "x 25 €", "title": "lo que cobras por cita", "body": "Pon tu precio medio. Corte, sesión, tratamiento…"},
+    {"type": "stat", "big": "300 €", "title": "perdidos cada mes", "body": "Son *3.600 € al año* con la silla vacía. Y ese hueco ya no lo recuperas."},
+    {"type": "item", "n": "✓", "title": "Lo que más lo reduce: *un recordatorio*", "body": "Un aviso automático antes de la cita. Y si cancelan, el hueco queda libre para otro cliente."},
+    {"type": "cta", "title": "¿Cuántos plantones tuviste *esta semana*?", "body": "Cuéntanoslo en comentarios 👇", "word": "CITA"}
+  ]
+}
