@@ -49,3 +49,21 @@ Este documento es el que sigue la tarea programada cada lunes. Si cambias algo d
 - Cada artículo lleva portada de 1200x630, hecha con `generator/cover.py` (las de ejemplo están en `blog/`).
 - El texto va en markdown (`##` para títulos, `**negrita**`, `- ` para listas y `[texto](url)` para enlaces) y termina con el enlace "Pruébala gratis en citasweb.es".
 - No inventar testimonios ni cifras. Precios: 50/60/80 €/mes + IVA, o 500/600/800 €/año (2 meses gratis). Prueba de 15 días sin tarjeta. Lista en 24-48 h. Web en tunegocio.citasweb.es; dominio propio a consultar.
+
+## Publicación automática del blog (tarea de los martes)
+Se hace con Claude in Chrome en el PC del dueño, que tiene la sesión abierta en citasweb.es/admin. Si Chrome no responde, no se publica nada: se avisa y se reintenta la semana siguiente.
+1. Abrir citasweb.es/admin → Blog. **Publicar un solo borrador por semana**, siguiendo este orden (saltar los que ya estén publicados):
+   1. Caso real: Nexus Barber Studio
+   2. Cómo reducir los clientes que no se presentan
+   3. Reservas de mesa online para bares y restaurantes
+   4. Cita previa online para talleres mecánicos
+   5. Cómo salir en Google Maps
+   6. Agenda online para clínicas y consultas
+   7. Reservas online para centros de estética y uñas
+   8. WhatsApp o agenda online
+   9. Web propia o plataforma de reservas
+2. Para publicar: Editar → Estado "Publicada" → Guardar. Recargar la página antes de abrir cada entrada, porque si no los formularios se apilan. Comprobar que la dirección es corta y que la entrada abre bien en citasweb.es/blog/<dirección>.
+3. **Si no quedan borradores**, escribir un artículo nuevo según las reglas del blog (sector que no esté repetido, 500-700 palabras, portada con cover.py, dirección corta) y publicarlo.
+4. **Promoción en redes:** si algún mes de las próximas 6 semanas tiene menos de 20 publicaciones en Metricool, crear **un** carrusel que resuma el artículo y termine con "Lee el artículo completo en citasweb.es/blog (enlace en la bio)", y programarlo en la primera mejor hora libre. No pasar nunca de 20 al mes.
+5. Informe: qué se ha publicado (enlace), si se ha programado promoción, y cuántos borradores quedan.
+- **No publicar la valoración "4,9" de la web de Nexus Barber:** no viene de Google.
