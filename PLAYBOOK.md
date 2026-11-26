@@ -34,6 +34,10 @@ Este documento es el que sigue la tarea programada cada lunes. Si cambias algo d
 - Palabras clave por sector: BARBER, PELU, MESA, RESTAURANTE, CARTA, GOURMET, TALLER, FISIO, DENTAL, BEAUTY, LIMPIEZA, SERVICIOS, VET, CITA, CLASE, ENTRENO, NUTRI, TATTOO, RELAX.
 - Sectores del generador (colores): general, barberia, peluqueria, estetica, restaurante, taller, fisio, dental, limpieza, vet, fitness.
 
+## Etiqueta de IA
+- Todo vídeo con voz sintética (generada aquí) va con `instagramData.isAiGenerated: true` y `tiktokData.isAigc: true`. Los reels programados hasta febrero de 2027 ya están marcados.
+- No usar voces de ElevenLabs del plan gratis: no permite uso comercial.
+
 ## Qué no hacer
 - No borrar ni editar publicaciones que ya existen. No tocar los borradores de la serie "Día X".
 - No pasar de 20 publicaciones al mes.
