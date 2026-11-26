@@ -1,0 +1,11 @@
+{
+  "sector": "peluqueria",
+  "slides": [
+    {"type": "cover", "kicker": "PELUQUERÍAS Y BARBERÍAS", "title": "Programa de citas: *lo que debe tener* sí o sí", "sub": "Guarda este post antes de elegir uno."},
+    {"type": "item", "n": "1", "title": "Reserva en *menos de un minuto*", "body": "Desde el móvil y sin descargar ninguna app. Si es un lío, el cliente lo deja a medias."},
+    {"type": "item", "n": "2", "title": "Cada servicio con *su duración real*", "body": "Un corte no ocupa lo mismo que unas mechas. Así la agenda cuadra sola y no se solapan citas."},
+    {"type": "item", "n": "3", "title": "Recordatorios *automáticos*", "body": "Es lo que más dinero ahorra: menos olvidos y huecos libres a tiempo para otro cliente."},
+    {"type": "item", "n": "4", "title": "Tu web, *con tu nombre*", "body": "Que el cliente te vea solo a ti, no en un escaparate junto a la competencia."},
+    {"type": "cta", "title": "Las 7 funciones, *en el blog*", "body": "citasweb.es/blog · enlace en la bio", "word": "PELU"}
+  ]
+}
