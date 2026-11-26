@@ -42,3 +42,10 @@ Este documento es el que sigue la tarea programada cada lunes. Si cambias algo d
 - No borrar ni editar publicaciones que ya existen. No tocar los borradores de la serie "Día X".
 - No pasar de 20 publicaciones al mes.
 - No subir nada que no sean imágenes de las publicaciones.
+
+## Blog de citasweb.es (panel: citasweb.es/admin → Blog)
+- Los artículos se guardan siempre como **borrador**. Los publica el dueño, salvo que pida lo contrario.
+- **Dirección (URL):** el panel la genera a partir del título y la corta a unos 70 caracteres. Hay que escribirla a mano: corta, sin tildes, con la palabra clave (p. ej. `cita-previa-online-talleres-mecanicos`).
+- Cada artículo lleva portada de 1200x630, hecha con `generator/cover.py` (las de ejemplo están en `blog/`).
+- El texto va en markdown (`##` para títulos, `**negrita**`, `- ` para listas y `[texto](url)` para enlaces) y termina con el enlace "Pruébala gratis en citasweb.es".
+- No inventar testimonios ni cifras. Precios: 50/60/80 €/mes + IVA, o 500/600/800 €/año (2 meses gratis). Prueba de 15 días sin tarjeta. Lista en 24-48 h. Web en tunegocio.citasweb.es; dominio propio a consultar.
