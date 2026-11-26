@@ -17,13 +17,14 @@ Este documento es el que sigue la tarea programada cada lunes. Si cambias algo d
    - Señalar la publicación que mejor ha funcionado y la que peor, y si el estilo nuevo (desde el 14 de diciembre de 2026) supera al antiguo.
    - **A partir del 15 de enero de 2027**, en la primera ejecución: comparar el estilo antiguo (de octubre al 13 de diciembre) con el nuevo.
 3. **Revisar el calendario** de las próximas 6 semanas con `getScheduledPosts`. Contar las publicaciones que no son borrador en cada mes natural.
-4. **Rellenar los huecos.** Solo en meses con menos de 20, y en las mejores horas que estén libres, se crean carruseles nuevos. Como mucho **4 por ejecución**. Nunca hay que pasar de 20 en un mes.
-5. **Crear cada carrusel:**
+4. **Blog → redes:** seguir la sección "Blog → redes" de más abajo, que va antes de los carruseles genéricos.
+5. **Rellenar los huecos.** Solo en meses con menos de 20, y en las mejores horas que estén libres, se crean carruseles nuevos. Como mucho **4 por ejecución**. Nunca hay que pasar de 20 en un mes.
+6. **Crear cada carrusel:**
    - Crear `posts/AAAA-MM-DD-tema/post.json`; el formato está en `generator/render.py`. Son 5 o 6 diapositivas: portada con gancho, desarrollo y CTA con la palabra clave.
    - Ejecutar `python3 generator/render.py posts/.../post.json`, revisar las imágenes y hacer commit y push a `main`.
    - Las URL de los medios son `https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/<carpeta>/slide-N.png`.
    - Programarlo con `createScheduledPost`: proveedores instagram (POST) y tiktok (`autoAddMusic: true`), `commercialContentOwnBrand: true` y texto alternativo en cada imagen.
-6. **Informe final:** métricas, qué ha funcionado, qué se ha programado (fecha, tema y enlace de Metricool) y el recuento por mes. Enviarlo con PushNotification si está disponible y dejarlo también como resultado de la ejecución.
+7. **Informe final:** recordatorio del artículo que toca publicar esa semana, métricas, qué ha funcionado, qué se ha programado (fecha, tema y enlace de Metricool) y el recuento por mes. Enviarlo con PushNotification si está disponible y dejarlo también como resultado de la ejecución.
 
 ## Estilo de los textos (el nuevo)
 - Gancho corto en la primera línea, 3 o 4 líneas en total.
