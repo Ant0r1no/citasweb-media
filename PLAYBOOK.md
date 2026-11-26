@@ -6,7 +6,10 @@ Este documento es el que sigue la tarea programada cada lunes. Si cambias algo d
 - Marca en Metricool: **citasweb.es**, blogId **7420076**, zona horaria **Europe/Madrid**.
 - Redes: Instagram @citasweb.es y TikTok @citasweb.
 - Web: https://citasweb.es/ (va en todos los textos).
-- Plan gratis de Metricool: **máximo 20 publicaciones al mes**, tanto si van a una red como a dos. Los borradores (`draft: true`) no cuentan.
+- **Reparto de redes (desde la puesta en marcha del publicador propio):**
+  - **TikTok → Metricool**, solo con `providers: [{"network":"tiktok"}]`. Plan gratis: **máximo 20 publicaciones publicadas al mes** (cada red cuenta por separado; los borradores no cuentan; lo que pase de 20 no se publica).
+  - **Instagram → publicador propio** (`calendar/instagram.json`, ver `calendar/README.md`). Sin límite mensual práctico. Cada publicación nueva se añade al calendario con el mismo texto y medios (vídeo mp4 por URL raw de GitHub; imágenes en JPEG o se convierten solas), `ai` igual que la etiqueta de IA, y se hace commit + push.
+  - Hasta que el publicador esté probado con la clave de Instagram, lo programado en Metricool sigue yendo a las dos redes.
 - Mejores horas: **lunes 18:00, miércoles 10:00, jueves 18:00, viernes 10:00**.
 
 ## Pasos de cada ejecución
@@ -18,7 +21,7 @@ Este documento es el que sigue la tarea programada cada lunes. Si cambias algo d
    - **A partir del 15 de enero de 2027**, en la primera ejecución: comparar el estilo antiguo (de octubre al 13 de diciembre) con el nuevo.
 3. **Revisar el calendario** de las próximas 6 semanas con `getScheduledPosts`. Contar las publicaciones que no son borrador en cada mes natural.
 4. **Blog → redes:** seguir la sección "Blog → redes" de más abajo, que va antes de los carruseles genéricos.
-5. **Rellenar los huecos.** Solo en meses con menos de 20, y en las mejores horas que estén libres, se crean carruseles nuevos. Como mucho **4 por ejecución**. Nunca hay que pasar de 20 en un mes.
+5. **Rellenar los huecos.** Solo en meses con menos de 20 en TikTok (en Instagram no hay límite), y en las mejores horas que estén libres, se crean carruseles nuevos. Como mucho **4 por ejecución**. Nunca hay que pasar de 20 en TikTok en un mes. Revisar también `calendar/ESTADO.md` y avisar en el informe si hay publicaciones de Instagram con problemas.
 6. **Crear cada carrusel:**
    - Crear `posts/AAAA-MM-DD-tema/post.json`; el formato está en `generator/render.py`. Son 5 o 6 diapositivas: portada con gancho, desarrollo y CTA con la palabra clave.
    - Ejecutar `python3 generator/render.py posts/.../post.json`, revisar las imágenes y hacer commit y push a `main`.
@@ -41,7 +44,7 @@ Este documento es el que sigue la tarea programada cada lunes. Si cambias algo d
 
 ## Qué no hacer
 - No borrar ni editar publicaciones que ya existen. No tocar los borradores de la serie "Día X".
-- No pasar de 20 publicaciones al mes.
+- No pasar de 20 publicaciones al mes en TikTok (Metricool).
 - No subir nada que no sean imágenes de las publicaciones.
 
 ## Blog de citasweb.es (panel: citasweb.es/admin → Blog)
