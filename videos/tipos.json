@@ -20,15 +20,58 @@
     ],
     [
      10.76,
-     "Suena el teléfono, dejas el degradado *a medias*, te limpias…"
+     "Suena el teléfono, dejas el degradado *a medias*, te limpias…",
+     {
+      "type": "call",
+      "name": "Cliente nuevo",
+      "time": "17:32"
+     }
     ],
     [
      14.62,
-     "…contestas, y te pregunta si tienes *hueco el martes*"
+     "…contestas, y te pregunta si tienes *hueco el martes*",
+     {
+      "type": "callon",
+      "name": "Cliente nuevo",
+      "time": "17:32"
+     }
     ],
     [
      18.26,
-     "Que sí, *que tienes hueco*"
+     "Que sí, *que tienes hueco*",
+     {
+      "type": "agenda",
+      "title": "Agenda",
+      "sub": "Martes",
+      "sel": "M",
+      "slots": [
+       [
+        "10:00",
+        "Juan · Corte",
+        "busy"
+       ],
+       [
+        "11:00",
+        "Libre",
+        "free"
+       ],
+       [
+        "12:00",
+        "Pablo · Barba",
+        "busy"
+       ],
+       [
+        "17:00",
+        "Libre",
+        "free"
+       ],
+       [
+        "18:00",
+        "Dani · Degradado",
+        "busy"
+       ]
+      ]
+     }
     ],
     [
      20.12,
@@ -36,7 +79,15 @@
     ],
     [
      22.78,
-     "…en tu web, *en 10 segundos*"
+     "…en tu web, *en 10 segundos*",
+     {
+      "type": "web",
+      "biz": "Tu Barbería",
+      "url": "tubarberia.citasweb.es",
+      "day": "Martes",
+      "pick": 1,
+      "time": "22:41"
+     }
     ],
     [
      25.06,
@@ -61,23 +112,139 @@
     ],
     [
      37.78,
-     "Te pide hueco, se lo guardas… *y desaparece*"
+     "Te pide hueco, se lo guardas… *y desaparece*",
+     {
+      "type": "chat",
+      "name": "Cliente",
+      "time": "12:04",
+      "msgs": [
+       [
+        "in",
+        "Hola! tienes hueco el jueves?",
+        "12:02"
+       ],
+       [
+        "out",
+        "Sí, a las 17:00. ¿Te lo guardo?",
+        "12:03"
+       ],
+       [
+        "in",
+        "Vale, ya te digo algo 👍",
+        "12:04"
+       ]
+      ],
+      "gap": 0.75
+     }
     ],
     [
      41.26,
-     "No confirma, no cancela, *nada*"
+     "No confirma, no cancela, *nada*",
+     {
+      "type": "chat",
+      "name": "Cliente",
+      "time": "18:40",
+      "status": "últ. vez hoy a las 12:05",
+      "msgs": [
+       [
+        "out",
+        "¿Al final te viene bien el jueves?",
+        "18:39"
+       ]
+      ],
+      "seen": true,
+      "gap": 0.6
+     }
     ],
     [
      44.26,
-     "Y tú, con ese hueco *bloqueado toda la semana*"
+     "Y tú, con ese hueco *bloqueado toda la semana*",
+     {
+      "type": "agenda",
+      "title": "Agenda",
+      "sub": "Jueves",
+      "sel": "J",
+      "slots": [
+       [
+        "16:00",
+        "Marcos · Corte",
+        "busy"
+       ],
+       [
+        "17:00",
+        "Reservado sin confirmar",
+        "pending",
+        0.9,
+        "¿Viene o no viene…?"
+       ],
+       [
+        "18:00",
+        "Luis · Barba",
+        "busy"
+       ],
+       [
+        "19:00",
+        "Libre",
+        "free"
+       ]
+      ]
+     }
     ],
     [
      47.28,
-     "Cuando el cliente *reserva él mismo*…"
+     "Cuando el cliente *reserva él mismo*…",
+     {
+      "type": "web",
+      "biz": "Tu Barbería",
+      "url": "tubarberia.citasweb.es",
+      "day": "Jueves",
+      "pick": 3,
+      "times": [
+       "10:00",
+       "11:00",
+       "12:30",
+       "17:00",
+       "18:30",
+       "19:00"
+      ],
+      "time": "12:05"
+     }
     ],
     [
      49.26,
-     "…el hueco es suyo o es de otro. *Sin mensajes, sin esperar*"
+     "…el hueco es suyo o es de otro. *Sin mensajes, sin esperar*",
+     {
+      "type": "agenda",
+      "title": "Agenda",
+      "sub": "Jueves",
+      "sel": "J",
+      "slots": [
+       [
+        "16:00",
+        "Marcos · Corte",
+        "busy"
+       ],
+       [
+        "17:00",
+        "Libre",
+        "booked",
+        0.5,
+        "✓ Reservado · Iván"
+       ],
+       [
+        "18:00",
+        "Luis · Barba",
+        "busy"
+       ],
+       [
+        "19:00",
+        "Libre",
+        "booked",
+        1.3,
+        "✓ Reservado · Sergio"
+       ]
+      ]
+     }
     ],
     [
      53.1,
@@ -102,7 +269,32 @@
     ],
     [
      65.7,
-     "Reserva, le esperas… y no aparece. *Ni un mensaje*"
+     "Reserva, le esperas… y no aparece. *Ni un mensaje*",
+     {
+      "type": "agenda",
+      "title": "Agenda",
+      "sub": "Viernes",
+      "sel": "V",
+      "slots": [
+       [
+        "10:00",
+        "Álex · Corte",
+        "busy"
+       ],
+       [
+        "11:00",
+        "Rubén · Degradado",
+        "noshow",
+        1.2,
+        "✕ No vino · sin avisar"
+       ],
+       [
+        "12:00",
+        "Jorge · Barba",
+        "busy"
+       ]
+      ]
+     }
     ],
     [
      70.54,
@@ -110,7 +302,15 @@
     ],
     [
      72.28,
-     "3 plantones a la semana × 25 € = *300 € al mes*"
+     "3 plantones a la semana × 25 € = *300 € al mes*",
+     {
+      "type": "money",
+      "lines": [
+       "1 plantón = 25 €",
+       "3 por semana = 75 €"
+      ],
+      "total": 300
+     }
     ],
     [
      77.06,
@@ -118,7 +318,25 @@
     ],
     [
      79.42,
-     "un *recordatorio automático* antes de la cita"
+     "un *recordatorio automático* antes de la cita",
+     {
+      "type": "notif",
+      "clock": "19:00",
+      "date": "jueves, 15 de enero",
+      "items": [
+       [
+        "CitasWeb",
+        "Recordatorio de tu cita",
+        "Mañana a las 11:00 en Tu Barbería ✂️"
+       ],
+       [
+        "CitasWeb",
+        "Cita confirmada ✓",
+        "Te esperamos mañana a las 11:00"
+       ]
+      ],
+      "gap": 0.9
+     }
     ],
     [
      81.88,
@@ -139,15 +357,68 @@
     ],
     [
      91.1,
-     "El de las *doce menos cuarto* de la noche"
+     "El de las *doce menos cuarto* de la noche",
+     {
+      "type": "notif",
+      "clock": "23:47",
+      "date": "martes, 14 de enero",
+      "items": [
+       [
+        "WhatsApp",
+        "Cliente",
+        "Holaa 👋"
+       ]
+      ]
+     }
     ],
     [
      93.6,
-     "«Holaa, *¿tienes hueco mañana?*»"
+     "«Holaa, *¿tienes hueco mañana?*»",
+     {
+      "type": "chat",
+      "name": "Cliente",
+      "time": "23:47",
+      "msgs": [
+       [
+        "in",
+        "Holaa",
+        "23:47"
+       ],
+       [
+        "in",
+        "¿tienes hueco mañana?",
+        "23:47"
+       ]
+      ],
+      "gap": 0.6
+     }
     ],
     [
      95.72,
-     "Y tú en el sofá, contestando *WhatsApps de trabajo*"
+     "Y tú en el sofá, contestando *WhatsApps de trabajo*",
+     {
+      "type": "chat",
+      "name": "Cliente",
+      "time": "23:52",
+      "msgs": [
+       [
+        "in",
+        "¿y a las 6?",
+        "23:49"
+       ],
+       [
+        "in",
+        "o el viernes mejor",
+        "23:50"
+       ],
+       [
+        "out",
+        "Mañana te digo 😴",
+        "23:52"
+       ]
+      ],
+      "gap": 0.7
+     }
     ],
     [
      99.0,
@@ -155,7 +426,25 @@
     ],
     [
      102.28,
-     "El cliente ve tus huecos, reserva… y tú te enteras *por la mañana*"
+     "El cliente ve tus huecos, reserva… y tú te enteras *por la mañana*",
+     {
+      "type": "notif",
+      "clock": "08:00",
+      "date": "miércoles, 15 de enero",
+      "items": [
+       [
+        "CitasWeb",
+        "3 reservas nuevas",
+        "Mientras dormías: 10:00, 12:30 y 18:00"
+       ],
+       [
+        "CitasWeb",
+        "Agenda de hoy",
+        "Completa ✓"
+       ]
+      ],
+      "gap": 0.9
+     }
     ],
     [
      105.9,
@@ -177,5 +466,5 @@
   ],
   "volume": 0.6
  },
- "outname": "video-v3.mp4"
+ "outname": "video-v4.mp4"
 }
