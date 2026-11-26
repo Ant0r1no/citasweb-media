@@ -1,0 +1,39 @@
+name: Revisar clave de Instagram
+
+on:
+  schedule:
+    - cron: "17 8 * * 1"     # lunes por la mañana
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comprobar y renovar la clave
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -e
+          ok=$(curl -s "https://graph.instagram.com/v26.0/me?fields=username&access_token=$IG_ACCESS_TOKEN" | python3 -c "import sys,json; print('ok' if 'username' in json.load(sys.stdin) else 'bad')")
+          if [ "$ok" != "ok" ]; then
+            gh issue create -R "$REPO" --title "🔑 La clave de Instagram no funciona" --body "El publicador no puede entrar en Instagram. Hay que generar una clave nueva y guardarla en Settings → Secrets → IG_ACCESS_TOKEN."
+            exit 0
+          fi
+          resp=$(curl -s "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=$IG_ACCESS_TOKEN")
+          new=$(echo "$resp" | python3 -c "import sys,json; print(json.load(sys.stdin).get('access_token',''))")
+          days=$(echo "$resp" | python3 -c "import sys,json; print(int(json.load(sys.stdin).get('expires_in',0))//86400)")
+          echo "Clave renovada: caduca en $days días"
+          if [ -n "$new" ] && [ "$new" != "$IG_ACCESS_TOKEN" ]; then
+            if [ -n "$GH_PAT" ]; then
+              echo "$new" | GH_TOKEN="$GH_PAT" gh secret set IG_ACCESS_TOKEN -R "$REPO"
+              echo "Secreto actualizado"
+            else
+              gh issue create -R "$REPO" --title "🔑 Renovar la clave de Instagram" --body "Instagram ha renovado la clave pero no puedo guardarla sola (falta el secreto GH_PAT). Genera una clave nueva en Meta for Developers y guárdala en Settings → Secrets and variables → Actions → IG_ACCESS_TOKEN."
+            fi
+          fi
