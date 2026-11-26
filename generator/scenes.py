@@ -119,7 +119,25 @@ def money(sc, dur):
     return h, [(0.2 + i * 0.6, "tick") for i in range(len(lines))] + [(t0 + 1.1, "cash")]
 
 
-BUILDERS = {"call": call, "callon": callon, "chat": chat, "notif": notif, "agenda": agenda, "web": web, "money": money}
+def search(sc, dur):
+    rows, ev = [], []
+    for i, (name, tag, good, *rest) in enumerate(sc["results"]):
+        on = rest[0] if rest else None
+        attr = f' data-on="{on:.2f}"' if on is not None else ""
+        cls = "res good" if good else "res bad"
+        rows.append(f'<div class="{cls}" data-t="{0.9 + i * 0.25:.2f}"{attr}><div class="rn">{E(name)}</div><div class="rt">{E(tag)}</div>'
+                    f'{"<span class=rb>Reservar</span>" if good else ""}</div>')
+        ev.append((0.9 + i * 0.25, "tick"))
+        if on is not None:
+            ev.append((on, "buzz" if not good else "pop"))
+    q = E(sc.get("query", "peluquería cerca de mí"))
+    h = f'''<div class="scr searchscr">{_status(sc.get("time", "19:40"))}
+<div class="sbar"><span class="mag">⌕</span><span class="q" data-type="{q}" data-t0="0.15"></span><i class="caret"></i></div>
+<div class="sres">{"".join(rows)}</div></div>'''
+    return h, [(0.15 + k * 0.06, "tap") for k in range(0, len(sc.get("query", "")), 3)] + ev
+
+
+BUILDERS = {"call": call, "callon": callon, "chat": chat, "notif": notif, "agenda": agenda, "web": web, "money": money, "search": search}
 
 
 def build(sc, dur):
@@ -202,6 +220,17 @@ CSS = """
 .ok{position:absolute;inset:0;background:#ffffffee;display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0}
 .ok.on{opacity:1}.okc{width:180px;height:180px;border-radius:50%;background:#34c759;color:#fff;font-size:110px;display:flex;align-items:center;justify-content:center;font-weight:900;margin-bottom:30px}
 .ok b{font-size:44px}.ok small{font-size:30px;color:#666;margin-top:10px}
+/* búsqueda */
+.searchscr{background:#fff;color:#111}
+.sbar{margin:30px 30px 10px;border:3px solid #e5e7eb;border-radius:50px;padding:22px 30px;font-size:32px;display:flex;align-items:center;gap:16px;box-shadow:0 4px 14px #0001}
+.mag{font-size:40px;color:#888}.caret{width:3px;height:36px;background:#333;display:inline-block}
+.sres{padding:10px 30px}
+.res{border-radius:24px;padding:22px 26px;margin-bottom:14px;background:#f6f7f9;position:relative;opacity:0}
+.rn{font-size:32px;font-weight:800}.rt{font-size:24px;color:#666;margin-top:6px}
+.res.good{border:3px solid var(--ac);background:#fff}
+.rb{position:absolute;right:22px;top:50%;transform:translateY(-50%);background:var(--ac);color:var(--bg);font-weight:800;font-size:24px;padding:12px 20px;border-radius:16px}
+.res.bad.on{opacity:.35 !important;filter:grayscale(1)}
+.res.good.on{box-shadow:0 0 0 6px var(--ac)}
 /* dinero */
 .moneyscr{background:linear-gradient(180deg,#1a0f0f,#0b0b0b)}
 .mtitle{text-align:center;font-size:34px;color:#ffffffaa;margin-top:30px}
@@ -224,6 +253,7 @@ function sceneRender(el, lt, t){
     x.textContent = Math.round(parseFloat(x.dataset.count)*p);
   });
   el.querySelectorAll('[data-grow]').forEach(x => { const [a,d] = x.dataset.grow.split(':').map(parseFloat); x.style.width = (100*ease((lt-a)/d))+'%'; });
+  el.querySelectorAll('[data-type]').forEach(x => { const txt = x.dataset.type, n = Math.max(0, Math.min(txt.length, Math.floor((lt - parseFloat(x.dataset.t0))/.06))); x.textContent = txt.slice(0, n); });
   el.querySelectorAll('[data-timer]').forEach(x => { const s = Math.max(0, Math.floor(lt)); x.textContent = '00:' + String(s).padStart(2,'0'); });
   el.querySelectorAll('[data-ring]').forEach(x => {
     const r = parseFloat(x.dataset.ring), on = lt > .15 && lt < .15 + r && ((lt-.15) % .9) < .6;

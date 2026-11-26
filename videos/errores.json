@@ -1,0 +1,434 @@
+{
+ "audio": "audio/errores.mp3",
+ "sector": "peluqueria",
+ "series": "ERRORES QUE CUESTAN CLIENTES",
+ "outname": "video-v4.mp4",
+ "music": {
+  "styles": [
+   "house",
+   "lofi",
+   "pop",
+   "house"
+  ],
+  "volume": 0.6
+ },
+ "videos": [
+  {
+   "slug": "errores-1-contestar-tarde",
+   "n": 1,
+   "hook": "No contestar *a tiempo*",
+   "start": 1.2,
+   "end": 20.0,
+   "tail": 2.3,
+   "phrases": [
+    [
+     1.25,
+     "Errores que te cuestan clientes"
+    ],
+    [
+     3.8,
+     "Número 1: *no contestar a tiempo*"
+    ],
+    [
+     6.68,
+     "Un cliente te escribe para *pedir cita*",
+     {
+      "type": "chat",
+      "name": "Laura",
+      "time": "16:02",
+      "msgs": [
+       [
+        "in",
+        "Hola! ¿Tienes hueco esta tarde?",
+        "16:02"
+       ]
+      ]
+     }
+    ],
+    [
+     9.22,
+     "Tú estás trabajando… y le contestas *dos horas después*",
+     {
+      "type": "chat",
+      "name": "Laura",
+      "time": "18:05",
+      "msgs": [
+       [
+        "in",
+        "Hola! ¿Tienes hueco esta tarde?",
+        "16:02"
+       ],
+       [
+        "out",
+        "¡Sí! ¿A las 19:00 te va?",
+        "18:05"
+       ]
+      ],
+      "gap": 0.9
+     }
+    ],
+    [
+     12.78,
+     "Para entonces, *ya ha reservado en otro sitio*",
+     {
+      "type": "chat",
+      "name": "Laura",
+      "time": "18:07",
+      "msgs": [
+       [
+        "out",
+        "¡Sí! ¿A las 19:00 te va?",
+        "18:05"
+       ],
+       [
+        "in",
+        "Ya cogí cita en otro sitio, gracias 🙏",
+        "18:07"
+       ]
+      ],
+      "gap": 0.6
+     }
+    ],
+    [
+     15.84,
+     "Si puede reservar solo, en el momento, *ese cliente es tuyo*",
+     {
+      "type": "web",
+      "biz": "Tu Salón",
+      "url": "tusalon.citasweb.es",
+      "day": "Hoy",
+      "pick": 3,
+      "time": "16:02",
+      "services": [
+       [
+        "Corte mujer",
+        "18 €",
+        "45 min"
+       ],
+       [
+        "Color",
+        "35 €",
+        "90 min"
+       ],
+       [
+        "Peinado",
+        "15 €",
+        "30 min"
+       ]
+      ]
+     }
+    ],
+    [
+     19.6,
+     "cta"
+    ]
+   ]
+  },
+  {
+   "slug": "errores-2-sin-recordatorios",
+   "n": 2,
+   "hook": "No mandar *recordatorios*",
+   "start": 21.95,
+   "end": 41.55,
+   "tail": 2.3,
+   "phrases": [
+    [
+     22.0,
+     "Errores que te cuestan clientes"
+    ],
+    [
+     24.28,
+     "Número 2: *no mandar recordatorios*"
+    ],
+    [
+     26.84,
+     "El cliente reserva para dentro de una semana… *y se le olvida*",
+     {
+      "type": "agenda",
+      "title": "Agenda",
+      "sub": "Jueves",
+      "sel": "J",
+      "slots": [
+       [
+        "10:00",
+        "Marta · Corte",
+        "busy"
+       ],
+       [
+        "11:00",
+        "Sara · Color",
+        "noshow",
+        1.6,
+        "✕ Se le olvidó"
+       ],
+       [
+        "13:00",
+        "Elena · Peinado",
+        "busy"
+       ]
+      ]
+     }
+    ],
+    [
+     31.74,
+     "No es mala fe: *tiene mil cosas en la cabeza*"
+    ],
+    [
+     35.02,
+     "Un *recordatorio automático* el día antes, y ese hueco no se pierde",
+     {
+      "type": "notif",
+      "clock": "18:00",
+      "date": "miércoles, 3 de marzo",
+      "items": [
+       [
+        "CitasWeb",
+        "Recordatorio de tu cita",
+        "Mañana a las 11:00 · Color en Tu Salón"
+       ],
+       [
+        "CitasWeb",
+        "Cita confirmada ✓",
+        "¡Te esperamos mañana!"
+       ]
+      ],
+      "gap": 1.0
+     }
+    ],
+    [
+     39.32,
+     "Sin que tú tengas que *acordarte de nada*"
+    ],
+    [
+     41.15,
+     "cta"
+    ]
+   ]
+  },
+  {
+   "slug": "errores-3-google",
+   "n": 3,
+   "hook": "Que no te encuentren *en Google*",
+   "start": 43.5,
+   "end": 60.75,
+   "tail": 2.4,
+   "phrases": [
+    [
+     43.55,
+     "Errores que te cuestan clientes"
+    ],
+    [
+     45.92,
+     "Número 3: *que no te encuentren en Google*"
+    ],
+    [
+     49.06,
+     "Alguien busca tu servicio *en tu ciudad*…",
+     {
+      "type": "search",
+      "query": "peluquería cerca de mí",
+      "time": "19:40",
+      "results": [
+       [
+        "Salón Marta",
+        "Web propia · Reserva online",
+        true
+       ],
+       [
+        "Peluquería Centro",
+        "Sin web",
+        false
+       ],
+       [
+        "Estudio Nuria",
+        "Web propia · Reserva online",
+        true
+       ]
+      ]
+     }
+    ],
+    [
+     51.24,
+     "Si no tienes web, o no se ve bien en el móvil… *pasa de largo*",
+     {
+      "type": "search",
+      "query": "peluquería cerca de mí",
+      "time": "19:40",
+      "results": [
+       [
+        "Salón Marta",
+        "Web propia · Reserva online",
+        true
+       ],
+       [
+        "Peluquería Centro",
+        "Sin web",
+        false,
+        1.4
+       ],
+       [
+        "Estudio Nuria",
+        "Web propia · Reserva online",
+        true
+       ]
+      ]
+     }
+    ],
+    [
+     54.62,
+     "Y reserva con quien *sí aparece*",
+     {
+      "type": "web",
+      "biz": "Tu Salón",
+      "url": "tusalon.citasweb.es",
+      "day": "Viernes",
+      "pick": 4,
+      "time": "19:41",
+      "services": [
+       [
+        "Corte mujer",
+        "18 €",
+        "45 min"
+       ],
+       [
+        "Color",
+        "35 €",
+        "90 min"
+       ],
+       [
+        "Peinado",
+        "15 €",
+        "30 min"
+       ]
+      ]
+     }
+    ],
+    [
+     57.08,
+     "Tener tu propia web con reservas es lo que *te pone en el mapa*",
+     {
+      "type": "notif",
+      "clock": "19:42",
+      "date": "jueves, 11 de marzo",
+      "items": [
+       [
+        "CitasWeb",
+        "Nueva reserva desde tu web",
+        "Viernes a las 18:30 · Corte mujer"
+       ]
+      ]
+     }
+    ],
+    [
+     60.4,
+     "cta"
+    ]
+   ]
+  },
+  {
+   "slug": "errores-4-esconder-precios",
+   "n": 4,
+   "hook": "Esconder *tus precios*",
+   "start": 62.75,
+   "end": 80.55,
+   "tail": 2.3,
+   "phrases": [
+    [
+     62.8,
+     "Errores que te cuestan clientes"
+    ],
+    [
+     65.22,
+     "Número 4: *esconder tus precios*"
+    ],
+    [
+     68.34,
+     "Si el cliente tiene que preguntarte cuánto cuesta… *muchos ni preguntan*",
+     {
+      "type": "chat",
+      "name": "Tu Salón",
+      "status": "en línea",
+      "time": "21:15",
+      "msgs": [
+       [
+        "out",
+        "Hola, ¿cuánto cuesta un col…",
+        "21:15"
+       ]
+      ],
+      "typing": false,
+      "gap": 0.6
+     }
+    ],
+    [
+     72.74,
+     "Simplemente *se van*"
+    ],
+    [
+     74.22,
+     "Pon tus servicios con *su precio y su duración*, claros",
+     {
+      "type": "web",
+      "biz": "Tu Salón",
+      "url": "tusalon.citasweb.es",
+      "day": "Sábado",
+      "pick": 1,
+      "time": "21:16",
+      "services": [
+       [
+        "Corte mujer",
+        "18 €",
+        "45 min"
+       ],
+       [
+        "Color",
+        "35 €",
+        "90 min"
+       ],
+       [
+        "Peinado",
+        "15 €",
+        "30 min"
+       ]
+      ]
+     }
+    ],
+    [
+     77.62,
+     "El que entra ya sabe lo que hay… *y reserva*",
+     {
+      "type": "agenda",
+      "title": "Agenda",
+      "sub": "Sábado",
+      "sel": "S",
+      "slots": [
+       [
+        "10:00",
+        "Libre",
+        "booked",
+        0.4,
+        "✓ Reservado · Color 35 €"
+       ],
+       [
+        "11:30",
+        "Libre",
+        "booked",
+        1.0,
+        "✓ Reservado · Corte 18 €"
+       ],
+       [
+        "13:00",
+        "Libre",
+        "free"
+       ]
+      ]
+     }
+    ],
+    [
+     80.1,
+     "cta"
+    ]
+   ]
+  }
+ ]
+}

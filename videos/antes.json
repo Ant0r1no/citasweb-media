@@ -1,0 +1,379 @@
+{
+ "audio": "audio/antes.mp3",
+ "sector": "fisio",
+ "series": "ANTES Y DESPUÉS",
+ "outname": "video-v4.mp4",
+ "music": {
+  "styles": [
+   "pop",
+   "lofi",
+   "house",
+   "pop"
+  ],
+  "volume": 0.6
+ },
+ "videos": [
+  {
+   "slug": "antes-1-llamadas",
+   "n": 1,
+   "hook": "Las *llamadas*",
+   "start": 1.15,
+   "end": 19.1,
+   "tail": 2.3,
+   "phrases": [
+    [
+     1.2,
+     "Antes y después de tener agenda online"
+    ],
+    [
+     4.06,
+     "*Las llamadas*"
+    ],
+    [
+     5.44,
+     "*Antes:* el teléfono sonando mientras trabajas… y tú sin poder cogerlo",
+     {
+      "type": "call",
+      "name": "Cliente",
+      "time": "12:10"
+     }
+    ],
+    [
+     10.6,
+     "*Después:* el cliente ve tus huecos y reserva solo",
+     {
+      "type": "web",
+      "biz": "Tu Negocio",
+      "url": "tunegocio.citasweb.es",
+      "day": "Jueves",
+      "pick": 2,
+      "time": "12:10",
+      "services": [
+       [
+        "Sesión",
+        "40 €",
+        "50 min"
+       ],
+       [
+        "Primera valoración",
+        "30 €",
+        "30 min"
+       ],
+       [
+        "Bono 5 sesiones",
+        "180 €",
+        "—"
+       ]
+      ]
+     }
+    ],
+    [
+     14.62,
+     "Tú sigues *con lo tuyo*"
+    ],
+    [
+     16.08,
+     "Y cuando miras el móvil, la cita *ya está apuntada*",
+     {
+      "type": "notif",
+      "clock": "13:30",
+      "date": "jueves, 4 de marzo",
+      "items": [
+       [
+        "CitasWeb",
+        "Nueva reserva",
+        "Jueves a las 12:30"
+       ]
+      ]
+     }
+    ],
+    [
+     18.7,
+     "cta"
+    ]
+   ]
+  },
+  {
+   "slug": "antes-2-domingos",
+   "n": 2,
+   "hook": "Los *domingos*",
+   "start": 21.35,
+   "end": 39.35,
+   "tail": 2.4,
+   "phrases": [
+    [
+     21.4,
+     "Antes y después de tener agenda online"
+    ],
+    [
+     24.18,
+     "*Los domingos*"
+    ],
+    [
+     25.42,
+     "*Antes:* domingo por la tarde, contestando mensajes para cuadrar la semana",
+     {
+      "type": "chat",
+      "name": "Clientes",
+      "time": "Dom 19:20",
+      "msgs": [
+       [
+        "in",
+        "¿Me pasas al martes?",
+        "19:12"
+       ],
+       [
+        "in",
+        "¿El jueves sigue en pie?",
+        "19:15"
+       ],
+       [
+        "in",
+        "¿Tienes algo el lunes a primera?",
+        "19:20"
+       ]
+      ],
+      "gap": 0.8
+     }
+    ],
+    [
+     30.32,
+     "*Después:* abres la agenda y la semana *ya está organizada*",
+     {
+      "type": "agenda",
+      "title": "Semana",
+      "sub": "Lunes",
+      "sel": "L",
+      "slots": [
+       [
+        "09:00",
+        "Libre",
+        "booked",
+        0.4,
+        "✓ Javier · Sesión"
+       ],
+       [
+        "10:00",
+        "Libre",
+        "booked",
+        0.8,
+        "✓ Lucía · Sesión"
+       ],
+       [
+        "11:00",
+        "Libre",
+        "booked",
+        1.2,
+        "✓ Pedro · Valoración"
+       ],
+       [
+        "12:00",
+        "Libre",
+        "free"
+       ]
+      ]
+     }
+    ],
+    [
+     34.6,
+     "Cada cliente en su hueco, *con su servicio*"
+    ],
+    [
+     37.26,
+     "Y el domingo *vuelve a ser domingo*"
+    ],
+    [
+     38.95,
+     "cta"
+    ]
+   ]
+  },
+  {
+   "slug": "antes-3-plantones",
+   "n": 3,
+   "hook": "Los *plantones*",
+   "start": 41.4,
+   "end": 60.45,
+   "tail": 2.3,
+   "phrases": [
+    [
+     41.45,
+     "Antes y después de tener agenda online"
+    ],
+    [
+     44.36,
+     "*Los plantones*"
+    ],
+    [
+     45.74,
+     "*Antes:* el cliente no viene, no avisa… y tú esperando con la silla vacía",
+     {
+      "type": "agenda",
+      "title": "Agenda",
+      "sub": "Martes",
+      "sel": "M",
+      "slots": [
+       [
+        "16:00",
+        "Ana · Sesión",
+        "busy"
+       ],
+       [
+        "17:00",
+        "Rober · Sesión",
+        "noshow",
+        1.8,
+        "✕ No vino · sin avisar"
+       ],
+       [
+        "18:00",
+        "Libre",
+        "free"
+       ]
+      ]
+     }
+    ],
+    [
+     51.52,
+     "*Después:* le llega un recordatorio y, si no puede venir, *cancela*…",
+     {
+      "type": "notif",
+      "clock": "18:00",
+      "date": "lunes, 8 de marzo",
+      "items": [
+       [
+        "CitasWeb",
+        "Recordatorio",
+        "Mañana a las 17:00"
+       ],
+       [
+        "CitasWeb",
+        "Cita cancelada",
+        "Hueco de las 17:00 libre"
+       ]
+      ],
+      "gap": 1.2
+     }
+    ],
+    [
+     56.08,
+     "…y ese hueco *lo coge otro*",
+     {
+      "type": "agenda",
+      "title": "Agenda",
+      "sub": "Martes",
+      "sel": "M",
+      "slots": [
+       [
+        "16:00",
+        "Ana · Sesión",
+        "busy"
+       ],
+       [
+        "17:00",
+        "Libre",
+        "booked",
+        0.5,
+        "✓ Reservado · Marina"
+       ],
+       [
+        "18:00",
+        "Libre",
+        "free"
+       ]
+      ]
+     }
+    ],
+    [
+     58.18,
+     "Menos sillas vacías, *más tranquilidad*"
+    ],
+    [
+     60.05,
+     "cta"
+    ]
+   ]
+  },
+  {
+   "slug": "antes-4-imagen",
+   "n": 4,
+   "hook": "Tu *imagen*",
+   "start": 62.6,
+   "end": 82.4,
+   "tail": 2.3,
+   "phrases": [
+    [
+     62.65,
+     "Antes y después de tener agenda online"
+    ],
+    [
+     65.74,
+     "*Tu imagen*"
+    ],
+    [
+     66.84,
+     "*Antes:* «escríbeme por WhatsApp y miramos»",
+     {
+      "type": "chat",
+      "name": "Cliente",
+      "time": "20:10",
+      "msgs": [
+       [
+        "in",
+        "Hola, ¿cómo pido cita?",
+        "20:08"
+       ],
+       [
+        "out",
+        "Escríbeme por WhatsApp y miramos",
+        "20:10"
+       ]
+      ],
+      "gap": 0.8
+     }
+    ],
+    [
+     70.24,
+     "*Después:* un enlace con tu web, tus servicios, tus precios y tus huecos",
+     {
+      "type": "web",
+      "biz": "Tu Negocio",
+      "url": "tunegocio.citasweb.es",
+      "day": "Viernes",
+      "pick": 1,
+      "time": "20:11",
+      "services": [
+       [
+        "Sesión",
+        "40 €",
+        "50 min"
+       ],
+       [
+        "Primera valoración",
+        "30 €",
+        "30 min"
+       ],
+       [
+        "Bono 5 sesiones",
+        "180 €",
+        "—"
+       ]
+      ]
+     }
+    ],
+    [
+     75.76,
+     "El cliente ve un negocio *serio, organizado y profesional*"
+    ],
+    [
+     79.5,
+     "Y la puedes probar *15 días gratis, sin tarjeta*"
+    ],
+    [
+     81.95,
+     "cta"
+    ]
+   ]
+  }
+ ]
+}
