@@ -13,6 +13,8 @@ from playwright.sync_api import sync_playwright
 
 sys.path.insert(0, str(Path(__file__).parent))
 from render import THEMES, LOGO, esc  # noqa: E402
+import music  # noqa: E402
+import wave  # noqa: E402
 
 CSS = """
 *{margin:0;padding:0;box-sizing:border-box}
@@ -55,6 +57,8 @@ def main(cfg_path, audio_override=None):
     theme = THEMES.get(cfg.get("sector", "general"), THEMES["general"])
     word = cfg.get("word", "CITA")
     out_root = cfg_path.parent
+    mcfg = cfg.get("music", {"style": "house", "volume": 0.30})  # {"style":..,"volume":..} o null para sin música
+    outname = cfg.get("outname", "video.mp4")
     with sync_playwright() as pw:
         b = pw.chromium.launch()
         pg = b.new_page(viewport={"width": 1080, "height": 1920})
@@ -81,17 +85,36 @@ def main(cfg_path, audio_override=None):
                 lines += [f"file '{f.name}'", f"duration {dur:.3f}"]
             lines.append(f"file '{concat[-1][0].name}'")
             lst.write_text("\n".join(lines))
+            voice = f"[1:a]afade=t=in:d=0.15,afade=t=out:st={total-0.4:.2f}:d=0.4,loudnorm=I=-16:TP=-1.5"
+            extra_in = []
+            if mcfg:
+                styles = mcfg.get("styles") or [mcfg.get("style", "house")]
+                style = v.get("music_style") or styles[(v["n"] - 1) % len(styles)]
+                wav = d / "music.wav"
+                data = music.make(total + 0.5, style, seed=v.get("music_seed", v["n"]))
+                with wave.open(str(wav), "wb") as w:
+                    w.setnchannels(2); w.setsampwidth(2); w.setframerate(music.SR); w.writeframes(data.tobytes())
+                extra_in = ["-i", str(wav)]
+                vol = mcfg.get("volume", 0.30)
+                fc = (f"{voice},asplit=2[v1][v2];"
+                      f"[2:a]volume={vol},afade=t=out:st={total-1.2:.2f}:d=1.2[m];"
+                      f"[m][v2]sidechaincompress=threshold=0.04:ratio=6:attack=15:release=350[md];"
+                      f"[v1][md]amix=inputs=2:normalize=0:duration=first,alimiter=limit=0.89[a]")
+            else:
+                fc = voice + "[a]"
             subprocess.run([
                 "ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(lst),
-                "-ss", f"{start}", "-t", f"{total}", "-i", audio,
-                "-filter_complex", f"[1:a]afade=t=in:d=0.15,afade=t=out:st={total-0.4:.2f}:d=0.4,loudnorm=I=-16:TP=-1.5[a]",
+                "-ss", f"{start}", "-t", f"{total}", "-i", audio, *extra_in,
+                "-filter_complex", fc,
                 "-map", "0:v", "-map", "[a]", "-r", "30", "-c:v", "libx264", "-preset", "veryfast", "-crf", "22",
                 "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-shortest", "-movflags", "+faststart",
-                str(d / "video.mp4")], check=True)
+                str(d / outname)], check=True)
             for f, _ in concat:
                 f.unlink()
             lst.unlink()
-            print(d / "video.mp4")
+            if mcfg:
+                wav.unlink()
+            print(d / outname)
         b.close()
 
 

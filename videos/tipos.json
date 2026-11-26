@@ -3,41 +3,179 @@
  "sector": "barberia",
  "series": "TIPOS DE CLIENTES",
  "videos": [
-  {"slug":"tipos-1-llama-en-mitad-del-corte","n":1,"hook":"El que llama *en mitad del corte*","start":3.55,"end":29.6,"phrases":[
-   [3.82,"Tipos de clientes que llaman a la barbería: *número 1*"],
-   [7.60,"El que llama justo cuando tienes *la máquina en la mano*"],
-   [10.76,"Suena el teléfono, dejas el degradado *a medias*, te limpias…"],
-   [14.62,"…contestas, y te pregunta si tienes *hueco el martes*"],
-   [18.26,"Que sí, *que tienes hueco*"],
-   [20.12,"Pero ese cliente podría haberlo visto *él solo*…"],
-   [22.78,"…en tu web, *en 10 segundos*"],
-   [25.06,"Y tú, *sin soltar la máquina*"],
-   [26.78,"cta"]]},
-  {"slug":"tipos-2-ya-te-digo-algo","n":2,"hook":"El *«ya te digo algo»*","start":33.4,"end":57.4,"phrases":[
-   [33.60,"Tipos de clientes, *número 2*: el «ya te digo algo»"],
-   [37.78,"Te pide hueco, se lo guardas… *y desaparece*"],
-   [41.26,"No confirma, no cancela, *nada*"],
-   [44.26,"Y tú, con ese hueco *bloqueado toda la semana*"],
-   [47.28,"Cuando el cliente *reserva él mismo*…"],
-   [49.26,"…el hueco es suyo o es de otro. *Sin mensajes, sin esperar*"],
-   [53.10,"cta"]]},
-  {"slug":"tipos-3-planton-profesional","n":3,"hook":"El *plantón profesional*","start":61.2,"end":84.4,"phrases":[
-   [61.42,"Tipos de clientes, *número 3*"],
-   [63.74,"El *plantón profesional*"],
-   [65.70,"Reserva, le esperas… y no aparece. *Ni un mensaje*"],
-   [70.54,"¿Sabes *cuánto cuesta* eso?"],
-   [72.28,"3 plantones a la semana × 25 € = *300 € al mes*"],
-   [77.06,"Lo que más lo reduce es *muy fácil*:"],
-   [79.42,"un *recordatorio automático* antes de la cita"],
-   [81.88,"cta"]]},
-  {"slug":"tipos-4-el-de-las-2347","n":4,"hook":"El de las *23:47*","start":88.7,"end":110.68,"phrases":[
-   [88.92,"Tipos de clientes, *número 4*"],
-   [91.10,"El de las *doce menos cuarto* de la noche"],
-   [93.60,"«Holaa, *¿tienes hueco mañana?*»"],
-   [95.72,"Y tú en el sofá, contestando *WhatsApps de trabajo*"],
-   [99.00,"Imagínate que a esa hora tu agenda *contestara sola*"],
-   [102.28,"El cliente ve tus huecos, reserva… y tú te enteras *por la mañana*"],
-   [105.90,"*Desconectas de verdad*"],
-   [108.42,"cta"]]}
- ]
+  {
+   "slug": "tipos-1-llama-en-mitad-del-corte",
+   "n": 1,
+   "hook": "El que llama *en mitad del corte*",
+   "start": 3.55,
+   "end": 29.6,
+   "phrases": [
+    [
+     3.82,
+     "Tipos de clientes que llaman a la barbería: *número 1*"
+    ],
+    [
+     7.6,
+     "El que llama justo cuando tienes *la máquina en la mano*"
+    ],
+    [
+     10.76,
+     "Suena el teléfono, dejas el degradado *a medias*, te limpias…"
+    ],
+    [
+     14.62,
+     "…contestas, y te pregunta si tienes *hueco el martes*"
+    ],
+    [
+     18.26,
+     "Que sí, *que tienes hueco*"
+    ],
+    [
+     20.12,
+     "Pero ese cliente podría haberlo visto *él solo*…"
+    ],
+    [
+     22.78,
+     "…en tu web, *en 10 segundos*"
+    ],
+    [
+     25.06,
+     "Y tú, *sin soltar la máquina*"
+    ],
+    [
+     26.78,
+     "cta"
+    ]
+   ]
+  },
+  {
+   "slug": "tipos-2-ya-te-digo-algo",
+   "n": 2,
+   "hook": "El *«ya te digo algo»*",
+   "start": 33.4,
+   "end": 57.4,
+   "phrases": [
+    [
+     33.6,
+     "Tipos de clientes, *número 2*: el «ya te digo algo»"
+    ],
+    [
+     37.78,
+     "Te pide hueco, se lo guardas… *y desaparece*"
+    ],
+    [
+     41.26,
+     "No confirma, no cancela, *nada*"
+    ],
+    [
+     44.26,
+     "Y tú, con ese hueco *bloqueado toda la semana*"
+    ],
+    [
+     47.28,
+     "Cuando el cliente *reserva él mismo*…"
+    ],
+    [
+     49.26,
+     "…el hueco es suyo o es de otro. *Sin mensajes, sin esperar*"
+    ],
+    [
+     53.1,
+     "cta"
+    ]
+   ]
+  },
+  {
+   "slug": "tipos-3-planton-profesional",
+   "n": 3,
+   "hook": "El *plantón profesional*",
+   "start": 61.2,
+   "end": 84.4,
+   "phrases": [
+    [
+     61.42,
+     "Tipos de clientes, *número 3*"
+    ],
+    [
+     63.74,
+     "El *plantón profesional*"
+    ],
+    [
+     65.7,
+     "Reserva, le esperas… y no aparece. *Ni un mensaje*"
+    ],
+    [
+     70.54,
+     "¿Sabes *cuánto cuesta* eso?"
+    ],
+    [
+     72.28,
+     "3 plantones a la semana × 25 € = *300 € al mes*"
+    ],
+    [
+     77.06,
+     "Lo que más lo reduce es *muy fácil*:"
+    ],
+    [
+     79.42,
+     "un *recordatorio automático* antes de la cita"
+    ],
+    [
+     81.88,
+     "cta"
+    ]
+   ]
+  },
+  {
+   "slug": "tipos-4-el-de-las-2347",
+   "n": 4,
+   "hook": "El de las *23:47*",
+   "start": 88.7,
+   "end": 110.68,
+   "phrases": [
+    [
+     88.92,
+     "Tipos de clientes, *número 4*"
+    ],
+    [
+     91.1,
+     "El de las *doce menos cuarto* de la noche"
+    ],
+    [
+     93.6,
+     "«Holaa, *¿tienes hueco mañana?*»"
+    ],
+    [
+     95.72,
+     "Y tú en el sofá, contestando *WhatsApps de trabajo*"
+    ],
+    [
+     99.0,
+     "Imagínate que a esa hora tu agenda *contestara sola*"
+    ],
+    [
+     102.28,
+     "El cliente ve tus huecos, reserva… y tú te enteras *por la mañana*"
+    ],
+    [
+     105.9,
+     "*Desconectas de verdad*"
+    ],
+    [
+     108.42,
+     "cta"
+    ]
+   ]
+  }
+ ],
+ "music": {
+  "styles": [
+   "house",
+   "pop",
+   "lofi",
+   "house"
+  ],
+  "volume": 0.3
+ },
+ "outname": "video-musica.mp4"
 }
