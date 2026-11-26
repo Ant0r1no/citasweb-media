@@ -136,14 +136,26 @@ def commit_push(paths, msg):
         time.sleep(5)
 
 
-def write_status(cal, now):
+def account():
+    """Comprueba la conexión con Instagram (sin publicar nada)."""
+    if not TOKEN:
+        return "⚪ Sin conectar (falta el secreto IG_ACCESS_TOKEN)"
+    try:
+        me = api("GET", "me", fields="user_id,username")
+        return f"🟢 Conectado como @{me.get('username')}"
+    except (IGError, requests.RequestException) as ex:
+        return f"🔴 La clave no funciona: {str(ex)[:150]}"
+
+
+def write_status(cal, now, acc=""):
     up = [e for e in cal if e.get("status") in ("pending", "error")]
     up.sort(key=lambda e: e["when"])
     done = [e for e in cal if e.get("status") == "published"]
     done.sort(key=lambda e: e.get("published_at", ""), reverse=True)
     bad = [e for e in cal if e.get("status") in ("error", "missed")]
     L = ["# Estado del publicador de Instagram", "",
-         f"Última revisión: {now:%d/%m/%Y %H:%M} (hora de Madrid)", "",
+         f"Última revisión: {now:%d/%m/%Y %H:%M} (hora de Madrid)", "", f"Cuenta: {acc}", "",
+         f"En espera de activar: **{sum(1 for e in cal if e.get('status') == 'hold')}**", "",
          f"- Pendientes: **{len(up)}** · Publicadas: **{len(done)}** · Con problemas: **{len(bad)}**", ""]
     if bad:
         L += ["## ⚠️ Con problemas", "", "| Fecha | Publicación | Motivo |", "|---|---|---|"]
@@ -204,7 +216,7 @@ def main():
             e["notified"] = True
     if not DRY:
         CAL.write_text(json.dumps(cal, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-        write_status(cal, now)
+        write_status(cal, now, account())
         commit_push([str(CAL), str(STATUS)], "Publicador Instagram: estado actualizado")
     if problems:
         Path(os.environ.get("RUNNER_TEMP", "/tmp"), "ig_problems.md").write_text(
