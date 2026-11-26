@@ -203,7 +203,8 @@ def main(cfg_path, audio_override=None):
             d = out_root / v["slug"]
             d.mkdir(parents=True, exist_ok=True)
             start, end = v["start"], v["end"]
-            total = end - start
+            vlen = end - start
+            total = vlen + v.get("tail", 0)  # tail: segundos extra de silencio para la pantalla final
             ph = v["phrases"]
             phrases = []
             events = []
@@ -232,7 +233,7 @@ def main(cfg_path, audio_override=None):
             for f in range(nframes):
                 pg.evaluate(f"render({f / FPS:.4f})")
                 pg.screenshot(path=str(raw / f"{f:05d}.jpg"), type="jpeg", quality=90)
-            voice = (f"[1:a]afade=t=in:d=0.15,afade=t=out:st={total-0.4:.2f}:d=0.4,apad=pad_dur=4,"
+            voice = (f"[1:a]afade=t=in:d=0.15,afade=t=out:st={vlen-0.4:.2f}:d=0.4,apad=pad_dur=6,"
                      f"loudnorm=I=-16:TP=-1.5,aresample=44100,atrim=0:{total:.3f}")  # apad: loudnorm se come los últimos 3 s
             fxwav = d / "sfx.wav"
             with wave.open(str(fxwav), "wb") as w:
@@ -254,7 +255,7 @@ def main(cfg_path, audio_override=None):
                 fc = voice + "[v];[v][2:a]amix=inputs=2:normalize=0:duration=first,alimiter=limit=0.89[a]"
             subprocess.run([
                 "ffmpeg", "-y", "-v", "error", "-framerate", str(FPS), "-i", str(raw / "%05d.jpg"),
-                "-ss", f"{start}", "-t", f"{total}", "-i", audio, *extra_in,
+                "-ss", f"{start}", "-t", f"{vlen}", "-i", audio, *extra_in,
                 "-filter_complex", fc,
                 "-map", "0:v", "-map", "[a]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "21",
                 "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-shortest", "-movflags", "+faststart",

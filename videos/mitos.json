@@ -1,0 +1,372 @@
+{
+ "audio": "audio/mitos.mp3",
+ "sector": "general",
+ "series": "MITOS",
+ "outname": "video-v4.mp4",
+ "music": {
+  "styles": [
+   "pop",
+   "house",
+   "lofi",
+   "pop"
+  ],
+  "volume": 0.6
+ },
+ "videos": [
+  {
+   "slug": "mitos-1-prefieren-llamar",
+   "n": 1,
+   "hook": "«Mis clientes *prefieren llamar*»",
+   "start": 1.0,
+   "end": 22.95,
+   "tail": 2.3,
+   "phrases": [
+    [
+     1.05,
+     "Mitos sobre las reservas online"
+    ],
+    [
+     3.82,
+     "Número 1: *«Mis clientes prefieren llamar»*"
+    ],
+    [
+     7.32,
+     "¿Seguro? Muchos llaman porque *no tienen otra opción*"
+    ],
+    [
+     10.7,
+     "Y cuando no lo coges, porque estás trabajando… *no esperan*",
+     {
+      "type": "call",
+      "name": "Cliente nuevo",
+      "time": "11:20"
+     }
+    ],
+    [
+     14.36,
+     "Llaman *al siguiente*",
+     {
+      "type": "notif",
+      "clock": "11:21",
+      "date": "lunes, 15 de febrero",
+      "items": [
+       [
+        "Teléfono",
+        "Llamada perdida",
+        "Cliente nuevo"
+       ],
+       [
+        "Teléfono",
+        "Llamada perdida (2)",
+        "Cliente nuevo"
+       ]
+      ],
+      "gap": 0.5
+     }
+    ],
+    [
+     15.9,
+     "Con reservas online, el que quiere llamar *sigue llamando*"
+    ],
+    [
+     19.3,
+     "Y el que no, reserva *en un minuto*. Sin perder a ninguno",
+     {
+      "type": "web",
+      "biz": "Tu Barbería",
+      "url": "tubarberia.citasweb.es",
+      "day": "Lunes",
+      "pick": 2,
+      "time": "11:22"
+     }
+    ],
+    [
+     22.6,
+     "cta"
+    ]
+   ]
+  },
+  {
+   "slug": "mitos-2-negocios-grandes",
+   "n": 2,
+   "hook": "«Eso es para *negocios grandes*»",
+   "start": 24.8,
+   "end": 42.95,
+   "tail": 2.4,
+   "phrases": [
+    [
+     24.85,
+     "Mitos sobre las reservas online"
+    ],
+    [
+     27.54,
+     "Número 2: *«Eso es para negocios grandes»*"
+    ],
+    [
+     30.92,
+     "*Justo al revés*"
+    ],
+    [
+     32.38,
+     "Si trabajas solo, eres tú quien coge el teléfono *con las manos ocupadas*",
+     {
+      "type": "call",
+      "name": "Cliente",
+      "time": "17:05"
+     }
+    ],
+    [
+     36.64,
+     "Una agenda online es como tener a alguien *en recepción*…",
+     {
+      "type": "agenda",
+      "title": "Agenda",
+      "sub": "Viernes",
+      "sel": "V",
+      "slots": [
+       [
+        "10:00",
+        "Libre",
+        "booked",
+        0.5,
+        "✓ Reservado · Ana"
+       ],
+       [
+        "11:00",
+        "Libre",
+        "booked",
+        1.1,
+        "✓ Reservado · Toni"
+       ],
+       [
+        "12:00",
+        "Libre",
+        "booked",
+        1.7,
+        "✓ Reservado · Raúl"
+       ],
+       [
+        "17:00",
+        "Libre",
+        "free"
+       ]
+      ]
+     }
+    ],
+    [
+     39.78,
+     "…pero *sin sueldo* y funcionando *las 24 horas*",
+     {
+      "type": "notif",
+      "clock": "03:12",
+      "date": "sábado, 20 de febrero",
+      "items": [
+       [
+        "CitasWeb",
+        "Nueva reserva",
+        "Sábado a las 10:00 · Corte"
+       ],
+       [
+        "CitasWeb",
+        "Nueva reserva",
+        "Sábado a las 12:30 · Barba"
+       ]
+      ],
+      "gap": 0.8
+     }
+    ],
+    [
+     42.9,
+     "cta"
+    ]
+   ]
+  },
+  {
+   "slug": "mitos-3-whatsapp-me-apano",
+   "n": 3,
+   "hook": "«Con WhatsApp *me apaño*»",
+   "start": 44.95,
+   "end": 67.95,
+   "tail": 2.4,
+   "phrases": [
+    [
+     45.0,
+     "Mitos sobre las reservas online"
+    ],
+    [
+     47.52,
+     "Número 3: *«Con WhatsApp me apaño»*"
+    ],
+    [
+     50.68,
+     "Te apañas… *a las 11 de la noche*, contestando mensajes",
+     {
+      "type": "chat",
+      "name": "Clientes",
+      "time": "23:04",
+      "msgs": [
+       [
+        "in",
+        "¿Mañana tienes algo?",
+        "23:01"
+       ],
+       [
+        "in",
+        "¿Y el sábado?",
+        "23:02"
+       ],
+       [
+        "in",
+        "Perdona, ¿a qué hora era lo mío?",
+        "23:04"
+       ]
+      ],
+      "gap": 0.7
+     }
+    ],
+    [
+     54.64,
+     "Apuntando a mano, cuadrando huecos… y *rezando para no equivocarte*",
+     {
+      "type": "agenda",
+      "title": "Agenda",
+      "sub": "Sábado",
+      "sel": "S",
+      "slots": [
+       [
+        "10:00",
+        "Pedro · Corte",
+        "busy"
+       ],
+       [
+        "10:00",
+        "Mario · Corte",
+        "pending",
+        1.2,
+        "⚠ ¡Dos a la misma hora!"
+       ],
+       [
+        "11:00",
+        "¿Libre?",
+        "free"
+       ]
+      ]
+     }
+    ],
+    [
+     59.34,
+     "Con una agenda online, el cliente ve tus huecos libres y *reserva solo*",
+     {
+      "type": "web",
+      "biz": "Tu Barbería",
+      "url": "tubarberia.citasweb.es",
+      "day": "Sábado",
+      "pick": 4,
+      "time": "23:10"
+     }
+    ],
+    [
+     63.9,
+     "Y tú usas WhatsApp para lo que quieras, *no para trabajar de madrugada*"
+    ],
+    [
+     67.95,
+     "cta"
+    ]
+   ]
+  },
+  {
+   "slug": "mitos-4-caro-y-complicado",
+   "n": 4,
+   "hook": "«Eso es *caro y complicado*»",
+   "start": 69.85,
+   "end": 90.35,
+   "tail": 2.3,
+   "phrases": [
+    [
+     69.9,
+     "Mitos sobre las reservas online"
+    ],
+    [
+     72.64,
+     "Número 4: *«Eso es caro y complicado»*"
+    ],
+    [
+     76.16,
+     "Haz la cuenta: *un solo cliente* al mes que no pierdes *ya lo paga*",
+     {
+      "type": "agenda",
+      "title": "Agenda",
+      "sub": "Este mes",
+      "sel": "L",
+      "slots": [
+       [
+        "Lun",
+        "Hueco vacío",
+        "free"
+       ],
+       [
+        "Mar",
+        "Libre",
+        "booked",
+        0.9,
+        "✓ Cliente que no has perdido"
+       ],
+       [
+        "Mié",
+        "Pablo · Corte",
+        "busy"
+       ]
+      ]
+     }
+    ],
+    [
+     80.24,
+     "¿Y complicado? *Nada*"
+    ],
+    [
+     82.0,
+     "Te la dejamos configurada *con tus servicios y tus precios*",
+     {
+      "type": "web",
+      "biz": "Tu Barbería",
+      "url": "tubarberia.citasweb.es",
+      "day": "Martes",
+      "pick": 0,
+      "time": "10:15"
+     }
+    ],
+    [
+     84.82,
+     "Tú solo *compartes el enlace*",
+     {
+      "type": "chat",
+      "name": "Cliente",
+      "time": "10:20",
+      "msgs": [
+       [
+        "out",
+        "Reserva aquí 👉 tubarberia.citasweb.es",
+        "10:19"
+       ],
+       [
+        "in",
+        "¡Hecho! Reservado el sábado 👌",
+        "10:20"
+       ]
+      ],
+      "gap": 0.9
+     }
+    ],
+    [
+     87.24,
+     "Y puedes probarla *15 días gratis, sin tarjeta*"
+    ],
+    [
+     89.95,
+     "cta"
+    ]
+   ]
+  }
+ ]
+}
