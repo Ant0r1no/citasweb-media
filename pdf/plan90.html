@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<style>
+@page{size:A4;margin:0}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins','Inter',sans-serif;color:#1b2333;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:210mm;height:297mm;padding:22mm 20mm;position:relative;overflow:hidden;page-break-after:always;background:#fff}
+.page:last-child{page-break-after:auto}
+.cover{background:#0B1B3F;color:#fff;display:flex;flex-direction:column;justify-content:center}
+.cover .glow{position:absolute;width:160mm;height:160mm;border-radius:50%;background:#3DDC97;opacity:.16;filter:blur(30mm);right:-50mm;top:-50mm}
+.kicker{display:inline-block;background:#3DDC97;color:#0B1B3F;font-weight:700;font-size:10pt;letter-spacing:2px;padding:2mm 5mm;border-radius:99px;margin-bottom:9mm}
+.cover h1{font-size:44pt;line-height:1.02;font-weight:800;letter-spacing:-1px}
+.cover h1 em,h2 em{font-style:normal;color:#3DDC97}
+.cover p{font-size:14pt;margin-top:9mm;color:#ffffffcc;max-width:140mm;line-height:1.45}
+.cover .weeks{display:flex;gap:4mm;margin-top:16mm}
+.cover .wk{flex:1;border:1px solid #ffffff33;border-radius:5mm;padding:5mm}
+.cover .wk b{display:block;color:#3DDC97;font-size:11pt}.cover .wk span{font-size:10pt;color:#ffffffcc}
+.brand{position:absolute;left:20mm;bottom:16mm;display:flex;align-items:center;gap:3mm;font-weight:700;font-size:12pt}
+.brand svg{width:9mm;height:9mm;color:#3DDC97}
+.cover .brand{color:#fff}
+.pnum{position:absolute;right:20mm;bottom:16mm;font-size:9pt;color:#8a93a6}
+.phase{font-size:10pt;font-weight:700;letter-spacing:2px;color:#2a9d6c;margin-bottom:2mm}
+h2{font-size:24pt;font-weight:800;line-height:1.1;margin-bottom:3mm;color:#0B1B3F}
+h2 em{color:#2a9d6c}
+.lead{font-size:11pt;color:#4a5468;margin-bottom:7mm;line-height:1.5}
+.week{border:1px solid #e3e8f0;border-radius:4mm;padding:5mm 6mm;margin-bottom:4.5mm;break-inside:avoid}
+.week h3{font-size:12.5pt;color:#0B1B3F;margin-bottom:2.5mm;display:flex;gap:3mm;align-items:center}
+.week h3 .n{background:#0B1B3F;color:#3DDC97;font-size:9.5pt;border-radius:99px;padding:1mm 3.5mm}
+.task{display:flex;gap:3mm;font-size:10.5pt;line-height:1.45;margin:1.6mm 0}
+.box{flex:0 0 4.2mm;height:4.2mm;border:1.6px solid #2a9d6c;border-radius:1mm;margin-top:.8mm}
+.tip{background:#eafaf2;border-left:4px solid #3DDC97;border-radius:2mm;padding:4mm 5mm;font-size:10.5pt;line-height:1.5;margin-top:5mm}
+table{width:100%;border-collapse:collapse;margin-top:3mm;font-size:11pt}
+td{border-bottom:1px solid #e3e8f0;padding:4mm 2mm}
+td.fill{width:45mm;border-bottom:1.6px dashed #9aa4b6}
+.calc{background:#0B1B3F;color:#fff;border-radius:4mm;padding:6mm;margin-top:6mm}
+.calc b{color:#3DDC97}
+.cta{background:#0B1B3F;color:#fff;border-radius:5mm;padding:9mm;margin-top:8mm}
+.cta h3{font-size:18pt;margin-bottom:3mm}.cta h3 em{font-style:normal;color:#3DDC97}
+.cta p{font-size:11pt;color:#ffffffcc;line-height:1.5}
+.cta .btn{display:inline-block;margin-top:5mm;background:#3DDC97;color:#0B1B3F;font-weight:800;padding:3mm 7mm;border-radius:99px;font-size:12pt}
+</style></head><body>
+
+<!-- 1. Portada -->
+<section class="page cover"><div class="glow"></div>
+<div><span class="kicker">GUÍA GRATUITA · RETO 90 DÍAS</span>
+<h1>Plan de 90 días para <em>llenar tu agenda</em></h1>
+<p>Una tarea concreta cada semana para que te encuentren más clientes, reserven sin llamarte y vuelvan. Para peluquerías, barberías, estética, clínicas, talleres, restaurantes y cualquier negocio que trabaje con citas.</p>
+<div class="weeks"><div class="wk"><b>Mes 1</b><span>Que te encuentren</span></div><div class="wk"><b>Mes 2</b><span>Que reserven solos</span></div><div class="wk"><b>Mes 3</b><span>Que vuelvan y te recomienden</span></div></div></div>
+<div class="brand">BRANDLOGO<span>CitasWeb</span></div></section>
+
+<!-- 2. Punto de partida -->
+<section class="page">
+<div class="phase">ANTES DE EMPEZAR</div>
+<h2>Tu <em>punto de partida</em></h2>
+<p class="lead">Rellena esto hoy. Al terminar los 90 días lo volverás a rellenar para comparar. Lo que no se mide, no mejora.</p>
+<table>
+<tr><td>Citas que tienes a la semana</td><td class="fill"></td></tr>
+<tr><td>Clientes que no se presentan a la semana (plantones)</td><td class="fill"></td></tr>
+<tr><td>Precio medio de una cita (€)</td><td class="fill"></td></tr>
+<tr><td>Llamadas y WhatsApps al día solo para dar o cambiar citas</td><td class="fill"></td></tr>
+<tr><td>Reseñas que tienes en Google (y tu nota media)</td><td class="fill"></td></tr>
+<tr><td>Huecos libres en tu agenda la semana pasada</td><td class="fill"></td></tr>
+</table>
+<div class="calc"><b>Haz la cuenta de lo que pierdes:</b><br><br>
+Plantones a la semana × precio medio × 4 = <b>€ perdidos al mes</b><br><br>
+Ejemplo: 3 plantones × 25 € × 4 = <b>300 € al mes</b> (3.600 € al año).<br>Esta es la cifra que el plan intenta bajar.</div>
+<div class="tip"><b>Cómo usar este plan:</b> haz las tareas de una semana antes de pasar a la siguiente. Cada tarea lleva entre 15 y 45 minutos. Marca la casilla al terminarla. Si una semana se te complica, no pasa nada: retómala la siguiente.</div>
+<div class="brand" style="color:#0B1B3F">BRANDLOGO<span>CitasWeb</span></div><div class="pnum">2</div></section>
+
+<!-- 3. Mes 1 -->
+<section class="page">
+<div class="phase">MES 1 · SEMANAS 1 A 4</div>
+<h2>Que te <em>encuentren</em></h2>
+<p class="lead">Antes de conseguir más clientes, asegúrate de que los que ya te buscan te encuentran (y les gusta lo que ven).</p>
+<div class="week"><h3><span class="n">Semana 1</span> Tu ficha de Google</h3>
+<div class="task"><span class="box"></span>Busca en Google "tu sector + tu ciudad". Apunta si sales y en qué posición.</div>
+<div class="task"><span class="box"></span>Crea o reclama tu Perfil de Empresa de Google y verifícalo.</div>
+<div class="task"><span class="box"></span>Revisa la categoría principal, la dirección, el teléfono y el horario (también festivos).</div></div>
+<div class="week"><h3><span class="n">Semana 2</span> Fotos y servicios</h3>
+<div class="task"><span class="box"></span>Sube al menos 5 fotos reales: fachada, interior, equipo y trabajos.</div>
+<div class="task"><span class="box"></span>Añade tus servicios principales con precio en Google.</div>
+<div class="task"><span class="box"></span>Escribe una descripción con lo que haces y tu zona.</div></div>
+<div class="week"><h3><span class="n">Semana 3</span> Reseñas</h3>
+<div class="task"><span class="box"></span>Copia el enlace directo para dejar reseña y guárdalo en el móvil.</div>
+<div class="task"><span class="box"></span>Pide una reseña a 5 clientes contentos al terminar su cita.</div>
+<div class="task"><span class="box"></span>Responde a todas tus reseñas, también a las negativas, con educación.</div></div>
+<div class="week"><h3><span class="n">Semana 4</span> Redes al día</h3>
+<div class="task"><span class="box"></span>Revisa tu bio de Instagram: qué haces, dónde y cómo reservar.</div>
+<div class="task"><span class="box"></span>Pon tu enlace de reservas en la bio y en el estado de WhatsApp.</div>
+<div class="task"><span class="box"></span>Publica 3 fotos o vídeos de tus trabajos esta semana.</div></div>
+<div class="brand" style="color:#0B1B3F">BRANDLOGO<span>CitasWeb</span></div><div class="pnum">3</div></section>
+
+<!-- 4. Mes 2 -->
+<section class="page">
+<div class="phase">MES 2 · SEMANAS 5 A 8</div>
+<h2>Que <em>reserven solos</em></h2>
+<p class="lead">Cada cita que tienes que cerrar por teléfono o WhatsApp es tiempo que no trabajas. Este mes, que reservar sea fácil.</p>
+<div class="week"><h3><span class="n">Semana 5</span> Reservas online</h3>
+<div class="task"><span class="box"></span>Activa un sistema para que tus clientes reserven solos, 24 horas.</div>
+<div class="task"><span class="box"></span>Pon cada servicio con su duración real para que la agenda cuadre sola.</div>
+<div class="task"><span class="box"></span>Bloquea tus descansos, vacaciones y festivos.</div></div>
+<div class="week"><h3><span class="n">Semana 6</span> Recordatorios y cancelaciones</h3>
+<div class="task"><span class="box"></span>Activa un recordatorio automático antes de cada cita.</div>
+<div class="task"><span class="box"></span>Deja que cancelen fácil: un hueco avisado se puede volver a llenar.</div>
+<div class="task"><span class="box"></span>Añade una frase amable en la confirmación: "Si no puedes venir, avísanos".</div></div>
+<div class="week"><h3><span class="n">Semana 7</span> Que todos lo sepan</h3>
+<div class="task"><span class="box"></span>Pon el botón de reservar en tu ficha de Google.</div>
+<div class="task"><span class="box"></span>Configura una respuesta automática en WhatsApp Business con tu enlace de reservas.</div>
+<div class="task"><span class="box"></span>Imprime un QR con tu enlace de reservas y ponlo en el mostrador.</div></div>
+<div class="week"><h3><span class="n">Semana 8</span> Revisa la agenda</h3>
+<div class="task"><span class="box"></span>Mira qué días y horas se quedan vacíos con más frecuencia.</div>
+<div class="task"><span class="box"></span>Lanza una pequeña oferta solo para esas horas (por ejemplo, martes por la mañana).</div>
+<div class="task"><span class="box"></span>Compara tus plantones con los del punto de partida.</div></div>
+<div class="brand" style="color:#0B1B3F">BRANDLOGO<span>CitasWeb</span></div><div class="pnum">4</div></section>
+
+<!-- 5. Mes 3 -->
+<section class="page">
+<div class="phase">MES 3 · SEMANAS 9 A 12</div>
+<h2>Que <em>vuelvan</em> y te recomienden</h2>
+<p class="lead">Conseguir un cliente nuevo cuesta más que conservar uno. Este mes, trabaja a los que ya tienes.</p>
+<div class="week"><h3><span class="n">Semana 9</span> Conoce a tus clientes</h3>
+<div class="task"><span class="box"></span>Apunta en la ficha de cada cliente lo que suele pedir y cualquier detalle útil.</div>
+<div class="task"><span class="box"></span>Haz una lista de los clientes que hace más de 2 meses que no vienen.</div></div>
+<div class="week"><h3><span class="n">Semana 10</span> Recupera a los que no vuelven</h3>
+<div class="task"><span class="box"></span>Escribe un mensaje cercano a esos clientes con tu enlace para reservar.</div>
+<div class="task"><span class="box"></span>Ofréceles algo sencillo para volver (un detalle, no un gran descuento).</div></div>
+<div class="week"><h3><span class="n">Semana 11</span> Que te recomienden</h3>
+<div class="task"><span class="box"></span>Crea un incentivo para quien traiga a un amigo (para los dos).</div>
+<div class="task"><span class="box"></span>Pon una tarjeta de fidelización: por ejemplo, la décima visita con regalo.</div></div>
+<div class="week"><h3><span class="n">Semana 12</span> Contenido que atrae</h3>
+<div class="task"><span class="box"></span>Graba un vídeo corto enseñando un antes y un después de tu trabajo.</div>
+<div class="task"><span class="box"></span>Comparte una reseña bonita de un cliente en tus redes (con su permiso).</div></div>
+<div class="tip"><b>Día 90:</b> vuelve a la página 2 y rellena de nuevo tu punto de partida. Compara citas, plantones, llamadas y reseñas. Quédate con lo que mejor te ha funcionado y repítelo.</div>
+<div class="brand" style="color:#0B1B3F">BRANDLOGO<span>CitasWeb</span></div><div class="pnum">5</div></section>
+
+<!-- 6. Cierre -->
+<section class="page">
+<div class="phase">PARA IR MÁS RÁPIDO</div>
+<h2>El mes 2, <em>hecho en 48 horas</em></h2>
+<p class="lead">Las tareas de las semanas 5 a 8 (reservas online, recordatorios, botón de reservar, QR y ficha de cada cliente) son justo lo que hace CitasWeb. Te lo dejamos configurado con tus servicios, tu horario y tu equipo.</p>
+<div class="week"><h3>Qué incluye</h3>
+<div class="task"><span class="box"></span>Tu web propia en tunegocio.citasweb.es, con tu marca y tus precios.</div>
+<div class="task"><span class="box"></span>Reservas online 24 horas, desde Google, Instagram o WhatsApp.</div>
+<div class="task"><span class="box"></span>Recordatorios automáticos y ficha de cada cliente.</div>
+<div class="task"><span class="box"></span>Sin comisiones por reserva y sin permanencia.</div></div>
+<div class="cta"><h3>Pruébala <em>15 días gratis</em>, sin tarjeta</h3>
+<p>Planes desde 50 €/mes + IVA. Te la dejamos lista en 24-48 horas y, si no te convence, no pagas nada.</p>
+<span class="btn">citasweb.es</span></div>
+<p class="lead" style="margin-top:8mm">¿Dudas? Escríbenos por WhatsApp desde la web o a info@citasweb.es.</p>
+<div class="brand" style="color:#0B1B3F">BRANDLOGO<span>CitasWeb</span></div><div class="pnum">6</div></section>
+</body></html>

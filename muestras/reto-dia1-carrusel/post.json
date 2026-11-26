@@ -1,0 +1,11 @@
+{
+  "sector": "general",
+  "slides": [
+    {"type": "cover", "kicker": "RETO 90 DÍAS · DÍA 1", "title": "Llena tu agenda en *90 días*", "sub": "Un plan semana a semana para negocios con citas. Empieza hoy."},
+    {"type": "item", "n": "01", "title": "Búscate en *Google Maps*", "body": "Escribe tu sector + tu ciudad. ¿Sales? ¿Con fotos, horario y teléfono? Si no, ahí se te van clientes cada día."},
+    {"type": "item", "n": "02", "title": "Completa *tu ficha*", "body": "Categoría correcta, horario real (también festivos), 5 fotos de tu local y tus servicios con precio."},
+    {"type": "item", "n": "03", "title": "Pon el botón de *reservar*", "body": "Que quien te encuentre pueda pedir cita en un toque, sin llamarte."},
+    {"type": "item", "n": "04", "title": "Pide *3 reseñas* esta semana", "body": "A tus clientes de siempre, al terminar. Mándales el enlace directo por WhatsApp."},
+    {"type": "cta", "title": "Mañana: *el error* que más citas te hace perder", "body": "Sigue el reto y guarda este post 📌", "word": "RETO"}
+  ]
+}

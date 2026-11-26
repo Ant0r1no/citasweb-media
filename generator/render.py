@@ -101,14 +101,23 @@ def slide_html(s):
     raise ValueError(f"tipo de slide desconocido: {t}")
 
 
-def page(s, i, total, theme):
+def page(s, i, total, theme, vertical=False):
     bg, ac = theme
+    extra = VERT_CSS if vertical else ""
     dots = "".join(f'<i class="{"on" if j == i else ""}"></i>' for j in range(total))
     right = '<span class="swipe">Desliza →</span>' if i < total - 1 else '<span>citasweb.es</span>'
-    return f"""<!doctype html><html><head><meta charset="utf-8"><style>:root{{--bg:{bg};--ac:{ac}}}{CSS}</style>
+    return f"""<!doctype html><html><head><meta charset="utf-8"><style>:root{{--bg:{bg};--ac:{ac}}}{CSS}{extra}</style>
 </head><body><div class="glow"></div><div class="wrap">{slide_html(s)}</div>
 <div class="foot"><div class="brand">{LOGO}<span>CitasWeb</span></div><div class="dots">{dots}</div>{right}</div>
 </body></html>"""
+
+
+VERT_CSS = """
+body{height:1920px}
+.wrap{inset:260px 90px 340px 90px}
+.foot{bottom:200px}
+h1{font-size:110px}h2{font-size:84px}.body,.sub{font-size:48px}
+"""
 
 
 def render(json_path):
@@ -116,12 +125,13 @@ def render(json_path):
     data = json.loads(p.read_text(encoding="utf-8"))
     theme = THEMES.get(data.get("sector", "general"), THEMES["general"])
     slides = data["slides"]
+    vertical = data.get("format") == "vertical"
     out = []
     with sync_playwright() as pw:
         b = pw.chromium.launch()
-        pg = b.new_page(viewport={"width": 1080, "height": 1350})
+        pg = b.new_page(viewport={"width": 1080, "height": 1920 if vertical else 1350})
         for i, s in enumerate(slides):
-            pg.set_content(page(s, i, len(slides), theme), wait_until="networkidle")
+            pg.set_content(page(s, i, len(slides), theme, vertical), wait_until="networkidle")
             f = p.parent / f"slide-{i + 1}.png"
             pg.screenshot(path=str(f))
             out.append(f)

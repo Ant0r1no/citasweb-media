@@ -1,0 +1,42 @@
+{
+ "sector": "general",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "RETO 90 DÍAS · DÍA 1",
+   "title": "Llena tu agenda en *90 días*",
+   "sub": "Día 1: que te encuentren en Google"
+  },
+  {
+   "type": "item",
+   "n": "01",
+   "title": "Búscate en *Google Maps*",
+   "body": "Tu sector + tu ciudad. ¿Sales?"
+  },
+  {
+   "type": "item",
+   "n": "02",
+   "title": "Completa *tu ficha*",
+   "body": "Horario real, fotos y servicios con precio."
+  },
+  {
+   "type": "item",
+   "n": "03",
+   "title": "Botón de *reservar*",
+   "body": "Que pidan cita en un toque."
+  },
+  {
+   "type": "item",
+   "n": "04",
+   "title": "Pide *3 reseñas*",
+   "body": "Esta semana, por WhatsApp."
+  },
+  {
+   "type": "cta",
+   "title": "Mañana: *el error* que más citas te hace perder",
+   "body": "Sigue el reto 👇",
+   "word": "RETO"
+  }
+ ],
+ "format": "vertical"
+}
