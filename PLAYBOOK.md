@@ -67,3 +67,9 @@ El blog **lo publica el dueño** a mano, desde su panel. Claude no publica en la
 3. **Promoción:** por cada artículo publicado que no esté promocionado, crear un carrusel (5-6 diapositivas) con lo mejor del artículo, terminando en "en el blog · citasweb.es/blog · enlace en la bio". Programarlo en la **primera mejor hora libre**, aunque sea en un mes posterior, sin pasar nunca de 20 al mes. Los carruseles del blog tienen **prioridad** sobre los carruseles genéricos. Después, añadir la línea correspondiente a `blog/promocionados.txt` y hacer commit.
 4. Si se acaban los borradores, avisar en el informe y proponer al dueño 3 temas nuevos.
 - **No publicar la valoración "4,9" de la web de Nexus Barber:** no viene de Google.
+
+## Vídeos con la voz del dueño
+- El dueño graba todos los guiones seguidos ("Vídeo uno… [guion]", con una pausa entre cada uno) y manda el audio por el chat.
+- Se transcribe con faster-whisper (modelo small; hay que pasarle el audio como muestras de 16 kHz porque la librería av falla con mp3), se crea `videos/<serie>.json` con los tiempos de cada frase (sin incluir el "Vídeo uno" del principio) y se ejecuta `python3 generator/voicevideo.py videos/<serie>.json <audio>`.
+- Se programan como REEL (Instagram) y vídeo (TikTok), con `videoThumbnailUrl` apuntando a cover.jpg. Si la voz es suya, `isAiGenerated: false`.
+- Programados: Tipos de clientes #1 (5 ene 18:00), #2 (4 feb 18:00), #3 (8 feb 18:00), #4 (11 feb 18:00).
