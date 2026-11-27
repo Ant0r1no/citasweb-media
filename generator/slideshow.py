@@ -7,6 +7,9 @@ Usa las mismas diapositivas que generator/render.py, pero en 1080x1920 y animada
 entrada deslizada de cada diapositiva, textos que aparecen escalonados, números que
 "saltan", barra de progreso tipo historias, música propia (generator/music.py) y efectos
 (generator/sfx.py). Crea video.mp4 y cover.jpg en la misma carpeta.
+
+Cada vídeo sale con una combinación distinta de transición, animación del texto, fondo,
+barra de progreso y música (se apunta en posts/_estilos.json para no repetir).
 """
 import json
 import shutil
@@ -31,6 +34,13 @@ body{width:1080px;height:1920px;background:var(--bg)}
 .grid{position:absolute;inset:0;background-image:linear-gradient(#ffffff0a 1px,transparent 1px),
  linear-gradient(90deg,#ffffff0a 1px,transparent 1px);background-size:72px 72px}
 .slide{position:absolute;inset:0;opacity:0}
+body.bg-dots .grid{background-image:radial-gradient(#ffffff1c 2px,transparent 2.5px);background-size:48px 48px}
+body.bg-stripes .grid{background-image:repeating-linear-gradient(135deg,#ffffff08 0 28px,transparent 28px 56px)}
+body.bg-plain .grid{background:linear-gradient(180deg,transparent,color-mix(in srgb,var(--ac) 10%,transparent))}
+body.bg-rings .grid{background-image:repeating-radial-gradient(circle at 80% 15%,#ffffff0d 0 2px,transparent 3px 90px)}
+body.bars-dots .bars i{flex:none;width:18px;height:18px;border-radius:50%}
+body.bars-dots .bars{justify-content:center}
+body.bars-line .bars{gap:0}body.bars-line .bars i{border-radius:0}
 .slide .wrap{inset:300px 90px 360px 90px}
 .slide .wrap>*{opacity:0}
 h1{font-size:112px}h2{font-size:86px}.body,.sub{font-size:50px}
@@ -44,7 +54,7 @@ h1{font-size:112px}h2{font-size:86px}.body,.sub{font-size:50px}
 """
 
 JS = """
-const D = __DURS__, BPM = __BPM__;
+const D = __DURS__, BPM = __BPM__, TR = '__TR__', TX = '__TX__';
 const starts = []; {let a = 0; for (const d of D) {starts.push(a); a += d;}}
 const ease = x => 1 - Math.pow(1 - Math.min(Math.max(x, 0), 1), 3);
 const back = x => {x = Math.min(Math.max(x, 0), 1); const c = 1.9; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2);};
@@ -54,17 +64,26 @@ function render(t) {
   let i = 0; while (i + 1 < D.length && t >= starts[i + 1]) i++;
   slides.forEach((s, j) => {
     const lt = t - starts[j];
-    let op = 0, x = 0;
-    if (j === i) { op = j === 0 ? 1 : ease(lt / 0.35); x = j === 0 ? 0 : (1 - ease(lt / 0.35)) * 140; }
-    if (j === i - 1) { const k = ease((t - starts[i]) / 0.35); op = 1 - k; x = -k * 140; }
-    s.style.opacity = op; s.style.transform = `translateX(${x}px)`;
+    let op = 0, k = 1, out = false;
+    if (j === i) { k = j === 0 ? 1 : ease(lt / 0.4); op = k; }
+    if (j === i - 1) { k = ease((t - starts[i]) / 0.4); op = 1 - k; out = true; }
+    s.style.opacity = op;
+    const u = 1 - k;  // 1 → 0 al entrar
+    if (TR === 'slide') s.style.transform = out ? `translateX(${-k * 160}px)` : `translateX(${u * 160}px)`;
+    if (TR === 'rise') s.style.transform = out ? `translateY(${-k * 220}px)` : `translateY(${u * 220}px)`;
+    if (TR === 'zoom') s.style.transform = out ? `scale(${1 + k * 0.25})` : `scale(${0.82 + 0.18 * k})`;
+    if (TR === 'flip') { s.style.transform = out ? `perspective(1600px) rotateY(${-k * 70}deg)` : `perspective(1600px) rotateY(${u * 70}deg)`; s.style.transformOrigin = out ? 'left center' : 'right center'; }
+    if (TR === 'wipe') { s.style.opacity = out ? Math.max(0, 1 - k * 2.2) : 1; s.style.clipPath = out ? 'none' : `circle(${k * 150}% at 85% 12%)`; s.style.zIndex = out ? 1 : 2; if (j !== i && !out) s.style.opacity = 0; }
     if (j !== i && j !== i - 1) return;
     const kids = [...s.querySelectorAll('.wrap > *')];
     kids.forEach((el, n) => {
       const k = (lt - 0.15 - n * 0.16) / 0.45;
       const pop = el.classList.contains('num') || el.classList.contains('big') || el.classList.contains('bubble') || el.classList.contains('word');
       el.style.opacity = ease(k * 1.4);
-      el.style.transform = pop ? `scale(${0.55 + 0.45 * back(k)})` : `translateY(${(1 - ease(k)) * 60}px)`;
+      const e = 1 - ease(k);
+      const move = TX === 'left' ? `translateX(${-e * 120}px)` : TX === 'scale' ? `scale(${1 + e * 0.18})` : TX === 'blur' ? `translateY(${e * 30}px)` : `translateY(${e * 60}px)`;
+      el.style.transform = pop ? `scale(${0.55 + 0.45 * back(k)})` : move;
+      if (TX === 'blur') el.style.filter = `blur(${e * 14}px)`;
       el.style.transformOrigin = 'left center';
     });
     const beat = 60 / BPM, ph = (t % beat) / beat, pulse = 1 + 0.035 * Math.exp(-ph * 6);
@@ -76,6 +95,28 @@ function render(t) {
 """
 
 
+TRANSICIONES = ["slide", "zoom", "rise", "flip", "wipe"]
+TEXTOS = ["up", "left", "scale", "blur"]
+FONDOS = ["grid", "dots", "stripes", "plain", "rings"]
+BARRAS = ["seg", "dots", "line"]
+MUSICAS = ["pop", "house", "funk", "lofi", "disco", "chill"]
+LOG = Path(__file__).resolve().parent.parent / "posts" / "_estilos.json"
+
+
+def pick_variant(name):
+    """Elige estilo visual y música distintos del anterior: rota cada parte por separado
+    (con pasos de distinto tamaño) para que no salgan dos vídeos iguales seguidos."""
+    log = json.loads(LOG.read_text()) if LOG.exists() else {}
+    if name in log:
+        return log[name]
+    n = len(log)
+    v = {"transicion": TRANSICIONES[n % 5], "texto": TEXTOS[(n * 3 + 1) % 4], "fondo": FONDOS[(n * 2 + 1) % 5],
+         "barra": BARRAS[n % 3], "musica": MUSICAS[n % 6], "semilla": 11 + n * 7}
+    log[name] = v
+    LOG.write_text(json.dumps(log, ensure_ascii=False, indent=1) + "\n")
+    return v
+
+
 def duration(s):
     text = " ".join(str(s.get(k, "")) for k in ("kicker", "title", "sub", "body", "msg", "big"))
     if s["type"] == "cta":
@@ -83,13 +124,14 @@ def duration(s):
     return round(min(4.6, max(2.6, 1.6 + 0.04 * len(text))), 2)
 
 
-def build_html(slides, theme, durs, bpm):
+def build_html(slides, theme, durs, bpm, v):
     bg, ac = theme
     inner = "".join(f'<div class="slide"><div class="wrap">{slide_html(s)}</div></div>' for s in slides)
     bars = "".join("<i><b></b></i>" for _ in slides)
-    js = JS.replace("__DURS__", json.dumps(durs)).replace("__BPM__", str(bpm))
+    js = (JS.replace("__DURS__", json.dumps(durs)).replace("__BPM__", str(bpm))
+          .replace("__TR__", v["transicion"]).replace("__TX__", v["texto"]))
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>:root{{--bg:{bg};--ac:{ac}}}{CSS}{EXTRA_CSS}</style>
-</head><body><div class="grid"></div><div class="glow"></div>{inner}<div class="bars">{bars}</div>
+</head><body class="bg-{v['fondo']} bars-{v['barra']}"><div class="grid"></div><div class="glow"></div>{inner}<div class="bars">{bars}</div>
 <div class="foot"><div class="brand">{LOGO}<span>CitasWeb</span></div><span class="site">citasweb.es</span></div>
 <script>{js}</script></body></html>"""
 
@@ -99,8 +141,9 @@ def make(json_path, style=None, seed=None):
     data = json.loads(p.read_text(encoding="utf-8"))
     slides = data["slides"]
     theme = THEMES.get(data.get("sector", "general"), THEMES["general"])
-    seed = int(seed or (sum(map(ord, p.parent.name)) % 97 + 1))
-    style = style or ["pop", "house", "lofi"][seed % 3]
+    v = pick_variant(p.parent.name)
+    seed = int(seed or v["semilla"])
+    style = style or v["musica"]
     bpm = music.STYLES[style]["bpm"]
     durs = [duration(s) for s in slides]
     total = round(sum(durs) + 0.4, 2)
@@ -122,7 +165,7 @@ def make(json_path, style=None, seed=None):
     with sync_playwright() as pw:
         b = pw.chromium.launch()
         pg = b.new_page(viewport={"width": 1080, "height": 1920})
-        pg.set_content(build_html(slides, theme, durs, bpm), wait_until="networkidle")
+        pg.set_content(build_html(slides, theme, durs, bpm, v), wait_until="networkidle")
         pg.evaluate(f"render({min(durs[0] - 0.1, 1.8)})")
         pg.screenshot(path=str(p.parent / "cover.jpg"), type="jpeg", quality=90)
         for f in range(int(total * FPS)):
@@ -143,7 +186,7 @@ def make(json_path, style=None, seed=None):
                     "-c:a", "aac", "-b:a", "160k", "-shortest", "-movflags", "+faststart", str(out)], check=True)
     shutil.rmtree(raw)
     mwav.unlink(); fxwav.unlink()
-    print(out, f"{total}s", style)
+    print(out, f"{total}s", style, v)
     return out
 
 

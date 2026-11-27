@@ -1,0 +1,5 @@
+{
+ "2026-11-27-test-agenda": {"transicion": "slide", "texto": "up", "fondo": "grid", "barra": "seg", "musica": "pop", "semilla": 4},
+ "2027-01-06-blog-peluqueria": {"transicion": "slide", "texto": "up", "fondo": "grid", "barra": "seg", "musica": "pop", "semilla": 2},
+ "2027-02-05-plantones": {"transicion": "slide", "texto": "up", "fondo": "grid", "barra": "seg", "musica": "house", "semilla": 7}
+}

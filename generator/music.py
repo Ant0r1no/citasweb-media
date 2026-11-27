@@ -2,7 +2,8 @@
 """Música de fondo original (sintetizada, sin derechos de terceros) para los vídeos.
 
 Uso: python3 generator/music.py salida.wav segundos [estilo] [semilla]
-Estilos: "house" (por defecto, alegre, 120 BPM), "lofi" (relajado, 88 BPM), "pop" (enérgico, 128 BPM).
+Estilos: "house" (alegre, 120 BPM), "lofi" (relajado, 88), "pop" (enérgico, 128), "funk" (108),
+"chill" (96), "disco" (118). La semilla cambia el arpegio y el tono (transposición).
 """
 import sys
 import numpy as np
@@ -84,6 +85,9 @@ STYLES = {
     "house": dict(bpm=120, prog=[("A", "m"), ("F", ""), ("C", ""), ("G", "")], swing=0.0, four=True),
     "pop": dict(bpm=128, prog=[("C", ""), ("G", ""), ("A", "m"), ("F", "")], swing=0.0, four=True),
     "lofi": dict(bpm=88, prog=[("D", "m7"), ("G", "7"), ("C", "maj7"), ("A", "m7")], swing=0.12, four=False),
+    "funk": dict(bpm=108, prog=[("E", "m7"), ("A", "7"), ("E", "m7"), ("B", "7")], swing=0.08, four=True),
+    "chill": dict(bpm=96, prog=[("F", "maj7"), ("E", "m7"), ("D", "m7"), ("C", "maj7")], swing=0.05, four=False),
+    "disco": dict(bpm=118, prog=[("D", "m"), ("G", ""), ("C", ""), ("A", "7")], swing=0.0, four=True),
 }
 
 
@@ -97,6 +101,7 @@ def chord_notes(root, kind):
 def make(seconds, style="house", seed=1):
     cfg = STYLES[style]
     rng = np.random.default_rng(seed)
+    shift = [0, 2, -3, 5, -2, 3][seed % 6]  # cambia de tono según la semilla
     bpm = cfg["bpm"]
     beat = 60 / bpm
     bar = 4 * beat
@@ -109,6 +114,8 @@ def make(seconds, style="house", seed=1):
     prog = cfg["prog"]
     for b in range(nbars):
         root, kind = prog[b % len(prog)]
+        names = list(NOTE.keys())
+        root = names[(NOTE[root] + shift) % 12]
         notes = chord_notes(root, kind)
         t0 = int(b * bar * SR)
         n = int(bar * SR)
