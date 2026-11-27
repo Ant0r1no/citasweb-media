@@ -113,3 +113,9 @@ El blog **lo publica el dueño** a mano, desde su panel. Claude no publica en la
 - Animación: siempre. `voicevideo.py` anima cada fotograma (palabras que aparecen al ritmo de la voz, resaltado que se pinta, fondo en movimiento que late con la música, número grande de la serie, botón final que late). Tarda ~1,5 min por vídeo; se pueden lanzar varios en paralelo pasando el slug como 3er argumento. Para cambiar un vídeo ya programado hay que subirlo con un NOMBRE NUEVO y actualizar el post en Metricool (Metricool copia el archivo al programar). En TikTok, `autoAddMusic` en false para los vídeos que ya llevan música.
 - Se programan como REEL (Instagram) y vídeo (TikTok), con `videoThumbnailUrl` apuntando a cover.jpg. Si la voz es suya, `isAiGenerated: false`.
 - Programados: Tipos de clientes #1 (5 ene 18:00), #2 (4 feb 18:00), #3 (8 feb 18:00), #4 (11 feb 18:00).
+
+## Cuentas a seguir (lista diaria)
+- Cada mañana una tarea programada deja en `seguir/AAAA-MM-DD.md` 10 cuentas de Instagram y 10 páginas de Facebook para que el dueño las siga A MANO (seguir de forma automática va contra las normas de Meta y es arriesgado con una cuenta nueva: NUNCA automatizar el botón «Seguir»).
+- Solo negocios y marcas, nunca perfiles de particulares: negocios locales de España de los sectores a los que vendemos (rotando sector y ciudad cada día), y cuentas útiles del sector (asociaciones de autónomos, medios de emprendimiento, gremios).
+- Solo enlaces que aparezcan en resultados de búsqueda reales (no inventar usuarios). Nada relacionado con la cuenta personal del dueño.
+- Sin repetir: todo lo propuesto se apunta en `seguir/historial.json`.
