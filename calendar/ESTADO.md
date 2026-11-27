@@ -1,9 +1,9 @@
 # Estado del publicador (Instagram y Facebook)
 
-Última revisión: 27/11/2026 09:25 (hora de Madrid)
+Última revisión: 27/11/2026 09:44 (hora de Madrid)
 
 Cuenta: 🟢 Conectado como @citasweb.es (graph.facebook.com)  
-Facebook: ⚪ Facebook sin conectar: la clave no tiene acceso a la página (hay que regenerarla con permisos de páginas)
+Facebook: 🟢 Facebook conectado: página CitasWeb · publicadas allí: 0
 
 En espera de activar: **0**
 
