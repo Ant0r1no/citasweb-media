@@ -1,6 +1,9 @@
 name: Publicar en Instagram
 
 on:
+  push:
+    branches: [main]
+    paths: ["calendar/instagram.json", "publisher/**", ".github/workflows/instagram.yml"]
   schedule:
     - cron: "7 * * * *"      # cada hora (UTC); el script decide qué toca según la hora de Madrid
   workflow_dispatch:
