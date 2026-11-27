@@ -1,8 +1,8 @@
 # Estado del publicador de Instagram
 
-Última revisión: 27/11/2026 08:51 (hora de Madrid)
+Última revisión: 27/11/2026 08:52 (hora de Madrid)
 
-Cuenta: 🔴 La clave no funciona: 190: Invalid OAuth access token - Cannot parse access token
+Cuenta: 🟢 Conectado como @citasweb.es (graph.facebook.com)
 
 En espera de activar: **58**
 
