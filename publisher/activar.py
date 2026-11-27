@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Prueba de conexión: 27/11/2026
 """Activa las publicaciones en espera ("hold") del calendario de Instagram a partir de una fecha.
 
 Uso: python3 publisher/activar.py 2026-12-01
