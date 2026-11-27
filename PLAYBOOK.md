@@ -51,6 +51,11 @@ Este documento es el que sigue la tarea programada cada lunes. Si cambias algo d
 - **Tendencias de la competencia, cada lunes:** buscar en la web qué publican y qué funciona en Booksy, Fresha, Treatwell, Reservio, Bookitit, Agendapro, Timify y similares, y los formatos en tendencia en Reels/TikTok de negocios locales. Tomar la idea, nunca copiar el texto ni la imagen, y hacerla mejor (más útil, más cercana, con nuestro estilo). Anotar en el informe qué tendencia se ha usado.
 - Alternar formatos: listas, «tipos de clientes», cuentas de dinero hipotéticas, antes/después, trucos gratis, mitos, retos y series. Si una serie necesita voz, preparar guiones y pedir al dueño los audios.
 
+## Banco de voz del dueño
+- El dueño graba 80 frases sueltas (ganchos, profesiones, problemas, soluciones, oferta y cierres por palabra clave; guion en el documento «Banco de frases para grabar — voz de CitasWeb»).
+- Cuando llegue el audio: cortar cada frase, limpiarla igual que en la serie de Lucía y guardarla en `voz/NN.mp3` con su texto en `voz/indice.json`.
+- Con ese banco se montan vídeos con su voz combinando frases (gancho + profesión + 2-4 problema/solución + oferta + cierre con la palabra clave del sector), con generator/voicevideo.py. Alternarlos con los vídeos sin voz.
+
 ## Estilo de los textos (el nuevo)
 - Gancho corto en la primera línea, 3 o 4 líneas en total.
 - Formato: `💬 Comenta "PALABRA" y te enseño cómo quedaría la tuya`, luego `👉 https://citasweb.es/` y **5 hashtags** como máximo.
