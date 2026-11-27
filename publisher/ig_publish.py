@@ -34,12 +34,14 @@ CAL = ROOT / "calendar" / "instagram.json"
 CACHE = ROOT / "calendar" / "cache"
 STATUS = ROOT / "calendar" / "ESTADO.md"
 TZ = ZoneInfo("Europe/Madrid")
-API = "https://graph.instagram.com/v26.0"
+HOSTS = ["https://graph.instagram.com/v26.0", "https://graph.facebook.com/v26.0"]
+API = HOSTS[0]
+IG_USER_ID = os.environ.get("IG_USER_ID", "17841421655402110")  # @citasweb.es (no es secreto)
 RAW = "https://raw.githubusercontent.com/{repo}/main/"
 MAX_LATE = timedelta(hours=12)   # si se pasa más de esto sin publicar, se marca "missed" y se avisa
 MAX_TRIES = 3
 
-TOKEN = os.environ.get("IG_ACCESS_TOKEN", "")
+TOKEN = os.environ.get("IG_ACCESS_TOKEN", "").strip()
 DRY = os.environ.get("DRY_RUN") == "1"
 ONLY = os.environ.get("ONLY_ID") or None
 REPO = os.environ.get("GITHUB_REPOSITORY", "Ant0r1no/citasweb-media")
@@ -136,13 +138,30 @@ def commit_push(paths, msg):
         time.sleep(5)
 
 
+def connect():
+    """Detecta qué servidor acepta la clave (inicio de sesión de Instagram o identificador de sistema de Meta)."""
+    global API
+    errors = []
+    for host in HOSTS:
+        API = host
+        try:
+            if "instagram" in host:
+                me = api("GET", "me", fields="user_id,username")
+                return me["user_id"], me.get("username")
+            me = api("GET", IG_USER_ID, fields="id,username")
+            return me["id"], me.get("username")
+        except (IGError, requests.RequestException) as ex:
+            errors.append(f"{host.split('/')[2]}: {ex}")
+    raise IGError(" | ".join(errors))
+
+
 def account():
     """Comprueba la conexión con Instagram (sin publicar nada)."""
     if not TOKEN:
         return "⚪ Sin conectar (falta el secreto IG_ACCESS_TOKEN)"
     try:
-        me = api("GET", "me", fields="user_id,username")
-        return f"🟢 Conectado como @{me.get('username')}"
+        _, user = connect()
+        return f"🟢 Conectado como @{user} ({API.split('/')[2]})"
     except (IGError, requests.RequestException) as ex:
         return f"🔴 La clave no funciona: {str(ex)[:150]}"
 
@@ -193,7 +212,7 @@ def main():
     if due and not DRY:
         if not TOKEN:
             sys.exit("Falta el secreto IG_ACCESS_TOKEN")
-        uid = api("GET", "me", fields="user_id,username")["user_id"]
+        uid, _ = connect()
     for e in due:
         print(f"→ {e['id']} ({e['type']}, {e['when']})")
         if DRY:
