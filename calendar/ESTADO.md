@@ -1,13 +1,13 @@
 # Estado del publicador (Instagram y Facebook)
 
-Última revisión: 27/11/2026 12:54 (hora de Madrid)
+Última revisión: 27/11/2026 13:51 (hora de Madrid)
 
 Cuenta: 🟢 Conectado como @citasweb.es (graph.facebook.com)  
 Facebook: 🟢 Facebook conectado: página CitasWeb · publicadas allí: 1
 
 En espera de activar: **0**
 
-- Pendientes: **79** · Publicadas: **1** · Con problemas: **0**
+- Pendientes: **97** · Publicadas: **1** · Con problemas: **0**
 
 ## Próximas
 
