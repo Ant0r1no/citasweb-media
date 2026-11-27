@@ -24,34 +24,35 @@ from render import THEMES, LOGO, esc  # noqa: E402
 import music  # noqa: E402
 import scenes  # noqa: E402
 import sfx  # noqa: E402
+import looks  # noqa: E402
 
 FPS = 30
 
 CSS = """
 *{margin:0;padding:0;box-sizing:border-box}
-body{width:1080px;height:1920px;background:var(--bg);color:#fff;font-family:'Poppins','Inter',sans-serif;position:relative;overflow:hidden}
+body{width:1080px;height:1920px;background:var(--bg);color:var(--fg,#fff);font-family:'Poppins','Inter',sans-serif;position:relative;overflow:hidden}
 .blob{position:absolute;border-radius:50%;will-change:transform}
 #b1{width:1400px;height:1400px;background:radial-gradient(closest-side,var(--ac),transparent);opacity:.3}
 #b2{width:1100px;height:1100px;background:radial-gradient(closest-side,var(--ac),transparent);opacity:.22}
 #b3{width:1000px;height:1000px;background:radial-gradient(closest-side,#fff,transparent);opacity:.06}
-#grid{position:absolute;inset:-200px;background-image:linear-gradient(#ffffff0d 2px,transparent 2px),linear-gradient(90deg,#ffffff0d 2px,transparent 2px);background-size:120px 120px}
+#grid{position:absolute;inset:-200px;background-image:linear-gradient(var(--ln,#ffffff0d) 2px,transparent 2px),linear-gradient(90deg,var(--ln,#ffffff0d) 2px,transparent 2px);background-size:120px 120px}
 #stage{position:absolute;inset:0;transform-origin:50% 45%}
 .top{position:absolute;left:80px;right:80px;top:170px}
-.kicker{display:inline-block;background:var(--ac);color:var(--bg);font-weight:800;font-size:34px;letter-spacing:4px;padding:12px 28px;border-radius:999px}
+.kicker{display:inline-block;background:var(--ac);color:var(--on,var(--bg));font-weight:800;font-size:34px;letter-spacing:4px;padding:12px 28px;border-radius:999px}
 .hook{margin-top:34px;font-size:64px;font-weight:800;line-height:1.08;letter-spacing:-1px}
 .hook em,.cta em{font-style:normal;color:var(--ac)}
 .ph{position:absolute;left:80px;right:80px;top:740px;font-size:86px;font-weight:800;line-height:1.16;letter-spacing:-1.5px;opacity:0}
 .w{display:inline-block;opacity:0;transform-origin:50% 80%;position:relative}
 .g{position:relative;display:inline-block;z-index:0}
-.g .w{color:var(--bg)}
+.g .w{color:var(--on,var(--bg))}
 .g::before{content:"";position:absolute;left:-.14em;right:-.14em;top:-.02em;bottom:-.06em;background:var(--ac);border-radius:.14em;z-index:-1;transform:scaleX(var(--s,0));transform-origin:0 50%}
-.bar{position:absolute;left:80px;right:80px;bottom:300px;height:12px;background:#ffffff22;border-radius:9px;overflow:hidden}
+.bar{position:absolute;left:80px;right:80px;bottom:300px;height:12px;background:var(--tr,#ffffff22);border-radius:9px;overflow:hidden}
 .bar i{display:block;height:100%;background:var(--ac);width:0}
 .foot{position:absolute;left:80px;right:80px;bottom:190px;display:flex;justify-content:space-between;align-items:center;font-size:38px;font-weight:700}
 .brand{display:flex;align-items:center;gap:16px}.brand svg{width:58px;height:58px;color:var(--ac)}
 .cta{position:absolute;left:80px;right:80px;top:680px;font-size:96px;font-weight:800;line-height:1.08;opacity:0}
-.word{display:inline-block;margin-top:50px;background:var(--ac);color:var(--bg);font-size:80px;font-weight:800;padding:24px 52px;border-radius:34px;box-shadow:0 0 0 0 var(--ac)}
-.sub{font-size:46px;color:#ffffffcc;font-weight:600;margin-top:40px}
+.word{display:inline-block;margin-top:50px;background:var(--ac);color:var(--on,var(--bg));font-size:80px;font-weight:800;padding:24px 52px;border-radius:34px;box-shadow:0 0 0 0 var(--ac)}
+.sub{font-size:46px;color:var(--mu,#ffffffcc);font-weight:600;margin-top:40px}
 .arrow{display:inline-block;font-size:90px;margin-left:24px}
 .btnrow{display:flex;align-items:center;flex-wrap:nowrap;margin-top:50px}.btnrow .word{margin-top:0;white-space:nowrap;flex:none}
 #num{position:absolute;right:-60px;top:1050px;font-size:720px;font-weight:900;color:transparent;-webkit-text-stroke:4px var(--ac);opacity:.13;line-height:1}
@@ -65,7 +66,7 @@ body{width:1080px;height:1920px;background:var(--bg);color:#fff;font-family:'Pop
 #meter .mv{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
 #meter .mv b{font-size:62px;font-weight:900;line-height:1}#meter .mv small{font-size:22px;letter-spacing:3px;font-weight:700;color:#ffffffb3;margin-top:6px}
 .fic{position:absolute;left:80px;top:112px;font-size:26px;font-weight:600;color:#ffffff8c;letter-spacing:1px;z-index:6}
-""" + scenes.CSS
+""" + scenes.CSS + looks.CSS
 
 JS = r"""
 const P = window.PHR, BPM = window.BPM, FOUR = window.FOUR, TOTAL = window.TOTAL;
@@ -81,6 +82,7 @@ function render(t){
   // pulso al ritmo
   const beat = 60/BPM, ph = (t % (FOUR ? beat : 2*beat)) / (FOUR ? beat : 2*beat);
   const pulse = Math.exp(-ph*6);
+  lookRender(t, pulse);
   $('b1').style.opacity = (.26 + .16*pulse).toFixed(3);
   $('num').style.transform = `translateY(${-40*Math.sin(t*.4)}px) rotate(${-6+4*Math.sin(t*.25)}deg) scale(${1+.03*pulse})`;
   // frase activa
@@ -110,7 +112,7 @@ function render(t){
     const el = $('p'+i);
     if (i < cur){
       const o = (t - P[i+1].t0)/.22;
-      el.style.opacity = Math.max(0,1-o); el.style.transform = `translateY(${-120*ease(o)}px)`;
+      el.style.opacity = Math.max(0,1-o); el.style.transform = window.LOOK ? lookOut(el,o) : `translateY(${-120*ease(o)}px)`;
       return;
     }
     if (i > cur){ el.style.opacity = 0; return; }
@@ -122,7 +124,7 @@ function render(t){
       const s = (lt - d0 - j*span/n)/.28;
       const b = back(s);
       w.style.opacity = Math.min(1, Math.max(0, s*2));
-      w.style.transform = `translateY(${(1-b)*50}px) scale(${.55+.45*b})`;
+      if (window.LOOK) lookWord(w, s, b); else w.style.transform = `translateY(${(1-b)*50}px) scale(${.55+.45*b})`;
       w._s = s;
     });
     el.querySelectorAll('.g').forEach(g => { const l = g.querySelectorAll('.w'); g.style.setProperty('--s', ease((l[l.length-1]._s-.5)/.8).toFixed(3)); });
@@ -169,6 +171,10 @@ def words_html(text):
 def page_html(theme, series, n, hook, phrases, word, bpm, four, total, opts=None):
     opts = opts or {}
     bg, ac = theme
+    lk = opts.get("look")
+    lvars, lcls, lhtml, numtxt, numcls, ljs = {}, "", "", f"{n:02d}", "", ""
+    if lk:
+        bg, ac, lvars, lcls, lhtml, (numtxt, numcls), ljs = looks.build(lk, theme, opts.get("sector", "general"), n)
     blocks, meta = [], []
     phone = []
     for i, (t0, t1, text, sc) in enumerate(phrases):
@@ -192,15 +198,15 @@ def page_html(theme, series, n, hook, phrases, word, bpm, four, total, opts=None
              'stroke-dasharray="597" stroke-dashoffset="597"/></svg><div class="mv"><b id="mval">0%</b><small>AGENDA</small></div></div>') if ag else ""
     agjs = f"window.AG={json.dumps(ag)};" if ag else ""
     fic = f'<div class="fic">{html.escape(opts["fiction"])}</div>' if opts.get("fiction") else ""
-    return f"""<!doctype html><html><head><meta charset="utf-8"><style>:root{{--bg:{bg};--ac:{ac}}}{CSS}</style></head>
-<body><div id="grid"></div><div id="num">{n:02d}</div><div class="blob" id="b1"></div><div class="blob" id="b2"></div><div class="blob" id="b3"></div>
+    return f"""<!doctype html><html><head><meta charset="utf-8"><style>:root{{--bg:{bg};--ac:{ac};{"".join(f"{k}:{v};" for k, v in lvars.items())}}}{CSS}</style></head>
+<body class="{lcls}">{lhtml}<div id="grid"></div><div id="num" class="{numcls}">{numtxt}</div><div class="blob" id="b1"></div><div class="blob" id="b2"></div><div class="blob" id="b3"></div>
 <div id="stage"><div class="top"><span class="kicker">{esc(opts.get("kicker") or f"{series} · #{n}")}</span><div class="hook">{esc(hook)}</div></div>
 {''.join(blocks)}</div>
 <div id="phone" style="transform:translateY(1150px)">{''.join(phone)}</div><div id="fade"></div>
 <div class="bar"><i id="bar"></i></div>
 <div class="foot"><div class="brand">{LOGO}<span>CitasWeb</span></div><span>citasweb.es</span></div>
 {meter}{fic}<div id="flash"></div>
-<script>{agjs}window.PHR={json.dumps(meta)};window.BPM={bpm};window.FOUR={str(four).lower()};window.TOTAL={total};{JS}{scenes.JS}</script>
+<script>{agjs}{ljs}window.PHR={json.dumps(meta)};window.BPM={bpm};window.FOUR={str(four).lower()};window.TOTAL={total};{JS}{scenes.JS}{looks.JS}</script>
 </body></html>"""
 
 
@@ -244,8 +250,9 @@ def main(cfg_path, audio_override=None):
             sc = music.STYLES[style]
             pg.close()
             pg = b.new_page(viewport={"width": 1080, "height": 1920})  # página limpia por vídeo
-            opts = {k: v[k] if k in v else cfg.get(k) for k in ("kicker", "agenda", "fiction", "cta_title", "cta_sub", "cta_button")}
+            opts = {k: v[k] if k in v else cfg.get(k) for k in ("kicker", "agenda", "fiction", "cta_title", "cta_sub", "cta_button", "look")}
             opts = {k: x for k, x in opts.items() if x}
+            opts["sector"] = cfg.get("sector", "general")
             pg.set_content(page_html(theme, cfg["series"], v["n"], v["hook"], phrases, v.get("word", word), sc["bpm"], sc["four"], total, opts),
                            wait_until="networkidle")
             # portada: primera frase ya completa

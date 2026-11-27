@@ -57,6 +57,10 @@ Este documento es el que sigue la tarea programada cada lunes. Si cambias algo d
 - Banco YA grabado y cortado: `voz/01..80.mp3` + `voz/indice.json` (1-15 gancho, 16-33 profesión, 34-43 problema, 44-58 solución, 59-63 oferta, 64-80 cierre).
 - Montaje: `python3 generator/vozmix.py <slug> <sector> "<gancho en pantalla>" n1 n2 … nK` → crea `videos/<slug>/video.mp4` y `cover.jpg` (música y estilo varían por slug). Orden: gancho + profesión + 2-4 problema/solución + oferta + cierre (la última frase debe ser un cierre «Comenta X»; su palabra va a la pantalla final). Opcional `k="texto con *resalte*"` y `k='{"type":...}'` para escenas.
 - Coherencia: la profesión, el cierre, el sector y el gancho deben ser del MISMO sector. No repetir la misma combinación de frases; anotar las usadas en `voz/usadas.json`.
+- Variedad visual automática (generator/looks.py): cada vídeo de vozmix rota fondo (manchas, malla, puntos, rayas, iconos del sector, foto real), paleta (oscura, clara, viva), maqueta (arriba, centro, abajo, tarjeta), transición, entrada de palabras y decoración; se apunta en `videos/_looks.json` para no repetir seguidos. vozmix añade solo hasta 2 escenas de móvil del sector (problema + solución) con negocios de ejemplo ficticios.
+- El gancho en pantalla NO debe repetir la primera frase hablada: que la complemente.
+- Fotos de fondo en `marca/fotos/<sector>/` (ver LICENCIA.md). Hay de barbería, restaurante, fisio, dental y vet; para ampliar, buscar en Pexels manos/herramientas/locales sin caras en primer plano ni menores, descargar desde images.pexels.com y revisarlas antes de usarlas. Los sectores sin fotos usan solo fondos generados.
+- Para los carruseles-vídeo (slideshow.py) la variedad sigue en posts/_estilos.json.
 - Meter 1-2 vídeos con voz por semana en IG/FB (y alguno en TikTok), alternados con los vídeos sin voz. Copiar el vídeo a la carpeta del post en `posts/` como cualquier reel.
 
 ## Estilo de los textos (el nuevo)
