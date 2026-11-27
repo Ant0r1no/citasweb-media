@@ -16,7 +16,7 @@ PALETAS = ["oscura", "clara", "viva"]
 MAQUETAS = ["arriba", "centro", "abajo", "tarjeta"]
 TRANS = ["sube", "lado", "zoom"]
 ENTRADAS = ["rebote", "desliza", "enfoque"]
-DECOS = ["emoji", "nada", "numero"]
+DECOS = ["emoji", "nada"]  # "numero" solo para series con capítulos
 
 EMOJIS = {
     "general": "📅⏰📲✅💬", "barberia": "💈✂️🪒🧔💺", "peluqueria": "✂️💇‍♀️💆‍♀️🪮💜",
@@ -37,11 +37,16 @@ def pick_look(slug, sector):
         return log[slug]
     n = len(log)
     fondos = FONDOS if fotos(sector) else FONDOS[:-1]
-    fondo = fondos[(n * 5 + 2) % len(fondos)]
+    prev = [v.get("fondo") for v in list(log.values())[-2:]]
+    fondo = fondos[(n * 2 + 2) % len(fondos)]
+    k = 0
+    while fondo in prev and k < len(fondos):  # nunca el mismo fondo que los dos últimos vídeos
+        k += 1
+        fondo = fondos[(n * 2 + 2 + k) % len(fondos)]
     look = {"fondo": fondo,
             "paleta": "oscura" if fondo == "foto" else PALETAS[(n * 2 + 1) % 3],
             "maqueta": MAQUETAS[(n * 3) % 4], "trans": TRANS[n % 3], "entrada": ENTRADAS[(n * 2) % 3],
-            "deco": DECOS[(n + 1) % 3], "semilla": 7 + n * 13}
+            "deco": DECOS[(n + 1) % 2], "semilla": 7 + n * 13}
     if fondo == "foto":
         fs = fotos(sector)
         look["foto"] = str(fs[n % len(fs)].relative_to(ROOT))

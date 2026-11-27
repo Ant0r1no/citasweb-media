@@ -1,0 +1,114 @@
+{
+ "audio": "/home/claude/citasweb-media/videos/2026-11-28-barber-whatsapp-noche/voz.wav",
+ "sector": "barberia",
+ "series": "CITASWEB",
+ "word": "BARBER",
+ "outname": "video.mp4",
+ "music": {
+  "styles": [
+   "pop",
+   "funk",
+   "house",
+   "disco",
+   "lofi",
+   "chill"
+  ],
+  "volume": 0.6
+ },
+ "videos": [
+  {
+   "slug": "2026-11-28-barber-whatsapp-noche",
+   "n": 1,
+   "hook": "Barberos: deja de contestar WhatsApps a medianoche",
+   "start": 0,
+   "end": 19.353,
+   "tail": 2.6,
+   "kicker": "CITASWEB",
+   "look": {
+    "fondo": "puntos",
+    "paleta": "clara",
+    "maqueta": "arriba",
+    "trans": "sube",
+    "entrada": "rebote",
+    "deco": "nada",
+    "semilla": 7
+   },
+   "music_style": "lofi",
+   "music_seed": 31,
+   "phrases": [
+    [
+     0.0,
+     "Son las once de la noche y sigues contestando mensajes."
+    ],
+    [
+     3.534,
+     "Barbero, esto va por ti."
+    ],
+    [
+     5.971,
+     "Te escriben a cualquier hora preguntando si tienes hueco.",
+     {
+      "type": "notif",
+      "clock": "23:47",
+      "items": [
+       [
+        "WhatsApp",
+        "Ana",
+        "¿Tienes hueco mañana para un corte?"
+       ],
+       [
+        "WhatsApp",
+        "Javi",
+        "¿Y el sábado por la mañana?"
+       ],
+       [
+        "Instagram",
+        "laura_92",
+        "Hola!! precio??"
+       ]
+      ]
+     }
+    ],
+    [
+     9.763,
+     "A cualquier hora, aunque tengas cerrado.",
+     {
+      "type": "web",
+      "biz": "Barbería Norte",
+      "url": "barberianorte.citasweb.es",
+      "services": [
+       [
+        "Corte",
+        "15 €",
+        "30 min"
+       ],
+       [
+        "Corte + barba",
+        "20 €",
+        "45 min"
+       ],
+       [
+        "Degradado",
+        "17 €",
+        "40 min"
+       ]
+      ],
+      "time": "02:14"
+     }
+    ],
+    [
+     12.591,
+     "La pruebas quince días gratis, sin tarjeta."
+    ],
+    [
+     15.798,
+     "Comenta BARBER y te enseño cómo quedaría la tuya."
+    ],
+    [
+     19.353,
+     "cta"
+    ]
+   ]
+  }
+ ]
+}

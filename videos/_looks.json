@@ -1,1 +1,20 @@
-{}
+{
+ "2026-11-28-barber-whatsapp-noche": {
+  "fondo": "puntos",
+  "paleta": "clara",
+  "maqueta": "arriba",
+  "trans": "sube",
+  "entrada": "rebote",
+  "deco": "nada",
+  "semilla": 7
+ },
+ "2026-11-29-pelu-domingo-libre": {
+  "fondo": "iconos",
+  "paleta": "oscura",
+  "maqueta": "tarjeta",
+  "trans": "lado",
+  "entrada": "enfoque",
+  "deco": "emoji",
+  "semilla": 20
+ }
+}

@@ -1,0 +1,115 @@
+{
+ "audio": "/home/claude/citasweb-media/videos/2026-11-29-pelu-domingo-libre/voz.wav",
+ "sector": "peluqueria",
+ "series": "CITASWEB",
+ "word": "PELU",
+ "outname": "video.mp4",
+ "music": {
+  "styles": [
+   "pop",
+   "funk",
+   "house",
+   "disco",
+   "lofi",
+   "chill"
+  ],
+  "volume": 0.6
+ },
+ "videos": [
+  {
+   "slug": "2026-11-29-pelu-domingo-libre",
+   "n": 1,
+   "hook": "Tu domingo no es para cuadrar citas",
+   "start": 0,
+   "end": 19.039,
+   "tail": 2.6,
+   "kicker": "CITASWEB",
+   "look": {
+    "fondo": "iconos",
+    "paleta": "oscura",
+    "maqueta": "tarjeta",
+    "trans": "lado",
+    "entrada": "enfoque",
+    "deco": "emoji",
+    "semilla": 20
+   },
+   "music_style": "chill",
+   "music_seed": 17,
+   "phrases": [
+    [
+     0.0,
+     "¿Te ha pasado esto alguna vez?"
+    ],
+    [
+     1.921,
+     "Si tienes una peluquería, escucha esto."
+    ],
+    [
+     4.843,
+     "Los domingos los pasas cuadrando la semana por WhatsApp.",
+     {
+      "type": "notif",
+      "date": "domingo, 19 de enero",
+      "clock": "21:15",
+      "items": [
+       [
+        "WhatsApp",
+        "Pedro",
+        "¿Me cambias al martes?"
+       ],
+       [
+        "WhatsApp",
+        "Sara",
+        "No puedo el lunes 😥"
+       ],
+       [
+        "WhatsApp",
+        "Luis",
+        "¿Hay hueco el miércoles?"
+       ]
+      ]
+     }
+    ],
+    [
+     8.554,
+     "Si sois varios, cada profesional tiene su propia agenda.",
+     {
+      "type": "agenda",
+      "title": "Salón Aura",
+      "sub": "Laura · Martes",
+      "slots": [
+       [
+        "10:00",
+        "Laura · ocupado",
+        "busy"
+       ],
+       [
+        "11:00",
+        "Libre",
+        "free"
+       ],
+       [
+        "12:00",
+        "Nueva reserva",
+        "booked",
+        1.0
+       ]
+      ]
+     }
+    ],
+    [
+     12.393,
+     "La pruebas quince días gratis, sin tarjeta."
+    ],
+    [
+     15.6,
+     "Comenta PELU y te enseño cómo quedaría la tuya."
+    ],
+    [
+     19.039,
+     "cta"
+    ]
+   ]
+  }
+ ]
+}
