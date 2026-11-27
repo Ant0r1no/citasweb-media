@@ -60,6 +60,11 @@ body{width:1080px;height:1920px;background:var(--bg);color:#fff;font-family:'Pop
 #fade{position:absolute;left:0;right:0;bottom:0;height:380px;background:linear-gradient(180deg,transparent,var(--bg) 55%);z-index:5;opacity:0}
 .bar,.foot{z-index:6}
 #phone{z-index:4}
+#meter{position:absolute;right:70px;top:150px;width:210px;height:210px;z-index:3}
+#meter svg{position:absolute;inset:0;transform:rotate(-90deg)}
+#meter .mv{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+#meter .mv b{font-size:62px;font-weight:900;line-height:1}#meter .mv small{font-size:22px;letter-spacing:3px;font-weight:700;color:#ffffffb3;margin-top:6px}
+.fic{position:absolute;left:80px;top:112px;font-size:26px;font-weight:600;color:#ffffff8c;letter-spacing:1px;z-index:6}
 """ + scenes.CSS
 
 JS = r"""
@@ -130,6 +135,12 @@ function render(t){
     }
   });
   $('bar').style.width = (100*Math.min(t/TOTAL,1)).toFixed(2)+'%';
+  if (window.AG){
+    const k2 = ease((t-1.0)/1.6), v = AG.from + (AG.to-AG.from)*k2;
+    $('mval').textContent = Math.round(v) + '%';
+    $('marc').style.strokeDashoffset = (597*(1-v/100)).toFixed(1);
+    $('meter').style.transform = `scale(${1+.05*pulse*(k2<1&&k2>0?1:0.3)})`;
+  }
 }
 """
 
@@ -137,7 +148,7 @@ function render(t){
 def words_html(text):
     """Separa en palabras animables; las palabras entre *asteriscos* van juntas en un grupo resaltado."""
     out, grp, hl = [], [], False
-    for tok in text.split():
+    for tok in [x for x in text.split(" ") if x]:  # solo espacios normales: el espacio duro (35\u00a0%) no corta
         clean = html.escape(tok.replace("*", ""))
         if tok.startswith("*") and not hl:
             hl = True
@@ -155,7 +166,8 @@ def words_html(text):
     return " ".join(out)
 
 
-def page_html(theme, series, n, hook, phrases, word, bpm, four, total):
+def page_html(theme, series, n, hook, phrases, word, bpm, four, total, opts=None):
+    opts = opts or {}
     bg, ac = theme
     blocks, meta = [], []
     phone = []
@@ -164,23 +176,31 @@ def page_html(theme, series, n, hook, phrases, word, bpm, four, total):
             h, _ = scenes.build(sc, t1 - t0)
             phone.append(h.replace('<div class="scr', f'<div id="sc{i}" class="scr', 1))
         if text == "cta":
-            blocks.append(f'<div class="cta" id="p{i}"><span class="w">¿Quieres</span> <span class="w">que</span> <span class="w">tu</span> '
-                          f'<span class="w">agenda</span> <span class="g"><span class="w">funcione</span> <span class="w">sola?</span></span>'
-                          f'<div class="btnrow"><span class="word">Comenta “{html.escape(word)}”</span><span class="arrow">👈</span></div>'
-                          f'<div class="sub">Pruébala 15 días gratis · citasweb.es</div></div>')
+            title = words_html(opts.get("cta_title", "¿Quieres que tu agenda *funcione sola?*"))
+            sub = html.escape(opts.get("cta_sub", "Pruébala 15 días gratis · citasweb.es"))
+            btn = html.escape(opts.get("cta_button", f"Comenta “{word}”"))
+            blocks.append(f'<div class="cta" id="p{i}">{title}'
+                          f'<div class="btnrow"><span class="word">{btn}</span><span class="arrow">👈</span></div>'
+                          f'<div class="sub">{sub}</div></div>')
             meta.append({"t0": t0, "t1": t1, "cta": True, "sc": bool(sc)})
         else:
             blocks.append(f'<div class="ph{" withsc" if sc else ""}" id="p{i}">{words_html(text)}</div>')
             meta.append({"t0": t0, "t1": t1, "cta": False, "sc": bool(sc)})
+    ag = opts.get("agenda")
+    meter = ('<style>.hook{max-width:690px}</style><div id="meter"><svg viewBox="0 0 210 210"><circle cx="105" cy="105" r="95" fill="none" stroke="#ffffff22" stroke-width="16"/>'
+             '<circle id="marc" cx="105" cy="105" r="95" fill="none" stroke="var(--ac)" stroke-width="16" stroke-linecap="round" '
+             'stroke-dasharray="597" stroke-dashoffset="597"/></svg><div class="mv"><b id="mval">0%</b><small>AGENDA</small></div></div>') if ag else ""
+    agjs = f"window.AG={json.dumps(ag)};" if ag else ""
+    fic = f'<div class="fic">{html.escape(opts["fiction"])}</div>' if opts.get("fiction") else ""
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>:root{{--bg:{bg};--ac:{ac}}}{CSS}</style></head>
 <body><div id="grid"></div><div id="num">{n:02d}</div><div class="blob" id="b1"></div><div class="blob" id="b2"></div><div class="blob" id="b3"></div>
-<div id="stage"><div class="top"><span class="kicker">{esc(series)} · #{n}</span><div class="hook">{esc(hook)}</div></div>
+<div id="stage"><div class="top"><span class="kicker">{esc(opts.get("kicker") or f"{series} · #{n}")}</span><div class="hook">{esc(hook)}</div></div>
 {''.join(blocks)}</div>
 <div id="phone" style="transform:translateY(1150px)">{''.join(phone)}</div><div id="fade"></div>
 <div class="bar"><i id="bar"></i></div>
 <div class="foot"><div class="brand">{LOGO}<span>CitasWeb</span></div><span>citasweb.es</span></div>
-<div id="flash"></div>
-<script>window.PHR={json.dumps(meta)};window.BPM={bpm};window.FOUR={str(four).lower()};window.TOTAL={total};{JS}{scenes.JS}</script>
+{meter}{fic}<div id="flash"></div>
+<script>{agjs}window.PHR={json.dumps(meta)};window.BPM={bpm};window.FOUR={str(four).lower()};window.TOTAL={total};{JS}{scenes.JS}</script>
 </body></html>"""
 
 
@@ -222,7 +242,11 @@ def main(cfg_path, audio_override=None):
             styles = (mcfg or {}).get("styles") or [(mcfg or {}).get("style", "house")]
             style = v.get("music_style") or styles[(v["n"] - 1) % len(styles)]
             sc = music.STYLES[style]
-            pg.set_content(page_html(theme, cfg["series"], v["n"], v["hook"], phrases, word, sc["bpm"], sc["four"], total),
+            pg.close()
+            pg = b.new_page(viewport={"width": 1080, "height": 1920})  # página limpia por vídeo
+            opts = {k: v[k] if k in v else cfg.get(k) for k in ("kicker", "agenda", "fiction", "cta_title", "cta_sub", "cta_button")}
+            opts = {k: x for k, x in opts.items() if x}
+            pg.set_content(page_html(theme, cfg["series"], v["n"], v["hook"], phrases, v.get("word", word), sc["bpm"], sc["four"], total, opts),
                            wait_until="networkidle")
             # portada: primera frase ya completa
             pg.evaluate(f"render({min(phrases[0][1] - 0.05, 2.5)})")

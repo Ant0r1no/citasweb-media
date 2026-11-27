@@ -21,7 +21,7 @@ def env(n, a=0.005, d=0.1, s=0.6, r=0.1, length=None):
     length = length or n
     t = np.arange(n) / SR
     e = np.ones(n) * s
-    ai, di, ri = int(a * SR), int(d * SR), int(r * SR)
+    ai, di, ri = min(int(a * SR), n), int(d * SR), int(r * SR)
     if ai: e[:ai] = np.linspace(0, 1, ai)
     if di: e[ai:ai + di] = np.linspace(1, s, min(di, max(0, n - ai)))[: max(0, min(di, n - ai))]
     if ri and n > ri: e[-ri:] *= np.linspace(1, 0, ri)

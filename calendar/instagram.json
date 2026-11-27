@@ -26,6 +26,32 @@
   "fb_published_at": "2026-11-27T10:32+01:00"
  },
  {
+  "id": "2026-11-30-lucia-01",
+  "when": "2026-11-30T13:30",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-01/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-01/cover.jpg",
+  "caption": "La agenda de Lucía · Día 1/21 💇‍♀️\n\nEsta es Lucía: peluquera, con su propio salón y la agenda al 35 %. Durante 21 días vamos a llenarla, paso a paso.\n\n📌 Historia ficticia para enseñarte cómo funciona: Lucía y sus cifras son inventadas; los pasos, reales.\n\n🔔 Sigue el reto: mañana, día 2\n👉 https://citasweb.es/\n\n#peluqueria #reservasonline #agendaonline #autonomos #retocitasweb",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
+  "id": "2026-12-01-lucia-02",
+  "when": "2026-12-01T13:30",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-02/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-02/cover.jpg",
+  "caption": "La agenda de Lucía · Día 2/21 💇‍♀️\n\nSeis llamadas perdidas en una mañana. Dos ya han reservado en otro sitio. El problema no es que no llamen…\n\n📌 Historia ficticia para enseñarte cómo funciona: Lucía y sus cifras son inventadas; los pasos, reales.\n\n🔔 Sigue el reto: mañana, día 3\n👉 https://citasweb.es/\n\n#peluqueria #reservasonline #agendaonline #autonomos #retocitasweb",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
   "id": "2026-12-01-mc443249151",
   "when": "2026-12-01T18:00",
   "type": "REELS",
@@ -50,6 +76,32 @@
   "ai": true,
   "metricool_id": 399799697,
   "status": "pending"
+ },
+ {
+  "id": "2026-12-02-lucia-03",
+  "when": "2026-12-02T13:30",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-03/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-03/cover.jpg",
+  "caption": "La agenda de Lucía · Día 3/21 💇‍♀️\n\nDomingo, 22:14, y Lucía sigue contestando WhatsApps. Hoy toma una decisión.\n\n📌 Historia ficticia para enseñarte cómo funciona: Lucía y sus cifras son inventadas; los pasos, reales.\n\n🔔 Sigue el reto: mañana, día 4\n👉 https://citasweb.es/\n\n#peluqueria #reservasonline #agendaonline #autonomos #retocitasweb",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
+  "id": "2026-12-03-lucia-04",
+  "when": "2026-12-03T13:30",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-04/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-04/cover.jpg",
+  "caption": "La agenda de Lucía · Día 4/21 💇‍♀️\n\nPrimer paso, y gratis: arreglar su perfil de Google. 20 minutos. ¿Cómo está el tuyo?\n\n📌 Historia ficticia para enseñarte cómo funciona: Lucía y sus cifras son inventadas; los pasos, reales.\n\n🔔 Sigue el reto: mañana, día 5\n👉 https://citasweb.es/\n\n#peluqueria #reservasonline #agendaonline #autonomos #retocitasweb",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
  },
  {
   "id": "2026-12-03-mc399799803",
@@ -78,6 +130,19 @@
   "status": "pending"
  },
  {
+  "id": "2026-12-04-lucia-05",
+  "when": "2026-12-04T13:30",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-05/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-05/cover.jpg",
+  "caption": "La agenda de Lucía · Día 5/21 💇‍♀️\n\n«¿Cuánto cuesta?» es el mensaje que más recibe. Hoy pone sus precios a la vista.\n\n📌 Historia ficticia para enseñarte cómo funciona: Lucía y sus cifras son inventadas; los pasos, reales.\n\n🔔 Sigue el reto: mañana, día 6\n👉 https://citasweb.es/\n\n#peluqueria #reservasonline #agendaonline #autonomos #retocitasweb",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
   "id": "2026-12-05-mc443009874",
   "when": "2026-12-05T11:00",
   "type": "REELS",
@@ -91,6 +156,45 @@
   "status": "pending"
  },
  {
+  "id": "2026-12-05-lucia-06",
+  "when": "2026-12-05T13:30",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-06/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-06/cover.jpg",
+  "caption": "La agenda de Lucía · Día 6/21 💇‍♀️\n\nCambia el «pide cita por WhatsApp» de su Instagram por un enlace para reservar sola.\n\n📌 Historia ficticia para enseñarte cómo funciona: Lucía y sus cifras son inventadas; los pasos, reales.\n\n🔔 Sigue el reto: mañana, día 7\n👉 https://citasweb.es/\n\n#peluqueria #reservasonline #agendaonline #autonomos #retocitasweb",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
+  "id": "2026-12-06-lucia-07",
+  "when": "2026-12-06T13:30",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-07/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-07/cover.jpg",
+  "caption": "La agenda de Lucía · Día 7/21 💇‍♀️\n\nBalance de la semana 1: del 35 % al 48 %. Y una reserva a las 23:30 sin coger el móvil.\n\n📌 Historia ficticia para enseñarte cómo funciona: Lucía y sus cifras son inventadas; los pasos, reales.\n\n🔔 Sigue el reto: mañana, día 8\n👉 https://citasweb.es/\n\n#peluqueria #reservasonline #agendaonline #autonomos #retocitasweb",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
+  "id": "2026-12-07-lucia-08",
+  "when": "2026-12-07T13:30",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-08/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-08/cover.jpg",
+  "caption": "La agenda de Lucía · Día 8/21 💇‍♀️\n\nCuando no puede contestar, salta un mensaje automático con su enlace de reservas.\n\n📌 Historia ficticia para enseñarte cómo funciona: Lucía y sus cifras son inventadas; los pasos, reales.\n\n🔔 Sigue el reto: mañana, día 9\n👉 https://citasweb.es/\n\n#peluqueria #reservasonline #agendaonline #autonomos #retocitasweb",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
   "id": "2026-12-07-mc399799964",
   "when": "2026-12-07T18:00",
   "type": "REELS",
@@ -102,6 +206,19 @@
   "ai": true,
   "metricool_id": 399799964,
   "status": "pending"
+ },
+ {
+  "id": "2026-12-08-lucia-09",
+  "when": "2026-12-08T13:30",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-09/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-09/cover.jpg",
+  "caption": "La agenda de Lucía · Día 9/21 💇‍♀️\n\nMiércoles, 23:47: antes era un mensaje sin contestar. Hoy, una reserva confirmada.\n\n📌 Historia ficticia para enseñarte cómo funciona: Lucía y sus cifras son inventadas; los pasos, reales.\n\n🔔 Sigue el reto: mañana, día 10\n👉 https://citasweb.es/\n\n#peluqueria #reservasonline #agendaonline #autonomos #retocitasweb",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
  },
  {
   "id": "2026-12-08-mc443249939",
@@ -130,6 +247,32 @@
   "status": "pending"
  },
  {
+  "id": "2026-12-09-lucia-10",
+  "when": "2026-12-09T13:30",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-10/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-10/cover.jpg",
+  "caption": "La agenda de Lucía · Día 10/21 💇‍♀️\n\nUn balayage no ocupa lo mismo que un corte. Cada servicio, con su duración real.\n\n📌 Historia ficticia para enseñarte cómo funciona: Lucía y sus cifras son inventadas; los pasos, reales.\n\n🔔 Sigue el reto: mañana, día 11\n👉 https://citasweb.es/\n\n#peluqueria #reservasonline #agendaonline #autonomos #retocitasweb",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
+  "id": "2026-12-10-lucia-11",
+  "when": "2026-12-10T13:30",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-11/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-11/cover.jpg",
+  "caption": "La agenda de Lucía · Día 11/21 💇‍♀️\n\nTres plantones a la semana. Lo que más los reduce no es enfadarse: es recordar.\n\n📌 Historia ficticia para enseñarte cómo funciona: Lucía y sus cifras son inventadas; los pasos, reales.\n\n🔔 Sigue el reto: mañana, día 12\n👉 https://citasweb.es/\n\n#peluqueria #reservasonline #agendaonline #autonomos #retocitasweb",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
   "id": "2026-12-10-mc399800240",
   "when": "2026-12-10T18:00",
   "type": "REELS",
@@ -156,6 +299,19 @@
   "status": "pending"
  },
  {
+  "id": "2026-12-11-lucia-12",
+  "when": "2026-12-11T13:30",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-12/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-12/cover.jpg",
+  "caption": "La agenda de Lucía · Día 12/21 💇‍♀️\n\nUna clienta cancela… y en 20 minutos otra persona reserva ese hueco.\n\n📌 Historia ficticia para enseñarte cómo funciona: Lucía y sus cifras son inventadas; los pasos, reales.\n\n🔔 Sigue el reto: mañana, día 13\n👉 https://citasweb.es/\n\n#peluqueria #reservasonline #agendaonline #autonomos #retocitasweb",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
   "id": "2026-12-12-mc443249961",
   "when": "2026-12-12T11:00",
   "type": "REELS",
@@ -167,6 +323,45 @@
   "ai": true,
   "metricool_id": 443249961,
   "status": "pending"
+ },
+ {
+  "id": "2026-12-12-lucia-13",
+  "when": "2026-12-12T13:30",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-13/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-13/cover.jpg",
+  "caption": "La agenda de Lucía · Día 13/21 💇‍♀️\n\nEl truco para los huecos de última hora: una historia y el enlace para reservar.\n\n📌 Historia ficticia para enseñarte cómo funciona: Lucía y sus cifras son inventadas; los pasos, reales.\n\n🔔 Sigue el reto: mañana, día 14\n👉 https://citasweb.es/\n\n#peluqueria #reservasonline #agendaonline #autonomos #retocitasweb",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
+  "id": "2026-12-13-lucia-14",
+  "when": "2026-12-13T13:30",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-14/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-14/cover.jpg",
+  "caption": "La agenda de Lucía · Día 14/21 💇‍♀️\n\nBalance de la semana 2: agenda al 72 %. Y es domingo sin contestar ni un mensaje.\n\n📌 Historia ficticia para enseñarte cómo funciona: Lucía y sus cifras son inventadas; los pasos, reales.\n\n🔔 Sigue el reto: mañana, día 15\n👉 https://citasweb.es/\n\n#peluqueria #reservasonline #agendaonline #autonomos #retocitasweb",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
+  "id": "2026-12-14-lucia-15",
+  "when": "2026-12-14T13:30",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-15/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-15/cover.jpg",
+  "caption": "La agenda de Lucía · Día 15/21 💇‍♀️\n\nClientas encantadas y casi ninguna reseña. Hoy empieza a pedirlas.\n\n📌 Historia ficticia para enseñarte cómo funciona: Lucía y sus cifras son inventadas; los pasos, reales.\n\n🔔 Sigue el reto: mañana, día 16\n👉 https://citasweb.es/\n\n#peluqueria #reservasonline #agendaonline #autonomos #retocitasweb",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
  },
  {
   "id": "2026-12-14-mc443249989",
@@ -182,6 +377,19 @@
   "status": "pending"
  },
  {
+  "id": "2026-12-15-lucia-16",
+  "when": "2026-12-15T13:30",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-16/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-16/cover.jpg",
+  "caption": "La agenda de Lucía · Día 16/21 💇‍♀️\n\nContestar cada reseña: las buenas con un gracias, la regular con calma.\n\n📌 Historia ficticia para enseñarte cómo funciona: Lucía y sus cifras son inventadas; los pasos, reales.\n\n🔔 Sigue el reto: mañana, día 17\n👉 https://citasweb.es/\n\n#peluqueria #reservasonline #agendaonline #autonomos #retocitasweb",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
   "id": "2026-12-16-mc443250011",
   "when": "2026-12-16T10:00",
   "type": "REELS",
@@ -193,6 +401,32 @@
   "ai": true,
   "metricool_id": 443250011,
   "status": "pending"
+ },
+ {
+  "id": "2026-12-16-lucia-17",
+  "when": "2026-12-16T13:30",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-17/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-17/cover.jpg",
+  "caption": "La agenda de Lucía · Día 17/21 💇‍♀️\n\nQue vuelvan a tiempo: al terminar, la siguiente cita ya queda reservada.\n\n📌 Historia ficticia para enseñarte cómo funciona: Lucía y sus cifras son inventadas; los pasos, reales.\n\n🔔 Sigue el reto: mañana, día 18\n👉 https://citasweb.es/\n\n#peluqueria #reservasonline #agendaonline #autonomos #retocitasweb",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
+  "id": "2026-12-17-lucia-18",
+  "when": "2026-12-17T13:30",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-18/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-18/cover.jpg",
+  "caption": "La agenda de Lucía · Día 18/21 💇‍♀️\n\nDoña Carmen, 74 años, acaba de reservar desde el móvil.\n\n📌 Historia ficticia para enseñarte cómo funciona: Lucía y sus cifras son inventadas; los pasos, reales.\n\n🔔 Sigue el reto: mañana, día 19\n👉 https://citasweb.es/\n\n#peluqueria #reservasonline #agendaonline #autonomos #retocitasweb",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
  },
  {
   "id": "2026-12-17-mc443250038",
@@ -221,6 +455,19 @@
   "status": "pending"
  },
  {
+  "id": "2026-12-18-lucia-19",
+  "when": "2026-12-18T13:30",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-19/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-19/cover.jpg",
+  "caption": "La agenda de Lucía · Día 19/21 💇‍♀️\n\nCómo llenar el día más flojo de la semana.\n\n📌 Historia ficticia para enseñarte cómo funciona: Lucía y sus cifras son inventadas; los pasos, reales.\n\n🔔 Sigue el reto: mañana, día 20\n👉 https://citasweb.es/\n\n#peluqueria #reservasonline #agendaonline #autonomos #retocitasweb",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
   "id": "2026-12-19-mc443010338",
   "when": "2026-12-19T11:00",
   "type": "REELS",
@@ -232,6 +479,32 @@
   "ai": true,
   "metricool_id": 443010338,
   "status": "pending"
+ },
+ {
+  "id": "2026-12-19-lucia-20",
+  "when": "2026-12-19T13:30",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-20/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-20/cover.jpg",
+  "caption": "La agenda de Lucía · Día 20/21 💇‍♀️\n\nSábado, móvil en silencio y a cenar. Las reservas entran solas.\n\n📌 Historia ficticia para enseñarte cómo funciona: Lucía y sus cifras son inventadas; los pasos, reales.\n\n🔔 Sigue el reto: mañana, día 21\n👉 https://citasweb.es/\n\n#peluqueria #reservasonline #agendaonline #autonomos #retocitasweb",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
+  "id": "2026-12-20-lucia-21",
+  "when": "2026-12-20T13:30",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-21/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/videos/lucia-21/cover.jpg",
+  "caption": "La agenda de Lucía · Día 21/21 💇‍♀️\n\nFin del reto: del 35 % al 90 %. Lucía es inventada; los pasos, reales. ¿Hacemos el tuyo?\n\n📌 Historia ficticia para enseñarte cómo funciona: Lucía y sus cifras son inventadas; los pasos, reales.\n\n💬 Comenta \"RETO\" y te ayudamos a hacer el tuyo (15 días gratis, sin tarjeta)\n👉 https://citasweb.es/\n\n#peluqueria #reservasonline #agendaonline #autonomos #retocitasweb",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
  },
  {
   "id": "2026-12-21-mc443250943",

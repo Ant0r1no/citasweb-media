@@ -1,0 +1,1287 @@
+{
+ "audio": "/home/claude/audio/lucia_all.wav",
+ "sector": "peluqueria",
+ "series": "LA AGENDA DE LUCÍA",
+ "word": "RETO",
+ "outname": "video.mp4",
+ "fiction": "Historia ficticia",
+ "music": {
+  "styles": [
+   "pop",
+   "funk",
+   "house",
+   "disco",
+   "lofi",
+   "chill"
+  ],
+  "volume": 0.6
+ },
+ "videos": [
+  {
+   "slug": "lucia-01",
+   "n": 1,
+   "hook": "La agenda *al 35 %*",
+   "start": 0.02,
+   "end": 21.572,
+   "tail": 2.6,
+   "kicker": "LA AGENDA DE LUCÍA · DÍA 1/21",
+   "agenda": {
+    "from": 0,
+    "to": 35
+   },
+   "music_style": "pop",
+   "music_seed": 101,
+   "phrases": [
+    [
+     0.2,
+     "Esta es *Lucía*. Peluquera, con su propio salón"
+    ],
+    [
+     3.476,
+     "Y la agenda… *al 35 %*",
+     {
+      "type": "agenda",
+      "title": "Agenda",
+      "sub": "Martes",
+      "sel": "M",
+      "slots": [
+       [
+        "10:00",
+        "Libre",
+        "free"
+       ],
+       [
+        "11:00",
+        "Marta · Corte",
+        "busy"
+       ],
+       [
+        "12:30",
+        "Libre",
+        "free"
+       ],
+       [
+        "16:00",
+        "Libre",
+        "free"
+       ],
+       [
+        "17:30",
+        "Elena · Color",
+        "busy"
+       ],
+       [
+        "19:00",
+        "Libre",
+        "free"
+       ]
+      ]
+     }
+    ],
+    [
+     8.505,
+     "Y el teléfono sonando con las manos *llenas de tinte*",
+     {
+      "type": "call",
+      "name": "Número desconocido",
+      "time": "11:24"
+     }
+    ],
+    [
+     12.086,
+     "*21 días* para llenar su agenda, paso a paso"
+    ],
+    [
+     18.79,
+     "Síguenos: *mañana empieza el reto*"
+    ],
+    [
+     21.683,
+     "cta"
+    ]
+   ],
+   "cta_title": "Mañana, *día 2*",
+   "cta_button": "Sigue el reto",
+   "cta_sub": "Historia ficticia · citasweb.es"
+  },
+  {
+   "slug": "lucia-02",
+   "n": 2,
+   "hook": "*6 llamadas* perdidas",
+   "start": 21.612,
+   "end": 40.09,
+   "tail": 2.6,
+   "kicker": "LA AGENDA DE LUCÍA · DÍA 2/21",
+   "agenda": {
+    "from": 35,
+    "to": 35
+   },
+   "music_style": "funk",
+   "music_seed": 102,
+   "phrases": [
+    [
+     21.792,
+     "Martes por la mañana. Lucía, *con unas mechas*"
+    ],
+    [
+     26.916,
+     "Una, dos… *seis llamadas perdidas*",
+     {
+      "type": "notif",
+      "clock": "11:40",
+      "date": "martes, 1 de diciembre",
+      "items": [
+       [
+        "Teléfono",
+        "6 llamadas perdidas",
+        "Número desconocido y 5 más"
+       ]
+      ]
+     }
+    ],
+    [
+     29.811,
+     "Cuando devuelve las llamadas, *dos ya han reservado en otro sitio*"
+    ],
+    [
+     33.754,
+     "El problema no es que no llamen. *Es que no puede contestar*"
+    ],
+    [
+     40.19,
+     "cta"
+    ]
+   ],
+   "cta_title": "Mañana, *día 3*",
+   "cta_button": "Sigue el reto",
+   "cta_sub": "Historia ficticia · citasweb.es"
+  },
+  {
+   "slug": "lucia-03",
+   "n": 3,
+   "hook": "Domingo, *22:14*",
+   "start": 40.13,
+   "end": 57.012,
+   "tail": 2.6,
+   "kicker": "LA AGENDA DE LUCÍA · DÍA 3/21",
+   "agenda": {
+    "from": 35,
+    "to": 36
+   },
+   "music_style": "house",
+   "music_seed": 103,
+   "phrases": [
+    [
+     40.31,
+     "Domingo, 10 de la noche… *y contestando WhatsApps*",
+     {
+      "type": "chat",
+      "name": "Clienta",
+      "time": "22:14",
+      "day": "DOMINGO",
+      "msgs": [
+       [
+        "in",
+        "¿Tienes hueco el jueves?",
+        "22:11"
+       ],
+       [
+        "in",
+        "¿Cuánto cuesta el balayage?",
+        "22:14"
+       ]
+      ],
+      "gap": 1.0
+     }
+    ],
+    [
+     48.196,
+     "Hoy decide *dejar de ser su propia recepcionista*"
+    ],
+    [
+     52.387,
+     "Pero antes, *que la encuentren*"
+    ],
+    [
+     55.187,
+     "Mañana: *Google*"
+    ],
+    [
+     57.108,
+     "cta"
+    ]
+   ],
+   "cta_title": "Mañana, *día 4*",
+   "cta_button": "Sigue el reto",
+   "cta_sub": "Historia ficticia · citasweb.es"
+  },
+  {
+   "slug": "lucia-04",
+   "n": 4,
+   "hook": "Su *perfil de Google*",
+   "start": 57.052,
+   "end": 78.238,
+   "tail": 2.6,
+   "kicker": "LA AGENDA DE LUCÍA · DÍA 4/21",
+   "agenda": {
+    "from": 36,
+    "to": 38
+   },
+   "music_style": "disco",
+   "music_seed": 104,
+   "phrases": [
+    [
+     57.232,
+     "Cuando buscan *«peluquería cerca de mí»*… sale Google",
+     {
+      "type": "search",
+      "query": "peluquería cerca de mí",
+      "time": "19:40",
+      "results": [
+       [
+        "Peluquería Centro",
+        "3 fotos · Horario sin actualizar",
+        false
+       ],
+       [
+        "Salón Lucía",
+        "Fotos nuevas · Servicios · Horario",
+        true,
+        2.6
+       ],
+       [
+        "Estudio Nuria",
+        "Web propia · Reserva online",
+        true
+       ]
+      ]
+     }
+    ],
+    [
+     62.013,
+     "3 fotos viejas, horario mal y *ni un servicio*"
+    ],
+    [
+     67.346,
+     "Lo arregla *en 20 minutos*"
+    ],
+    [
+     72.832,
+     "Es gratis. *Puedes hacerlo hoy*"
+    ],
+    [
+     78.334,
+     "cta"
+    ]
+   ],
+   "cta_title": "Mañana, *día 5*",
+   "cta_button": "Sigue el reto",
+   "cta_sub": "Historia ficticia · citasweb.es"
+  },
+  {
+   "slug": "lucia-05",
+   "n": 5,
+   "hook": "*Precios* a la vista",
+   "start": 78.277,
+   "end": 96.736,
+   "tail": 2.6,
+   "kicker": "LA AGENDA DE LUCÍA · DÍA 5/21",
+   "agenda": {
+    "from": 38,
+    "to": 41
+   },
+   "music_style": "lofi",
+   "music_seed": 105,
+   "phrases": [
+    [
+     78.457,
+     "El mensaje que más recibe: *«¿cuánto cuesta?»*",
+     {
+      "type": "chat",
+      "name": "Clienta",
+      "time": "16:20",
+      "msgs": [
+       [
+        "in",
+        "Hola, ¿cuánto cuesta un color?",
+        "16:20"
+       ]
+      ],
+      "seen": true
+     }
+    ],
+    [
+     82.838,
+     "Si no ven el precio, *ni preguntan: se van*"
+    ],
+    [
+     86.286,
+     "Hoy pone sus precios *a la vista*",
+     {
+      "type": "web",
+      "biz": "Salón Lucía",
+      "url": "salonlucia.citasweb.es",
+      "day": "Viernes",
+      "pick": 2,
+      "time": "16:25",
+      "services": [
+       [
+        "Corte mujer",
+        "18 €",
+        "45 min"
+       ],
+       [
+        "Color",
+        "35 €",
+        "90 min"
+       ],
+       [
+        "Balayage",
+        "60 €",
+        "2 h 30"
+       ]
+      ]
+     }
+    ],
+    [
+     89.505,
+     "Menos mensajes y clientas que *llegan sabiendo lo que pagan*"
+    ],
+    [
+     96.836,
+     "cta"
+    ]
+   ],
+   "cta_title": "Mañana, *día 6*",
+   "cta_button": "Sigue el reto",
+   "cta_sub": "Historia ficticia · citasweb.es"
+  },
+  {
+   "slug": "lucia-06",
+   "n": 6,
+   "hook": "El *enlace* de la bio",
+   "start": 96.776,
+   "end": 112.695,
+   "tail": 2.6,
+   "kicker": "LA AGENDA DE LUCÍA · DÍA 6/21",
+   "agenda": {
+    "from": 41,
+    "to": 44
+   },
+   "music_style": "chill",
+   "music_seed": 106,
+   "phrases": [
+    [
+     96.956,
+     "En su Instagram ponía *«pide cita por WhatsApp»*"
+    ],
+    [
+     101.356,
+     "Hoy pone un enlace: *ve huecos y reserva sola*",
+     {
+      "type": "web",
+      "biz": "Salón Lucía",
+      "url": "salonlucia.citasweb.es",
+      "day": "Sábado",
+      "pick": 3,
+      "time": "13:02",
+      "services": [
+       [
+        "Corte mujer",
+        "18 €",
+        "45 min"
+       ],
+       [
+        "Color",
+        "35 €",
+        "90 min"
+       ],
+       [
+        "Balayage",
+        "60 €",
+        "2 h 30"
+       ]
+      ]
+     }
+    ],
+    [
+     106.614,
+     "Ya no hace falta *escribirle*"
+    ],
+    [
+     108.309,
+     "Y lo mejor llega *esta noche*"
+    ],
+    [
+     112.821,
+     "cta"
+    ]
+   ],
+   "cta_title": "Mañana, *día 7*",
+   "cta_button": "Sigue el reto",
+   "cta_sub": "Historia ficticia · citasweb.es"
+  },
+  {
+   "slug": "lucia-07",
+   "n": 7,
+   "hook": "Semana 1: *35 % → 48 %*",
+   "start": 112.735,
+   "end": 134.143,
+   "tail": 2.6,
+   "kicker": "LA AGENDA DE LUCÍA · DÍA 7/21",
+   "agenda": {
+    "from": 44,
+    "to": 48
+   },
+   "music_style": "pop",
+   "music_seed": 107,
+   "phrases": [
+    [
+     112.915,
+     "Una semana de reto"
+    ],
+    [
+     116.153,
+     "Google arreglado, *precios a la vista* y enlace para reservar"
+    ],
+    [
+     120.325,
+     "Del 35 % al *48 %*"
+    ],
+    [
+     126.972,
+     "Una reserva a las 23:30… *sin coger el móvil*",
+     {
+      "type": "notif",
+      "clock": "23:31",
+      "date": "sábado, 5 de diciembre",
+      "items": [
+       [
+        "CitasWeb",
+        "Nueva reserva",
+        "Martes 11:00 · Corte mujer"
+       ]
+      ]
+     }
+    ],
+    [
+     131.144,
+     "Ahora, a por *los que se le escapan*"
+    ],
+    [
+     134.246,
+     "cta"
+    ]
+   ],
+   "cta_title": "Mañana, *día 8*",
+   "cta_button": "Sigue el reto",
+   "cta_sub": "Historia ficticia · citasweb.es"
+  },
+  {
+   "slug": "lucia-08",
+   "n": 8,
+   "hook": "La *respuesta automática*",
+   "start": 134.183,
+   "end": 153.043,
+   "tail": 2.6,
+   "kicker": "LA AGENDA DE LUCÍA · DÍA 8/21",
+   "agenda": {
+    "from": 48,
+    "to": 51
+   },
+   "music_style": "funk",
+   "music_seed": 108,
+   "phrases": [
+    [
+     134.363,
+     "Los WhatsApps siguen llegando, *y está bien*"
+    ],
+    [
+     138.173,
+     "Cuando no puede contestar, *salta un mensaje automático*",
+     {
+      "type": "chat",
+      "name": "Salón Lucía",
+      "time": "15:03",
+      "msgs": [
+       [
+        "in",
+        "Hola! ¿Tienes hueco mañana?",
+        "15:02"
+       ],
+       [
+        "out",
+        "Estoy con una clienta 💇‍♀️ Reserva aquí: salonlucia.citasweb.es",
+        "15:02"
+       ]
+      ],
+      "gap": 1.1
+     }
+    ],
+    [
+     145.658,
+     "Quien escribe a las 3 *ya no espera hasta las 8*"
+    ],
+    [
+     149.906,
+     "Mañana: lo que pasó *a medianoche*"
+    ],
+    [
+     153.142,
+     "cta"
+    ]
+   ],
+   "cta_title": "Mañana, *día 9*",
+   "cta_button": "Sigue el reto",
+   "cta_sub": "Historia ficticia · citasweb.es"
+  },
+  {
+   "slug": "lucia-09",
+   "n": 9,
+   "hook": "Reserva a las *23:47*",
+   "start": 153.083,
+   "end": 171.904,
+   "tail": 2.6,
+   "kicker": "LA AGENDA DE LUCÍA · DÍA 9/21",
+   "agenda": {
+    "from": 51,
+    "to": 54
+   },
+   "music_style": "house",
+   "music_seed": 109,
+   "phrases": [
+    [
+     153.263,
+     "Miércoles, *23:47*",
+     {
+      "type": "notif",
+      "clock": "23:47",
+      "date": "miércoles, 9 de diciembre",
+      "items": [
+       [
+        "CitasWeb",
+        "Reserva confirmada",
+        "Viernes 10:00 · Corte y color"
+       ]
+      ]
+     }
+    ],
+    [
+     157.015,
+     "Antes: un mensaje *sin contestar hasta el día siguiente*"
+    ],
+    [
+     160.406,
+     "Hoy: *reserva confirmada*. Viernes a las 10"
+    ],
+    [
+     164.234,
+     "Ella lo ve por la mañana, *con el café*"
+    ],
+    [
+     167.015,
+     "Tu negocio cierra. *Tu agenda, no*"
+    ],
+    [
+     172.003,
+     "cta"
+    ]
+   ],
+   "cta_title": "Mañana, *día 10*",
+   "cta_button": "Sigue el reto",
+   "cta_sub": "Historia ficticia · citasweb.es"
+  },
+  {
+   "slug": "lucia-10",
+   "n": 10,
+   "hook": "Cada servicio, *su tiempo*",
+   "start": 171.945,
+   "end": 191.791,
+   "tail": 2.6,
+   "kicker": "LA AGENDA DE LUCÍA · DÍA 10/21",
+   "agenda": {
+    "from": 54,
+    "to": 57
+   },
+   "music_style": "disco",
+   "music_seed": 110,
+   "phrases": [
+    [
+     172.125,
+     "Un balayage *no ocupa lo mismo* que un corte"
+    ],
+    [
+     175.896,
+     "Apuntando a mano: *citas juntas o huecos muertos*"
+    ],
+    [
+     180.067,
+     "Ahora cada servicio tiene *su duración real*",
+     {
+      "type": "agenda",
+      "title": "Agenda",
+      "sub": "Miércoles",
+      "sel": "X",
+      "slots": [
+       [
+        "10:00",
+        "Ana · Corte · 45 min",
+        "busy"
+       ],
+       [
+        "10:45",
+        "Rocío · Balayage · 2 h 30",
+        "busy"
+       ],
+       [
+        "13:15",
+        "Libre",
+        "booked",
+        1.4,
+        "✓ Reservado · Corte"
+       ],
+       [
+        "16:00",
+        "Libre",
+        "free"
+       ]
+      ]
+     }
+    ],
+    [
+     186.391,
+     "Se acabaron *los días descuadrados*"
+    ],
+    [
+     191.894,
+     "cta"
+    ]
+   ],
+   "cta_title": "Mañana, *día 11*",
+   "cta_button": "Sigue el reto",
+   "cta_sub": "Historia ficticia · citasweb.es"
+  },
+  {
+   "slug": "lucia-11",
+   "n": 11,
+   "hook": "Adiós a los *plantones*",
+   "start": 191.831,
+   "end": 210.608,
+   "tail": 2.6,
+   "kicker": "LA AGENDA DE LUCÍA · DÍA 11/21",
+   "agenda": {
+    "from": 57,
+    "to": 60
+   },
+   "music_style": "lofi",
+   "music_seed": 111,
+   "phrases": [
+    [
+     192.011,
+     "*3 plantones* a la semana"
+    ],
+    [
+     196.268,
+     "No es mala fe: *se les olvida*"
+    ],
+    [
+     198.859,
+     "Hoy activa los *recordatorios automáticos*",
+     {
+      "type": "notif",
+      "clock": "10:00",
+      "date": "jueves, 10 de diciembre",
+      "items": [
+       [
+        "CitasWeb",
+        "Recordatorio de tu cita",
+        "Mañana a las 10:00 · Salón Lucía"
+       ],
+       [
+        "CitasWeb",
+        "Cita confirmada ✓",
+        "¡Te esperamos!"
+       ]
+      ],
+      "gap": 1.0
+     }
+    ],
+    [
+     204.001,
+     "Lo que más los reduce no es enfadarse. *Es recordar*"
+    ],
+    [
+     210.704,
+     "cta"
+    ]
+   ],
+   "cta_title": "Mañana, *día 12*",
+   "cta_button": "Sigue el reto",
+   "cta_sub": "Historia ficticia · citasweb.es"
+  },
+  {
+   "slug": "lucia-12",
+   "n": 12,
+   "hook": "Cancela… *y se rellena*",
+   "start": 210.647,
+   "end": 227.494,
+   "tail": 2.6,
+   "kicker": "LA AGENDA DE LUCÍA · DÍA 12/21",
+   "agenda": {
+    "from": 60,
+    "to": 64
+   },
+   "music_style": "chill",
+   "music_seed": 112,
+   "phrases": [
+    [
+     210.827,
+     "Una clienta *cancela la cita de las 5*"
+    ],
+    [
+     213.989,
+     "Antes, ese hueco *se quedaba vacío*"
+    ],
+    [
+     216.275,
+     "Ahora vuelve a estar libre… *y en 20 minutos lo reserva otra*",
+     {
+      "type": "agenda",
+      "title": "Agenda",
+      "sub": "Viernes",
+      "sel": "V",
+      "slots": [
+       [
+        "16:00",
+        "Pilar · Color",
+        "busy"
+       ],
+       [
+        "17:00",
+        "Cancelada",
+        "noshow",
+        0.6,
+        "✕ Cancelada"
+       ],
+       [
+        "17:00",
+        "Libre",
+        "booked",
+        1.8,
+        "✓ Reservado · Corte"
+       ],
+       [
+        "18:30",
+        "Lola · Peinado",
+        "busy"
+       ]
+      ]
+     }
+    ],
+    [
+     222.675,
+     "Y Lucía *no ha hecho nada*"
+    ],
+    [
+     227.587,
+     "cta"
+    ]
+   ],
+   "cta_title": "Mañana, *día 13*",
+   "cta_button": "Sigue el reto",
+   "cta_sub": "Historia ficticia · citasweb.es"
+  },
+  {
+   "slug": "lucia-13",
+   "n": 13,
+   "hook": "Huecos de *última hora*",
+   "start": 227.534,
+   "end": 244.359,
+   "tail": 2.6,
+   "kicker": "LA AGENDA DE LUCÍA · DÍA 13/21",
+   "agenda": {
+    "from": 64,
+    "to": 68
+   },
+   "music_style": "pop",
+   "music_seed": 113,
+   "phrases": [
+    [
+     227.714,
+     "Siempre queda *algún hueco suelto*"
+    ],
+    [
+     230.818,
+     "Sube una historia: *«Hueco hoy a las 12»*",
+     {
+      "type": "web",
+      "biz": "Salón Lucía",
+      "url": "salonlucia.citasweb.es",
+      "day": "Hoy",
+      "pick": 2,
+      "time": "09:40",
+      "services": [
+       [
+        "Corte mujer",
+        "18 €",
+        "45 min"
+       ],
+       [
+        "Color",
+        "35 €",
+        "90 min"
+       ],
+       [
+        "Balayage",
+        "60 €",
+        "2 h 30"
+       ]
+      ]
+     }
+    ],
+    [
+     237.599,
+     "Quien lo ve primero, *se lo queda*"
+    ],
+    [
+     239.409,
+     "Sin llamadas. *Sin «ya te digo algo»*"
+    ],
+    [
+     244.454,
+     "cta"
+    ]
+   ],
+   "cta_title": "Mañana, *día 14*",
+   "cta_button": "Sigue el reto",
+   "cta_sub": "Historia ficticia · citasweb.es"
+  },
+  {
+   "slug": "lucia-14",
+   "n": 14,
+   "hook": "Semana 2: *48 % → 72 %*",
+   "start": 244.399,
+   "end": 264.339,
+   "tail": 2.6,
+   "kicker": "LA AGENDA DE LUCÍA · DÍA 14/21",
+   "agenda": {
+    "from": 68,
+    "to": 72
+   },
+   "music_style": "funk",
+   "music_seed": 114,
+   "phrases": [
+    [
+     244.579,
+     "Dos semanas de reto"
+    ],
+    [
+     247.95,
+     "Respuesta automática, reservas 24 h *y recordatorios*"
+    ],
+    [
+     253.893,
+     "Agenda *al 72 %*"
+    ],
+    [
+     256.293,
+     "Es domingo… *y no ha contestado ni un mensaje*"
+    ],
+    [
+     260.731,
+     "Última semana: *que vuelvan*"
+    ],
+    [
+     264.443,
+     "cta"
+    ]
+   ],
+   "cta_title": "Mañana, *día 15*",
+   "cta_button": "Sigue el reto",
+   "cta_sub": "Historia ficticia · citasweb.es"
+  },
+  {
+   "slug": "lucia-15",
+   "n": 15,
+   "hook": "Las *reseñas*",
+   "start": 264.38,
+   "end": 283.392,
+   "tail": 2.6,
+   "kicker": "LA AGENDA DE LUCÍA · DÍA 15/21",
+   "agenda": {
+    "from": 72,
+    "to": 75
+   },
+   "music_style": "house",
+   "music_seed": 115,
+   "phrases": [
+    [
+     264.56,
+     "¿Qué miras al elegir peluquería? *Las reseñas*"
+    ],
+    [
+     269.474,
+     "Clientas encantadas… *y casi ninguna reseña*"
+    ],
+    [
+     273.264,
+     "Ahora la pide *al terminar cada cita*",
+     {
+      "type": "chat",
+      "name": "Marta",
+      "time": "13:10",
+      "msgs": [
+       [
+        "out",
+        "¡Gracias por venir, Marta! ¿Nos dejas tu opinión? ⭐",
+        "13:09"
+       ],
+       [
+        "in",
+        "¡Claro! Me encanta cómo ha quedado 😍",
+        "13:10"
+       ]
+      ],
+      "gap": 1.1
+     }
+    ],
+    [
+     278.179,
+     "Sin presionar. *Solo pidiéndolo*"
+    ],
+    [
+     283.491,
+     "cta"
+    ]
+   ],
+   "cta_title": "Mañana, *día 16*",
+   "cta_button": "Sigue el reto",
+   "cta_sub": "Historia ficticia · citasweb.es"
+  },
+  {
+   "slug": "lucia-16",
+   "n": 16,
+   "hook": "Contestar *cada reseña*",
+   "start": 283.431,
+   "end": 299.438,
+   "tail": 2.6,
+   "kicker": "LA AGENDA DE LUCÍA · DÍA 16/21",
+   "agenda": {
+    "from": 75,
+    "to": 77
+   },
+   "music_style": "disco",
+   "music_seed": 116,
+   "phrases": [
+    [
+     283.611,
+     "Lucía contesta *todas sus reseñas*"
+    ],
+    [
+     287.021,
+     "Las buenas, con un gracias. *La regular, con calma*"
+    ],
+    [
+     292.849,
+     "Quien lo lee ve a alguien que *cuida a sus clientas*"
+    ],
+    [
+     299.533,
+     "cta"
+    ]
+   ],
+   "cta_title": "Mañana, *día 17*",
+   "cta_button": "Sigue el reto",
+   "cta_sub": "Historia ficticia · citasweb.es"
+  },
+  {
+   "slug": "lucia-17",
+   "n": 17,
+   "hook": "Que vuelvan *a tiempo*",
+   "start": 299.479,
+   "end": 317.755,
+   "tail": 2.6,
+   "kicker": "LA AGENDA DE LUCÍA · DÍA 17/21",
+   "agenda": {
+    "from": 77,
+    "to": 80
+   },
+   "music_style": "lofi",
+   "music_seed": 117,
+   "phrases": [
+    [
+     299.659,
+     "Viene cada 6 semanas… *y a veces tarda 10*"
+    ],
+    [
+     305.487,
+     "Al terminar, *le deja reservada la siguiente*",
+     {
+      "type": "notif",
+      "clock": "12:30",
+      "date": "miércoles, 16 de diciembre",
+      "items": [
+       [
+        "CitasWeb",
+        "Próxima cita reservada",
+        "27 de enero · 10:00 · Color"
+       ]
+      ]
+     }
+    ],
+    [
+     311.354,
+     "Vuelven a tiempo y la agenda *se llena con semanas de antelación*"
+    ],
+    [
+     317.866,
+     "cta"
+    ]
+   ],
+   "cta_title": "Mañana, *día 18*",
+   "cta_button": "Sigue el reto",
+   "cta_sub": "Historia ficticia · citasweb.es"
+  },
+  {
+   "slug": "lucia-18",
+   "n": 18,
+   "hook": "La sorpresa de *doña Carmen*",
+   "start": 317.796,
+   "end": 334.784,
+   "tail": 2.6,
+   "kicker": "LA AGENDA DE LUCÍA · DÍA 18/21",
+   "agenda": {
+    "from": 80,
+    "to": 83
+   },
+   "music_style": "chill",
+   "music_seed": 118,
+   "phrases": [
+    [
+     317.976,
+     "Doña Carmen, *74 años*. Quince viniendo"
+    ],
+    [
+     323.023,
+     "Lucía pensaba que *nunca reservaría por internet*"
+    ],
+    [
+     325.652,
+     "Hoy le llega *su reserva desde el móvil*",
+     {
+      "type": "notif",
+      "clock": "17:05",
+      "date": "jueves, 17 de diciembre",
+      "items": [
+       [
+        "CitasWeb",
+        "Nueva reserva",
+        "Carmen · Sábado 10:00 · Peinado"
+       ]
+      ]
+     }
+    ],
+    [
+     330.014,
+     "Si es fácil, *lo usa todo el mundo*"
+    ],
+    [
+     334.888,
+     "cta"
+    ]
+   ],
+   "cta_title": "Mañana, *día 19*",
+   "cta_button": "Sigue el reto",
+   "cta_sub": "Historia ficticia · citasweb.es"
+  },
+  {
+   "slug": "lucia-19",
+   "n": 19,
+   "hook": "Llenar el *día flojo*",
+   "start": 334.824,
+   "end": 352.157,
+   "tail": 2.6,
+   "kicker": "LA AGENDA DE LUCÍA · DÍA 19/21",
+   "agenda": {
+    "from": 83,
+    "to": 86
+   },
+   "music_style": "pop",
+   "music_seed": 119,
+   "phrases": [
+    [
+     335.004,
+     "El martes por la mañana era *el agujero de la semana*"
+    ],
+    [
+     339.308,
+     "Lanza algo especial *solo para los martes*",
+     {
+      "type": "web",
+      "biz": "Salón Lucía",
+      "url": "salonlucia.citasweb.es",
+      "day": "Martes",
+      "pick": 1,
+      "time": "20:10",
+      "services": [
+       [
+        "Corte mujer",
+        "18 €",
+        "45 min"
+       ],
+       [
+        "Color",
+        "35 €",
+        "90 min"
+       ],
+       [
+        "Balayage",
+        "60 €",
+        "2 h 30"
+       ]
+      ]
+     }
+    ],
+    [
+     346.566,
+     "Conocer tu día flojo es *la mitad del trabajo*"
+    ],
+    [
+     352.258,
+     "cta"
+    ]
+   ],
+   "cta_title": "Mañana, *día 20*",
+   "cta_button": "Sigue el reto",
+   "cta_sub": "Historia ficticia · citasweb.es"
+  },
+  {
+   "slug": "lucia-20",
+   "n": 20,
+   "hook": "*Móvil en silencio*",
+   "start": 352.197,
+   "end": 369.047,
+   "tail": 2.6,
+   "kicker": "LA AGENDA DE LUCÍA · DÍA 20/21",
+   "agenda": {
+    "from": 86,
+    "to": 88
+   },
+   "music_style": "funk",
+   "music_seed": 120,
+   "phrases": [
+    [
+     352.377,
+     "Cierra el sábado *a su hora*"
+    ],
+    [
+     355.52,
+     "Móvil en silencio *y a cenar*"
+    ],
+    [
+     358.149,
+     "Por primera vez en meses, *sin contestar a nadie*"
+    ],
+    [
+     362.015,
+     "Las reservas entran solas. *Los recordatorios salen solos*",
+     {
+      "type": "notif",
+      "clock": "22:15",
+      "date": "sábado, 19 de diciembre",
+      "items": [
+       [
+        "CitasWeb",
+        "Nueva reserva",
+        "Lunes 10:00 · Balayage"
+       ],
+       [
+        "CitasWeb",
+        "Recordatorio enviado",
+        "3 clientas de mañana"
+       ]
+      ],
+      "gap": 0.9
+     }
+    ],
+    [
+     365.787,
+     "Mañana, *el último día*"
+    ],
+    [
+     369.156,
+     "cta"
+    ]
+   ],
+   "cta_title": "Mañana, *día 21*",
+   "cta_button": "Sigue el reto",
+   "cta_sub": "Historia ficticia · citasweb.es"
+  },
+  {
+   "slug": "lucia-21",
+   "n": 21,
+   "hook": "Fin del reto: *35 % → 90 %*",
+   "start": 369.087,
+   "end": 395.92,
+   "tail": 2.6,
+   "kicker": "LA AGENDA DE LUCÍA · DÍA 21/21",
+   "agenda": {
+    "from": 88,
+    "to": 90
+   },
+   "music_style": "house",
+   "music_seed": 121,
+   "phrases": [
+    [
+     369.267,
+     "Fin del reto. *Del 35 % al 90 %*"
+    ],
+    [
+     376.181,
+     "No es magia: *que te encuentren, que no se escapen y que vuelvan*"
+    ],
+    [
+     381.0,
+     "Lucía es inventada. *Los pasos son reales*"
+    ],
+    [
+     386.981,
+     "Tu web y tu agenda *listas en 24-48 h*. 15 días gratis, sin tarjeta",
+     {
+      "type": "web",
+      "biz": "Salón Lucía",
+      "url": "salonlucia.citasweb.es",
+      "day": "Lunes",
+      "pick": 1,
+      "time": "10:00",
+      "services": [
+       [
+        "Corte mujer",
+        "18 €",
+        "45 min"
+       ],
+       [
+        "Color",
+        "35 €",
+        "90 min"
+       ],
+       [
+        "Balayage",
+        "60 €",
+        "2 h 30"
+       ]
+      ]
+     }
+    ],
+    [
+     396.026,
+     "cta"
+    ]
+   ],
+   "cta_title": "¿Hacemos *tu reto?*",
+   "cta_button": "Comenta “RETO”",
+   "cta_sub": "15 días gratis, sin tarjeta · citasweb.es",
+   "word": "RETO"
+  }
+ ]
+}
