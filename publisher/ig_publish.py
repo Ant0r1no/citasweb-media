@@ -94,7 +94,7 @@ def wait_ready(cid, timeout=600):
     raise IGError("el vídeo tardó demasiado en procesarse")
 
 
-def publish(entry, uid):
+def publish(entry, uid, validate=False):
     t = entry["type"].upper()
     cap = entry.get("caption", "")
     ai = "true" if entry.get("ai") else "false"
@@ -121,6 +121,8 @@ def publish(entry, uid):
         wait_ready(cid, 120)
     else:
         raise IGError(f"tipo desconocido: {t}")
+    if validate:
+        return cid, "validado (contenedor listo, sin publicar)"
     mid = api("POST", f"{uid}/media_publish", creation_id=cid)["id"]
     link = api("GET", mid, fields="permalink").get("permalink", "")
     return mid, link
@@ -187,9 +189,29 @@ def write_status(cal, now, acc=""):
     STATUS.write_text("\n".join(L) + "\n", encoding="utf-8")
 
 
+VALIDATE = ROOT / "calendar" / "validar.txt"
+
+
+def validate(cal):
+    """Prueba sin publicar: crea el contenedor de las entradas listadas en calendar/validar.txt."""
+    ids = [l.strip() for l in VALIDATE.read_text().splitlines() if l.strip()]
+    uid, _ = connect()
+    out = []
+    for e in cal:
+        if e["id"] in ids:
+            try:
+                _, msg = publish(e, uid, validate=True)
+                out.append(f"- ✅ {e['id']}: {msg}")
+            except (IGError, requests.RequestException) as ex:
+                out.append(f"- ❌ {e['id']}: {ex}")
+    VALIDATE.unlink()
+    return "\n".join(out)
+
+
 def main():
     cal = json.loads(CAL.read_text(encoding="utf-8"))
     now = datetime.now(TZ)
+    vres = validate(cal) if VALIDATE.exists() and TOKEN and not DRY else ""
     due = []
     for e in cal:
         if ONLY:
@@ -236,7 +258,9 @@ def main():
     if not DRY:
         CAL.write_text(json.dumps(cal, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
         write_status(cal, now, account())
-        commit_push([str(CAL), str(STATUS)], "Publicador Instagram: estado actualizado")
+        if vres:
+            STATUS.write_text(STATUS.read_text(encoding="utf-8") + "\n## Prueba sin publicar\n\n" + vres + "\n", encoding="utf-8")
+        commit_push([str(CAL), str(STATUS), str(VALIDATE)], "Publicador Instagram: estado actualizado")
     if problems:
         Path(os.environ.get("RUNNER_TEMP", "/tmp"), "ig_problems.md").write_text(
             "\n".join(f"- **{e['id']}** ({e['when']}): {e.get('error', e['status'])}" for e in problems), encoding="utf-8")
