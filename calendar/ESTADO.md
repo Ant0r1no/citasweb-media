@@ -1,19 +1,18 @@
 # Estado del publicador (Instagram y Facebook)
 
-Última revisión: 27/11/2026 09:56 (hora de Madrid)
+Última revisión: 27/11/2026 10:31 (hora de Madrid)
 
 Cuenta: 🟢 Conectado como @citasweb.es (graph.facebook.com)  
-Facebook: 🟢 Facebook conectado: página CitasWeb · publicadas allí: 0
+Facebook: 🟢 Facebook conectado: página CitasWeb · publicadas allí: 1
 
 En espera de activar: **0**
 
-- Pendientes: **59** · Publicadas: **0** · Con problemas: **0**
+- Pendientes: **58** · Publicadas: **1** · Con problemas: **0**
 
 ## Próximas
 
 | Fecha | Tipo | Publicación |
 |---|---|---|
-| 2026-11-27 10:30 | CAROUSEL | 2026-11-27-test-agenda |
 | 2026-12-01 18:00 | REELS | 2026-12-01-mc443249151 |
 | 2026-12-02 10:00 | REELS | 2026-12-02-mc399799697 |
 | 2026-12-03 18:00 | REELS | 2026-12-03-mc399799803 |
@@ -28,8 +27,10 @@ En espera de activar: **0**
 | 2026-12-14 18:00 | REELS | 2026-12-14-mc443249989 |
 | 2026-12-16 10:00 | REELS | 2026-12-16-mc443250011 |
 | 2026-12-17 18:00 | REELS | 2026-12-17-mc443250038 |
+| 2026-12-18 10:00 | REELS | 2026-12-18-mc443250056 |
 
 ## Últimas publicadas
 
 | Fecha | Publicación | Enlace |
 |---|---|---|
+| 2026-11-27 10:31 | 2026-11-27-test-agenda | https://www.instagram.com/p/DgPXUmopWYe/ |
