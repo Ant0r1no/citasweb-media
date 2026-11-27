@@ -1,5 +1,24 @@
 [
  {
+  "id": "2026-11-27-test-agenda",
+  "when": "2026-11-27T10:30",
+  "type": "CAROUSEL",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2026-11-27-test-agenda/slide-1.jpg",
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2026-11-27-test-agenda/slide-2.jpg",
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2026-11-27-test-agenda/slide-3.jpg",
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2026-11-27-test-agenda/slide-4.jpg",
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2026-11-27-test-agenda/slide-5.jpg",
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2026-11-27-test-agenda/slide-6.jpg",
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2026-11-27-test-agenda/slide-7.jpg"
+  ],
+  "cover": null,
+  "caption": "Test de 30 segundos: ¿tu agenda es de 2010 o de 2026? 🕰️➡️📲\n\nDesliza, cuenta cuántas te pasan y dinos tu número en comentarios.\n\n💬 Comenta \"CITA\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/\n\n#autonomos #pequeñosnegocios #reservasonline #agendaonline #emprendedores",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
   "id": "2026-12-01-mc443249151",
   "when": "2026-12-01T18:00",
   "type": "REELS",

@@ -277,7 +277,7 @@ class FB:
 def fb_due(cal, now):
     out = []
     for e in cal:
-        if e["when"][:10] < FB_FROM or e.get("facebook") is False:
+        if e.get("facebook") is False or (e["when"][:10] < FB_FROM and e.get("facebook") is not True):
             continue
         if ONLY:
             if e["id"] == ONLY:

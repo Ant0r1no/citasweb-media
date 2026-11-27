@@ -1,0 +1,12 @@
+{
+  "sector": "general",
+  "slides": [
+    {"type": "cover", "kicker": "TEST DE 30 SEGUNDOS", "title": "¿Tu agenda es de *2010* o de 2026?", "sub": "Cuenta cuántas te pasan. Sin trampas 👀"},
+    {"type": "chat", "time": "23:47", "msg": "Holaa, ¿tienes hueco mañana?", "title": "1. Te piden cita por WhatsApp *a deshoras*"},
+    {"type": "item", "n": 2, "title": "Apuntas las citas *en una libreta*", "body": "O peor: en la libreta, en el móvil y en la memoria. A la vez."},
+    {"type": "item", "n": 3, "title": "Mandas los recordatorios *a mano*", "body": "Uno por uno. Cuando te acuerdas."},
+    {"type": "item", "n": 4, "title": "Te encuentran en Google… *y tienen que llamar*", "body": "Si no contestas, reservan en el de al lado."},
+    {"type": "item", "n": "✓", "title": "0-1: vas bien. *2 o más: modo 2010*", "body": "Se arregla en 24-48 h con tu web y tu agenda online. Y lo pruebas 15 días gratis, sin tarjeta."},
+    {"type": "cta", "title": "¿Cuántas te *han tocado*?", "body": "Pon tu número en comentarios 👇", "word": "CITA"}
+  ]
+}
