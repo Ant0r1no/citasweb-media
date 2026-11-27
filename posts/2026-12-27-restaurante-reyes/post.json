@@ -1,0 +1,35 @@
+{
+ "sector": "restaurante",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "BARES Y RESTAURANTES",
+   "title": "Reyes, comidas de enero… *¿y la libreta?*",
+   "sub": ""
+  },
+  {
+   "type": "chat",
+   "time": "23:05",
+   "msg": "¿Os queda mesa para 8 el día 6?",
+   "title": "Un mensaje que llega *cuando ya has cerrado*"
+  },
+  {
+   "type": "item",
+   "n": 1,
+   "title": "Reservan *solos, 24 h*",
+   "body": "Indican cuántos son y si hay alergias."
+  },
+  {
+   "type": "item",
+   "n": 2,
+   "title": "Lo ves todo *en el móvil*",
+   "body": "Sin libreta, sin tachones, sin mesas dobles."
+  },
+  {
+   "type": "cta",
+   "title": "¿Llenas la sala *sin coger el teléfono*?",
+   "body": "Reservas de mesa sin comisión por comensal",
+   "word": "MESA"
+  }
+ ]
+}

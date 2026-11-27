@@ -1,0 +1,35 @@
+{
+ "sector": "vet",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "VETERINARIOS",
+   "title": "Vacunas, revisiones, peluquería… *todo por teléfono*",
+   "sub": ""
+  },
+  {
+   "type": "chat",
+   "time": "21:30",
+   "msg": "Hola, ¿cuándo le toca la vacuna a Toby?",
+   "title": "El mensaje de *cada noche*"
+  },
+  {
+   "type": "item",
+   "n": 1,
+   "title": "Reservan *con el nombre de su mascota*",
+   "body": "Tipo de consulta, día y hora."
+  },
+  {
+   "type": "item",
+   "n": 2,
+   "title": "Recordatorio *antes de la cita*",
+   "body": "Para el dueño, que es quien se olvida."
+  },
+  {
+   "type": "cta",
+   "title": "¿Tu clínica reserva *online*?",
+   "body": "Te la dejamos lista en 24-48 h",
+   "word": "VET"
+  }
+ ]
+}

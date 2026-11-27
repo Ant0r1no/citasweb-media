@@ -1,0 +1,35 @@
+{
+ "sector": "general",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "FELIZ NAVIDAD",
+   "title": "3 cosas que hace tu agenda *mientras tú celebras*",
+   "sub": ""
+  },
+  {
+   "type": "item",
+   "n": 1,
+   "title": "Recoge *reservas*",
+   "body": "Tus clientes eligen servicio, día y hora. Sin llamarte."
+  },
+  {
+   "type": "item",
+   "n": 2,
+   "title": "Manda *recordatorios*",
+   "body": "Cada cliente recibe su aviso antes de la cita."
+  },
+  {
+   "type": "item",
+   "n": 3,
+   "title": "Libera *cancelaciones*",
+   "body": "Si alguien cancela, el hueco vuelve a estar disponible para otro."
+  },
+  {
+   "type": "cta",
+   "title": "Hoy toca *descansar*",
+   "body": "Feliz Navidad de parte de CitasWeb 🎁",
+   "word": "CITA"
+  }
+ ]
+}

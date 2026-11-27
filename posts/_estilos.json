@@ -1,5 +1,170 @@
 {
- "2026-11-27-test-agenda": {"transicion": "slide", "texto": "up", "fondo": "grid", "barra": "seg", "musica": "pop", "semilla": 4},
- "2027-01-06-blog-peluqueria": {"transicion": "slide", "texto": "up", "fondo": "grid", "barra": "seg", "musica": "pop", "semilla": 2},
- "2027-02-05-plantones": {"transicion": "slide", "texto": "up", "fondo": "grid", "barra": "seg", "musica": "house", "semilla": 7}
+ "2026-11-27-test-agenda": {
+  "transicion": "slide",
+  "texto": "up",
+  "fondo": "grid",
+  "barra": "seg",
+  "musica": "pop",
+  "semilla": 4
+ },
+ "2027-01-06-blog-peluqueria": {
+  "transicion": "slide",
+  "texto": "up",
+  "fondo": "grid",
+  "barra": "seg",
+  "musica": "pop",
+  "semilla": 2
+ },
+ "2027-02-05-plantones": {
+  "transicion": "slide",
+  "texto": "up",
+  "fondo": "grid",
+  "barra": "seg",
+  "musica": "house",
+  "semilla": 7
+ },
+ "2026-12-24-navidad-cierra-sin-perder": {
+  "transicion": "flip",
+  "texto": "scale",
+  "fondo": "stripes",
+  "barra": "seg",
+  "musica": "lofi",
+  "semilla": 32
+ },
+ "2026-12-25-navidad-mientras-celebras": {
+  "transicion": "wipe",
+  "texto": "left",
+  "fondo": "rings",
+  "barra": "dots",
+  "musica": "disco",
+  "semilla": 39
+ },
+ "2026-12-26-estetica-cuesta-enero": {
+  "transicion": "slide",
+  "texto": "up",
+  "fondo": "dots",
+  "barra": "line",
+  "musica": "chill",
+  "semilla": 46
+ },
+ "2026-12-27-restaurante-reyes": {
+  "transicion": "zoom",
+  "texto": "blur",
+  "fondo": "plain",
+  "barra": "seg",
+  "musica": "pop",
+  "semilla": 53
+ },
+ "2026-12-28-taller-viajes-reyes": {
+  "transicion": "rise",
+  "texto": "scale",
+  "fondo": "grid",
+  "barra": "dots",
+  "musica": "house",
+  "semilla": 60
+ },
+ "2026-12-30-fisio-propositos": {
+  "transicion": "flip",
+  "texto": "left",
+  "fondo": "stripes",
+  "barra": "line",
+  "musica": "funk",
+  "semilla": 67
+ },
+ "2026-12-31-checklist-2027": {
+  "transicion": "wipe",
+  "texto": "up",
+  "fondo": "rings",
+  "barra": "seg",
+  "musica": "lofi",
+  "semilla": 74
+ },
+ "2027-01-01-proposito-2027": {
+  "transicion": "slide",
+  "texto": "blur",
+  "fondo": "dots",
+  "barra": "dots",
+  "musica": "disco",
+  "semilla": 81
+ },
+ "2027-01-02-barberia-cuesta-enero": {
+  "transicion": "zoom",
+  "texto": "scale",
+  "fondo": "plain",
+  "barra": "line",
+  "musica": "chill",
+  "semilla": 88
+ },
+ "2027-01-03-dental-revisiones-enero": {
+  "transicion": "rise",
+  "texto": "left",
+  "fondo": "grid",
+  "barra": "seg",
+  "musica": "pop",
+  "semilla": 95
+ },
+ "2027-01-09-vet-vacunas": {
+  "transicion": "flip",
+  "texto": "up",
+  "fondo": "stripes",
+  "barra": "dots",
+  "musica": "house",
+  "semilla": 102
+ },
+ "2027-01-10-limpieza-post-fiestas": {
+  "transicion": "wipe",
+  "texto": "blur",
+  "fondo": "rings",
+  "barra": "line",
+  "musica": "funk",
+  "semilla": 109
+ },
+ "2027-01-16-fitness-enero": {
+  "transicion": "slide",
+  "texto": "scale",
+  "fondo": "dots",
+  "barra": "seg",
+  "musica": "lofi",
+  "semilla": 116
+ },
+ "2027-01-17-peluqueria-color-enero": {
+  "transicion": "zoom",
+  "texto": "left",
+  "fondo": "plain",
+  "barra": "dots",
+  "musica": "disco",
+  "semilla": 123
+ },
+ "2027-01-23-estetica-unas": {
+  "transicion": "rise",
+  "texto": "up",
+  "fondo": "grid",
+  "barra": "line",
+  "musica": "chill",
+  "semilla": 130
+ },
+ "2027-01-24-restaurante-san-valentin": {
+  "transicion": "flip",
+  "texto": "blur",
+  "fondo": "stripes",
+  "barra": "seg",
+  "musica": "pop",
+  "semilla": 137
+ },
+ "2027-01-30-taller-itv": {
+  "transicion": "wipe",
+  "texto": "scale",
+  "fondo": "rings",
+  "barra": "dots",
+  "musica": "house",
+  "semilla": 144
+ },
+ "2027-01-31-senales-reservas-online": {
+  "transicion": "slide",
+  "texto": "left",
+  "fondo": "dots",
+  "barra": "line",
+  "musica": "funk",
+  "semilla": 151
+ }
 }

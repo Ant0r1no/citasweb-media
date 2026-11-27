@@ -1,0 +1,35 @@
+{
+ "sector": "taller",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "TALLERES",
+   "title": "Antes de viajar en Reyes, *todos quieren revisión*",
+   "sub": ""
+  },
+  {
+   "type": "item",
+   "n": 1,
+   "title": "Que reserven *sin llamarte*",
+   "body": "Revisión, aceite, neumáticos: eligen hora y listo."
+  },
+  {
+   "type": "item",
+   "n": 2,
+   "title": "Cada servicio *con su precio*",
+   "body": "Llegan sabiendo lo que van a pagar."
+  },
+  {
+   "type": "item",
+   "n": 3,
+   "title": "Tú, *debajo del coche*",
+   "body": "No soltando la llave para coger el teléfono."
+  },
+  {
+   "type": "cta",
+   "title": "¿Tu taller acepta *citas online*?",
+   "body": "Te lo dejamos listo en 24-48 h",
+   "word": "TALLER"
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "sector": "restaurante",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "RESTAURANTES",
+   "title": "San Valentín *se reserva en enero*",
+   "sub": ""
+  },
+  {
+   "type": "item",
+   "n": 1,
+   "title": "Mesas para 2, *a la vista*",
+   "body": "Quien lo planea con tiempo, reserva ya."
+  },
+  {
+   "type": "item",
+   "n": 2,
+   "title": "Alergias y peticiones, *anotadas*",
+   "body": "Antes de que lleguen."
+  },
+  {
+   "type": "item",
+   "n": 3,
+   "title": "Menos *plantones*",
+   "body": "Recordatorio automático antes de la cena."
+  },
+  {
+   "type": "cta",
+   "title": "¿Abres ya las reservas *del 14*?",
+   "body": "Sin comisión por comensal",
+   "word": "MESA"
+  }
+ ]
+}

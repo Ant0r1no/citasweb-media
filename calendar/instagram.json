@@ -546,6 +546,71 @@
   "status": "pending"
  },
  {
+  "id": "2026-12-24-navidad-cierra-sin-perder",
+  "when": "2026-12-24T10:00",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2026-12-24-navidad-cierra-sin-perder/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2026-12-24-navidad-cierra-sin-perder/cover.jpg",
+  "caption": "Cierras por Navidad… tu agenda no 🎄\n\nMientras celebras, tus clientes pueden reservar ya sus citas de enero. Tú vuelves con la agenda llena y sin mensajes pendientes.\n\n💬 Comenta \"CITA\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/\n\n#autonomos #pequeñosnegocios #reservasonline #agendaonline #emprendedores",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
+  "id": "2026-12-25-navidad-mientras-celebras",
+  "when": "2026-12-25T10:00",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2026-12-25-navidad-mientras-celebras/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2026-12-25-navidad-mientras-celebras/cover.jpg",
+  "caption": "Feliz Navidad 🎁\n\nHoy tú descansas. Tu agenda online sigue trabajando: recoge reservas, manda recordatorios y libera cancelaciones.\n\n💬 Comenta \"CITA\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/\n\n#autonomos #pequeñosnegocios #reservasonline #agendaonline #emprendedores",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
+  "id": "2026-12-26-estetica-cuesta-enero",
+  "when": "2026-12-26T10:00",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2026-12-26-estetica-cuesta-enero/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2026-12-26-estetica-cuesta-enero/cover.jpg",
+  "caption": "La cuesta de enero también se llena 💅\n\nHuecos a la vista, precios claros y recordatorio automático: así tus clientas reservan aunque sea un mes flojo.\n\n💬 Comenta \"BEAUTY\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/\n\n#estetica #uñas #esteticista #centrodeestetica #reservasonline",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
+  "id": "2026-12-27-restaurante-reyes",
+  "when": "2026-12-27T10:00",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2026-12-27-restaurante-reyes/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2026-12-27-restaurante-reyes/cover.jpg",
+  "caption": "Reyes y comidas de enero: ¿otra vez con la libreta? 🍽️\n\nTus clientes reservan mesa a cualquier hora, dicen cuántos son y si hay alergias, y tú lo ves todo en el móvil.\n\n💬 Comenta \"MESA\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/\n\n#restaurantes #hosteleria #bares #reservasonline #restaurante",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
+  "id": "2026-12-28-taller-viajes-reyes",
+  "when": "2026-12-28T10:00",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2026-12-28-taller-viajes-reyes/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2026-12-28-taller-viajes-reyes/cover.jpg",
+  "caption": "Antes de viajar en Reyes todos quieren revisión 🔧\n\nQue tus clientes elijan servicio y hora solos, con el precio a la vista, mientras tú sigues trabajando.\n\n💬 Comenta \"TALLER\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/\n\n#tallermecanico #mecanico #automocion #itv #citaprevia",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
   "id": "2026-12-29-mc443250991",
   "when": "2026-12-29T18:00",
   "type": "REELS",
@@ -557,6 +622,71 @@
   "ai": true,
   "metricool_id": 443250991,
   "status": "pending"
+ },
+ {
+  "id": "2026-12-30-fisio-propositos",
+  "when": "2026-12-30T10:00",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2026-12-30-fisio-propositos/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2026-12-30-fisio-propositos/cover.jpg",
+  "caption": "«En enero me pongo con la espalda» 🩺\n\nQue ese propósito acabe en una cita: reserva al momento, recordatorio antes de cada sesión y tratamientos claros.\n\n💬 Comenta \"FISIO\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/\n\n#fisioterapia #fisioterapeuta #fisio #osteopatia #agendaonline",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
+  "id": "2026-12-31-checklist-2027",
+  "when": "2026-12-31T10:00",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2026-12-31-checklist-2027/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2026-12-31-checklist-2027/cover.jpg",
+  "caption": "Checklist para empezar 2027 con la agenda llena 🥂\n\nGoogle al día, precios a la vista, enlace para reservar y recordatorios automáticos. ¿Cuántas tienes ya?\n\n💬 Comenta \"CITA\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/\n\n#autonomos #pequeñosnegocios #reservasonline #agendaonline #emprendedores",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
+  "id": "2027-01-01-proposito-2027",
+  "when": "2027-01-01T10:00",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-01-proposito-2027/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-01-proposito-2027/cover.jpg",
+  "caption": "Propósito de año nuevo: soltar el teléfono 📵\n\nQue tus clientes reserven solos y reciban su recordatorio. Tú, a trabajar y a desconectar cuando cierras.\n\n💬 Comenta \"CITA\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/\n\n#autonomos #pequeñosnegocios #reservasonline #agendaonline #emprendedores",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
+  "id": "2027-01-02-barberia-cuesta-enero",
+  "when": "2027-01-02T10:00",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-02-barberia-cuesta-enero/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-02-barberia-cuesta-enero/cover.jpg",
+  "caption": "La cuesta de enero se nota en la silla 💈\n\nHuecos a la vista, cancelaciones que se rellenan solas y clientes que reservan su próximo corte antes de irse.\n\n💬 Comenta \"BARBER\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/\n\n#barberia #barbero #barbershop #peluqueria #reservasonline",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
+  "id": "2027-01-03-dental-revisiones-enero",
+  "when": "2027-01-03T10:00",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-03-dental-revisiones-enero/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-03-dental-revisiones-enero/cover.jpg",
+  "caption": "Enero, el mes de «tengo que ir al dentista» 🦷\n\nQue tus pacientes pidan cita cuando lo deciden, reciban su recordatorio y tu recepción respire.\n\n💬 Comenta \"DENTAL\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/\n\n#clinicadental #dentista #odontologia #citaprevia #salud",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
  },
  {
   "id": "2027-01-04-pelu-mujer",
@@ -619,6 +749,32 @@
   "status": "pending"
  },
  {
+  "id": "2027-01-09-vet-vacunas",
+  "when": "2027-01-09T10:00",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-09-vet-vacunas/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-09-vet-vacunas/cover.jpg",
+  "caption": "Vacunas, revisiones, peluquería canina… ¿todo por teléfono? 🐾\n\nQue los dueños reserven con el nombre de su mascota y reciban su recordatorio.\n\n💬 Comenta \"VET\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/\n\n#veterinario #clinicaveterinaria #mascotas #perros #citaprevia",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
+  "id": "2027-01-10-limpieza-post-fiestas",
+  "when": "2027-01-10T10:00",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-10-limpieza-post-fiestas/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-10-limpieza-post-fiestas/cover.jpg",
+  "caption": "Después de las fiestas, todos quieren limpieza a fondo 🧽\n\nQue te contraten en un minuto, con servicio, día y dirección, y cada trabajador con su propia agenda.\n\n💬 Comenta \"LIMPIEZA\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/\n\n#limpieza #empresadelimpieza #limpiezaprofesional #limpiezaadomicilio #autonomos",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
   "id": "2027-01-11-fisio-ausencias",
   "when": "2027-01-11T18:00",
   "type": "REELS",
@@ -677,6 +833,32 @@
   "caption": "Cada \"¿tienes hueco mañana?\" que contestas tarde es una clienta que reserva en otro sitio 💅\n\nCon tu agenda online tus clientas ven tus huecos libres y reservan al momento, de día o de noche. Tú lo ves en el móvil y ellas reciben su recordatorio.\n\n💬 Comenta \"BEAUTY\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/\n\n#estetica #centrodeestetica #uñas #esteticista #reservasonline",
   "ai": true,
   "status": "pending"
+ },
+ {
+  "id": "2027-01-16-fitness-enero",
+  "when": "2027-01-16T10:00",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-16-fitness-enero/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-16-fitness-enero/cover.jpg",
+  "caption": "Enero llena el gimnasio. Febrero lo vacía 💪\n\nReservar en 30 segundos y un recordatorio antes de cada sesión ayudan a que tus clientes sigan viniendo.\n\n💬 Comenta \"ENTRENO\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/\n\n#entrenadorpersonal #fitness #gimnasio #entrenamiento #reservasonline",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
+  "id": "2027-01-17-peluqueria-color-enero",
+  "when": "2027-01-17T10:00",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-17-peluqueria-color-enero/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-17-peluqueria-color-enero/cover.jpg",
+  "caption": "«Año nuevo, color nuevo» 💇‍♀️\n\nQue tus clientas lo reserven solas: cada servicio con su duración, eligen estilista y ven el precio antes de venir.\n\n💬 Comenta \"PELU\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/\n\n#peluqueria #peluqueras #salondebelleza #estilista #reservasonline",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
  },
  {
   "id": "2027-01-18-entrenador",
@@ -739,6 +921,32 @@
   "status": "pending"
  },
  {
+  "id": "2027-01-23-estetica-unas",
+  "when": "2027-01-23T10:00",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-23-estetica-unas/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-23-estetica-unas/cover.jpg",
+  "caption": "Tipos de clientas: la que escribe a las 22:58 💅\n\nQue vea tus huecos y reserve sola su relleno, mientras tú sigues con la lima.\n\n💬 Comenta \"BEAUTY\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/\n\n#estetica #uñas #esteticista #centrodeestetica #reservasonline",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
+  "id": "2027-01-24-restaurante-san-valentin",
+  "when": "2027-01-24T10:00",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-24-restaurante-san-valentin/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-24-restaurante-san-valentin/cover.jpg",
+  "caption": "San Valentín se reserva en enero ❤️\n\nMesas a la vista, alergias anotadas y recordatorio automático para que nadie falte a la cena.\n\n💬 Comenta \"MESA\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/\n\n#restaurantes #hosteleria #bares #reservasonline #restaurante",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
   "id": "2027-01-25-taller-al-lado",
   "when": "2027-01-25T18:00",
   "type": "REELS",
@@ -797,6 +1005,32 @@
   "caption": "\"¿Me das cita para vacunar a Luna?\" Que te lo pidan sin llamarte 🐶🐾\n\nLos dueños reservan consulta, vacunas o peluquería canina online, dejan el nombre de su mascota y reciben su recordatorio. Menos llamadas en recepción, más tiempo para los peludos.\n\n💬 Comenta \"VET\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/\n\n#veterinario #clinicaveterinaria #peluqueriacanina #mascotas #perros",
   "ai": true,
   "status": "pending"
+ },
+ {
+  "id": "2027-01-30-taller-itv",
+  "when": "2027-01-30T10:00",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-30-taller-itv/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-30-taller-itv/cover.jpg",
+  "caption": "«¿Me pasas la pre-ITV?» 🚗\n\nQue la reserven solos, con matrícula y vehículo apuntados y el precio a la vista.\n\n💬 Comenta \"TALLER\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/\n\n#tallermecanico #mecanico #automocion #itv #citaprevia",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
+ },
+ {
+  "id": "2027-01-31-senales-reservas-online",
+  "when": "2027-01-31T10:00",
+  "type": "REELS",
+  "media": [
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-31-senales-reservas-online/video.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-31-senales-reservas-online/cover.jpg",
+  "caption": "5 señales de que necesitas reservas online 📲\n\nMensajes de noche, plantones, preguntas de precio, llamadas perdidas… y la agenda en una libreta. ¿Cuántas te tocan?\n\n💬 Comenta \"CITA\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/\n\n#autonomos #pequeñosnegocios #reservasonline #agendaonline #emprendedores",
+  "ai": false,
+  "status": "pending",
+  "facebook": true
  },
  {
   "id": "2027-02-01-psicologo",

@@ -1,0 +1,35 @@
+{
+ "sector": "general",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "NOCHEBUENA",
+   "title": "Cierras por Navidad… *tu agenda no*",
+   "sub": "Que reserven para enero mientras tú celebras."
+  },
+  {
+   "type": "chat",
+   "time": "22:47",
+   "msg": "¿Tienes hueco el 2 de enero?",
+   "title": "Esto te va a llegar *estos días*"
+  },
+  {
+   "type": "item",
+   "n": 1,
+   "title": "Tus huecos de enero, *a la vista*",
+   "body": "Quien quiere cita la coge sola, aunque estés de vacaciones."
+  },
+  {
+   "type": "item",
+   "n": 2,
+   "title": "Tú *desconectas de verdad*",
+   "body": "Sin contestar mensajes en la cena de Nochebuena."
+  },
+  {
+   "type": "cta",
+   "title": "¿Vuelves en enero con la agenda *ya llena*?",
+   "body": "Feliz Nochebuena 🎄",
+   "word": "CITA"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "sector": "general",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "TEST RÁPIDO",
+   "title": "5 señales de que necesitas *reservas online*",
+   "sub": ""
+  },
+  {
+   "type": "item",
+   "n": 1,
+   "title": "Contestas *mensajes por la noche*",
+   "body": ""
+  },
+  {
+   "type": "item",
+   "n": 2,
+   "title": "Tienes *plantones* cada semana",
+   "body": ""
+  },
+  {
+   "type": "item",
+   "n": 3,
+   "title": "Te preguntan *el precio* a diario",
+   "body": ""
+  },
+  {
+   "type": "item",
+   "n": 4,
+   "title": "Pierdes llamadas *mientras trabajas*",
+   "body": "Y la 5: tu agenda vive en una libreta."
+  },
+  {
+   "type": "cta",
+   "title": "¿Cuántas *te han tocado*?",
+   "body": "Dínoslo en comentarios 👇",
+   "word": "CITA"
+  }
+ ]
+}

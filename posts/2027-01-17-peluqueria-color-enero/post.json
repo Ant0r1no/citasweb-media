@@ -1,0 +1,35 @@
+{
+ "sector": "peluqueria",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "PELUQUERÍAS",
+   "title": "«Año nuevo, *color nuevo*»",
+   "sub": "Que lo reserven sin escribirte."
+  },
+  {
+   "type": "item",
+   "n": 1,
+   "title": "Cada servicio, *su duración real*",
+   "body": "Un balayage no ocupa lo mismo que un corte."
+  },
+  {
+   "type": "item",
+   "n": 2,
+   "title": "Eligen *estilista*",
+   "body": "Y ven solo los huecos de esa persona."
+  },
+  {
+   "type": "item",
+   "n": 3,
+   "title": "Precio *antes de venir*",
+   "body": "Sin sorpresas, sin preguntas."
+  },
+  {
+   "type": "cta",
+   "title": "¿Llenas enero *sin coger el teléfono*?",
+   "body": "Pruébala 15 días gratis, sin tarjeta",
+   "word": "PELU"
+  }
+ ]
+}

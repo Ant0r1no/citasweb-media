@@ -1,0 +1,35 @@
+{
+ "sector": "fitness",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "ENTRENADORES",
+   "title": "Enero llena el gimnasio. *Febrero lo vacía*",
+   "sub": "Que tus clientes no abandonen."
+  },
+  {
+   "type": "item",
+   "n": 1,
+   "title": "Reservar sesión, *en 30 segundos*",
+   "body": "Si cuesta reservar, se saltan el entreno."
+  },
+  {
+   "type": "item",
+   "n": 2,
+   "title": "Recordatorio *antes de cada clase*",
+   "body": "Constancia sin que tengas que perseguir."
+  },
+  {
+   "type": "item",
+   "n": 3,
+   "title": "Bonos *claros*",
+   "body": "Cada cliente sabe qué le queda."
+  },
+  {
+   "type": "cta",
+   "title": "¿Que *sigan viniendo* en febrero?",
+   "body": "Te la dejamos lista en 24-48 h",
+   "word": "ENTRENO"
+  }
+ ]
+}

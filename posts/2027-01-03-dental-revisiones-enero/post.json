@@ -1,0 +1,35 @@
+{
+ "sector": "dental",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "CLÍNICAS DENTALES",
+   "title": "Enero, el mes de *«tengo que ir al dentista»*",
+   "sub": ""
+  },
+  {
+   "type": "item",
+   "n": 1,
+   "title": "Que pidan cita *cuando lo deciden*",
+   "body": "Aunque sea domingo por la noche."
+  },
+  {
+   "type": "item",
+   "n": 2,
+   "title": "Recordatorio *automático*",
+   "body": "Menos sillones vacíos por olvidos."
+  },
+  {
+   "type": "item",
+   "n": 3,
+   "title": "Recepción *más tranquila*",
+   "body": "Menos llamadas para pedir, cambiar o confirmar."
+  },
+  {
+   "type": "cta",
+   "title": "¿Tu clínica tiene *cita online*?",
+   "body": "Pruébala 15 días gratis, sin tarjeta",
+   "word": "DENTAL"
+  }
+ ]
+}

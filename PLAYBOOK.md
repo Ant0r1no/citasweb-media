@@ -27,11 +27,12 @@ Este documento es el que sigue la tarea programada cada lunes. Si cambias algo d
 3. **Revisar el calendario** de las próximas 6 semanas: `calendar/instagram.json` (Instagram y Facebook) y `getScheduledPosts` (TikTok). Apuntar los días sin publicación en Instagram/Facebook y cuántas lleva TikTok en cada mes natural.
 4. **Blog → redes:** seguir la sección "Blog → redes" de más abajo, que va antes de los carruseles genéricos.
 5. **Rellenar los huecos** (prioridad: los más cercanos):
-   - **Instagram + Facebook:** dejar cubiertos **todos los días de las próximas 3 semanas** (hasta 21 vídeos por ejecución si hace falta), a las mejores horas de arriba.
+   - **Horizonte fijo: los 2 meses naturales siguientes al actual, completos** (más lo que quede del mes en curso). El dueño no planifica nada: solo propone ideas.
+   - **Instagram + Facebook:** todos esos días cubiertos, sin límite de vídeos por ejecución, a las mejores horas de arriba.
    - **TikTok:** con esos mismos vídeos, completar cada mes hasta **20, nunca más**, en los mejores huecos (lunes a viernes, 10:00/18:00, primero miércoles y jueves).
    - Alternar sectores y formatos; si un día ya tiene una serie de voz, no hace falta otro.
    - Revisar también `calendar/ESTADO.md` y avisar en el informe si hay publicaciones con problemas.
-   - Huecos apuntados el 27/11/2026: Instagram/Facebook 7 en diciembre, 11 en enero, 18 en febrero, 23 en marzo y 30 en abril; TikTok libre: 1 en enero, 10 en febrero, 11 en marzo, 0 en abril.
+   - (Histórico) Huecos apuntados el 27/11/2026, antes de rellenar diciembre y enero: Instagram/Facebook 7 en diciembre, 11 en enero, 18 en febrero, 23 en marzo y 30 en abril; TikTok libre: 1 en enero, 10 en febrero, 11 en marzo, 0 en abril.
 6. **Crear cada carrusel:**
    - Crear `posts/AAAA-MM-DD-tema/post.json`; el formato está en `generator/render.py`. Son 5 o 6 diapositivas: portada con gancho, desarrollo y CTA con la palabra clave.
    - **Se publica como mini vídeo, no como fotos** (decisión del dueño, 27/11/2026): ejecutar `python3 generator/slideshow.py posts/.../post.json` → crea `video.mp4` (vertical, animado, con música y efectos) y `cover.jpg`. Revisar unos fotogramas y hacer commit y push a `main`.
@@ -40,6 +41,15 @@ Este documento es el que sigue la tarea programada cada lunes. Si cambias algo d
    - Instagram + Facebook: añadir la entrada a `calendar/instagram.json` con `type: "REELS"`, `media: [.../video.mp4]` y `cover: .../cover.jpg`.
    - TikTok: `createScheduledPost` solo con tiktok, el mismo `video.mp4` como medio, `videoThumbnailUrl` con la portada y `commercialContentOwnBrand: true`.
 7. **Informe final:** recordatorio del artículo que toca publicar esa semana, métricas, qué ha funcionado, qué se ha programado (fecha, tema y enlace de Metricool) y el recuento por mes. Enviarlo con PushNotification si está disponible y dejarlo también como resultado de la ejecución.
+
+## Ideas del dueño
+- Cuando el dueño proponga una idea o una serie, se convierte en contenido y se encaja en el calendario sin que él tenga que planificar fechas. Si necesita su voz, se le pasan los guiones en un documento y se monta al recibir el audio.
+
+## Si el dueño no propone nada (lo normal)
+- El contenido se prepara solo, poco a poco, **siempre distinto**: no repetir tema ni enfoque de las últimas 8 semanas (mirar `posts/` y `calendar/instagram.json`).
+- **Cubrir todas las profesiones** a las que vendemos (peluquería, barbería, estética y uñas, fisio, dental, psicología, nutrición, entrenadores, masajes, tatuaje, veterinaria, talleres, limpieza, autoescuelas, restaurantes y bares, servicios a domicilio…) y **todo lo que ofrecemos** (web propia, reservas 24 h, recordatorios, varios profesionales, ficha de cliente, precios y duraciones, cancelaciones, dominio propio, configuración en 24-48 h, prueba de 15 días).
+- **Tendencias de la competencia, cada lunes:** buscar en la web qué publican y qué funciona en Booksy, Fresha, Treatwell, Reservio, Bookitit, Agendapro, Timify y similares, y los formatos en tendencia en Reels/TikTok de negocios locales. Tomar la idea, nunca copiar el texto ni la imagen, y hacerla mejor (más útil, más cercana, con nuestro estilo). Anotar en el informe qué tendencia se ha usado.
+- Alternar formatos: listas, «tipos de clientes», cuentas de dinero hipotéticas, antes/después, trucos gratis, mitos, retos y series. Si una serie necesita voz, preparar guiones y pedir al dueño los audios.
 
 ## Estilo de los textos (el nuevo)
 - Gancho corto en la primera línea, 3 o 4 líneas en total.

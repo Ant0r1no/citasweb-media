@@ -1,0 +1,35 @@
+{
+ "sector": "limpieza",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "LIMPIEZA",
+   "title": "Después de las fiestas, *todos quieren limpieza a fondo*",
+   "sub": ""
+  },
+  {
+   "type": "item",
+   "n": 1,
+   "title": "Que contraten *en un minuto*",
+   "body": "Servicio, día, hora y dirección."
+  },
+  {
+   "type": "item",
+   "n": 2,
+   "title": "Cada trabajador, *su agenda*",
+   "body": "Sin cruces ni dobles reservas."
+  },
+  {
+   "type": "item",
+   "n": 3,
+   "title": "Menos *presupuestos por WhatsApp*",
+   "body": "Los servicios y precios ya están en tu web."
+  },
+  {
+   "type": "cta",
+   "title": "¿Cierras trabajos *sin perseguir mensajes*?",
+   "body": "Pruébala 15 días gratis, sin tarjeta",
+   "word": "LIMPIEZA"
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "sector": "fisio",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "FISIOTERAPIA",
+   "title": "«En enero me pongo con la espalda» 🩺",
+   "sub": "Que ese propósito acabe en una cita."
+  },
+  {
+   "type": "item",
+   "n": 1,
+   "title": "Reserva *en el momento*",
+   "body": "Cuando decide, no cuando consigue hablar contigo."
+  },
+  {
+   "type": "item",
+   "n": 2,
+   "title": "Recordatorio *antes de cada sesión*",
+   "body": "Menos ausencias en los tratamientos largos."
+  },
+  {
+   "type": "item",
+   "n": 3,
+   "title": "Bonos y sesiones, *claros*",
+   "body": "Cada tratamiento con su duración y su precio."
+  },
+  {
+   "type": "cta",
+   "title": "¿Empiezas el año *con la agenda llena*?",
+   "body": "Pruébala 15 días gratis, sin tarjeta",
+   "word": "FISIO"
+  }
+ ]
+}

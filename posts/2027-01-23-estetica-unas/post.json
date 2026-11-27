@@ -1,0 +1,35 @@
+{
+ "sector": "estetica",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "UÑAS Y ESTÉTICA",
+   "title": "Tipos de clientas: *la que escribe con las uñas puestas* 💅",
+   "sub": ""
+  },
+  {
+   "type": "chat",
+   "time": "22:58",
+   "msg": "Holaa, ¿relleno mañana por la tarde?",
+   "title": "Siempre a la misma hora"
+  },
+  {
+   "type": "item",
+   "n": 1,
+   "title": "Ve tus huecos *y reserva sola*",
+   "body": "Relleno, manicura o diseño, con su duración."
+  },
+  {
+   "type": "item",
+   "n": 2,
+   "title": "Tú, *con la lima*",
+   "body": "No con el móvil en la otra mano."
+  },
+  {
+   "type": "cta",
+   "title": "¿Te suena *esta clienta*?",
+   "body": "Etiquétala 👇",
+   "word": "BEAUTY"
+  }
+ ]
+}

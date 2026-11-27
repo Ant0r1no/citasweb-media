@@ -1,0 +1,35 @@
+{
+ "sector": "estetica",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "ESTÉTICA",
+   "title": "La cuesta de enero *también se llena*",
+   "sub": "Si tus clientas pueden reservar a cualquier hora."
+  },
+  {
+   "type": "item",
+   "n": 1,
+   "title": "Enseña tus *huecos libres*",
+   "body": "Quien ve un hueco el martes por la mañana, lo coge."
+  },
+  {
+   "type": "item",
+   "n": 2,
+   "title": "Precios *a la vista*",
+   "body": "Manicura, facial, depilación: sin tener que preguntar."
+  },
+  {
+   "type": "item",
+   "n": 3,
+   "title": "Recordatorio *automático*",
+   "body": "Menos olvidos justo cuando cada cita cuenta."
+  },
+  {
+   "type": "cta",
+   "title": "¿Preparas enero *desde ya*?",
+   "body": "Te la dejamos lista en 24-48 h",
+   "word": "BEAUTY"
+  }
+ ]
+}

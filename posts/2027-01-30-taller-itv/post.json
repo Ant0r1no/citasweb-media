@@ -1,0 +1,35 @@
+{
+ "sector": "taller",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "TALLERES",
+   "title": "«¿Me pasas la *pre-ITV*?»",
+   "sub": "La pregunta que más te hacen."
+  },
+  {
+   "type": "item",
+   "n": 1,
+   "title": "Que la reserven *solos*",
+   "body": "Pre-ITV, aceite o frenos, con hora fija."
+  },
+  {
+   "type": "item",
+   "n": 2,
+   "title": "Matrícula y vehículo, *apuntados*",
+   "body": "Llegan con todo claro."
+  },
+  {
+   "type": "item",
+   "n": 3,
+   "title": "Precio *visible*",
+   "body": "Menos llamadas preguntando cuánto cuesta."
+  },
+  {
+   "type": "cta",
+   "title": "¿Tu taller *trabaja con cita*?",
+   "body": "Te lo dejamos listo en 24-48 h",
+   "word": "TALLER"
+  }
+ ]
+}

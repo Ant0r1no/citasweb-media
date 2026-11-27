@@ -1,0 +1,35 @@
+{
+ "sector": "general",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "2027",
+   "title": "Propósito de año nuevo: *soltar el teléfono*",
+   "sub": ""
+  },
+  {
+   "type": "stat",
+   "big": "23:47",
+   "title": "la hora del último «¿tienes hueco?»",
+   "body": "Si te suena, este propósito es para ti."
+  },
+  {
+   "type": "item",
+   "n": 1,
+   "title": "Que reserven *solos*",
+   "body": "Ven tus huecos libres y eligen."
+  },
+  {
+   "type": "item",
+   "n": 2,
+   "title": "Que *no se olviden*",
+   "body": "Recordatorio automático antes de cada cita."
+  },
+  {
+   "type": "cta",
+   "title": "¿Lo cumplimos *juntos*?",
+   "body": "Pruébala 15 días gratis, sin tarjeta",
+   "word": "CITA"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "sector": "general",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "ÚLTIMO DÍA DEL AÑO",
+   "title": "Checklist para empezar 2027 *con la agenda llena*",
+   "sub": ""
+  },
+  {
+   "type": "item",
+   "n": "✓",
+   "title": "Perfil de Google *al día*",
+   "body": "Fotos, horario real y servicios."
+  },
+  {
+   "type": "item",
+   "n": "✓",
+   "title": "Precios *a la vista*",
+   "body": "En Google y en tus redes."
+  },
+  {
+   "type": "item",
+   "n": "✓",
+   "title": "Enlace para *reservar solo*",
+   "body": "En la bio de Instagram y en WhatsApp."
+  },
+  {
+   "type": "item",
+   "n": "✓",
+   "title": "Recordatorios *automáticos*",
+   "body": "Para que nadie se olvide de su cita."
+  },
+  {
+   "type": "cta",
+   "title": "¿Cuántas tienes *marcadas*?",
+   "body": "Feliz año nuevo 🥂",
+   "word": "CITA"
+  }
+ ]
+}

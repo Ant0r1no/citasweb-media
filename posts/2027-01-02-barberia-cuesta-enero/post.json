@@ -1,0 +1,35 @@
+{
+ "sector": "barberia",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "BARBERÍAS",
+   "title": "La cuesta de enero *se nota en la silla*",
+   "sub": ""
+  },
+  {
+   "type": "item",
+   "n": 1,
+   "title": "Huecos libres, *a la vista*",
+   "body": "El que pasa por delante puede reservar desde el móvil."
+  },
+  {
+   "type": "item",
+   "n": 2,
+   "title": "Avisos de *cancelación*",
+   "body": "Un hueco cancelado vuelve a estar libre al momento."
+  },
+  {
+   "type": "item",
+   "n": 3,
+   "title": "Clientes que *repiten*",
+   "body": "Que reserven su próximo corte antes de irse."
+  },
+  {
+   "type": "cta",
+   "title": "¿Llenas enero *sin perseguir a nadie*?",
+   "body": "Te la dejamos lista en 24-48 h",
+   "word": "BARBER"
+  }
+ ]
+}
