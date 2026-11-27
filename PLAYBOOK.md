@@ -10,7 +10,12 @@ Este documento es el que sigue la tarea programada cada lunes. Si cambias algo d
   - **TikTok → Metricool**, solo con `providers: [{"network":"tiktok"}]`. Plan gratis: **máximo 20 publicaciones publicadas al mes** (cada red cuenta por separado; los borradores no cuentan; lo que pase de 20 no se publica).
   - **Instagram → publicador propio** (`calendar/instagram.json`, ver `calendar/README.md`). Sin límite mensual práctico. Cada publicación nueva se añade al calendario con el mismo texto y medios (vídeo mp4 por URL raw de GitHub; imágenes en JPEG o se convierten solas), `ai` igual que la etiqueta de IA, y se hace commit + push.
   - **Facebook (página CitasWeb, id 61597065477463) → el mismo publicador**: cada entrada de `calendar/instagram.json` desde el 01/12/2026 sale también en la página. Para excluir una, `"facebook": false`. Necesita el secreto de GitHub `FB_PAGE_TOKEN` (clave de la página); mientras no exista, Facebook se salta sin error. No tocar el ajuste "Publicador Instagram" de la app: si se le añaden páginas deja de ser compatible con la API de Instagram.
-- Mejores horas: **lunes 18:00, miércoles 10:00, jueves 18:00, viernes 10:00**.
+- **Ritmo (decisión del dueño, 27/11/2026):**
+  - **Instagram y Facebook: una publicación TODOS los días**, sin huecos (no tienen límite).
+  - **TikTok: hasta 20 al mes** (límite de Metricool), solo en los mejores días y horas.
+- **Mejores horas** (Metricool, noviembre 2026):
+  - Instagram (y Facebook, que va con él): **10:00 todos los días** (lo mejor, de miércoles a viernes). Si ese día ya hay algo a las 10:00, usar las **18:00** (fuerte de martes a jueves). Fin de semana: 10:00.
+  - TikTok: **de lunes a viernes, 10:00 o 18:00**; los mejores, **miércoles y jueves**. Evitar sábado y domingo salvo que no quede otra. 20 al mes ≈ 5 por semana.
 
 ## Pasos de cada ejecución
 1. **Clonar este repositorio** (`Ant0r1no/citasweb-media`) e instalar lo necesario si falta (`playwright`).
@@ -19,9 +24,14 @@ Este documento es el que sigue la tarea programada cada lunes. Si cambias algo d
    - TikTok, conector `posts`: TKPO01, TKPO05, TKPO07 (vistas), TKPO08 (likes), TKPO13 (vídeo completo), TKPO15 (tiempo medio).
    - Señalar la publicación que mejor ha funcionado y la que peor, y si el estilo nuevo (desde el 14 de diciembre de 2026) supera al antiguo.
    - **A partir del 15 de enero de 2027**, en la primera ejecución: comparar el estilo antiguo (de octubre al 13 de diciembre) con el nuevo.
-3. **Revisar el calendario** de las próximas 6 semanas con `getScheduledPosts`. Contar las publicaciones que no son borrador en cada mes natural.
+3. **Revisar el calendario** de las próximas 6 semanas: `calendar/instagram.json` (Instagram y Facebook) y `getScheduledPosts` (TikTok). Apuntar los días sin publicación en Instagram/Facebook y cuántas lleva TikTok en cada mes natural.
 4. **Blog → redes:** seguir la sección "Blog → redes" de más abajo, que va antes de los carruseles genéricos.
-5. **Rellenar los huecos.** Solo en meses con menos de 20 en TikTok (en Instagram no hay límite), y en las mejores horas que estén libres, se crean carruseles nuevos. Como mucho **4 por ejecución**. Nunca hay que pasar de 20 en TikTok en un mes. Revisar también `calendar/ESTADO.md` y avisar en el informe si hay publicaciones de Instagram con problemas.
+5. **Rellenar los huecos** (prioridad: los más cercanos):
+   - **Instagram + Facebook:** dejar cubiertos **todos los días de las próximas 3 semanas** (hasta 21 vídeos por ejecución si hace falta), a las mejores horas de arriba.
+   - **TikTok:** con esos mismos vídeos, completar cada mes hasta **20, nunca más**, en los mejores huecos (lunes a viernes, 10:00/18:00, primero miércoles y jueves).
+   - Alternar sectores y formatos; si un día ya tiene una serie de voz, no hace falta otro.
+   - Revisar también `calendar/ESTADO.md` y avisar en el informe si hay publicaciones con problemas.
+   - Huecos apuntados el 27/11/2026: Instagram/Facebook 7 en diciembre, 11 en enero, 18 en febrero, 23 en marzo y 30 en abril; TikTok libre: 1 en enero, 10 en febrero, 11 en marzo, 0 en abril.
 6. **Crear cada carrusel:**
    - Crear `posts/AAAA-MM-DD-tema/post.json`; el formato está en `generator/render.py`. Son 5 o 6 diapositivas: portada con gancho, desarrollo y CTA con la palabra clave.
    - **Se publica como mini vídeo, no como fotos** (decisión del dueño, 27/11/2026): ejecutar `python3 generator/slideshow.py posts/.../post.json` → crea `video.mp4` (vertical, animado, con música y efectos) y `cover.jpg`. Revisar unos fotogramas y hacer commit y push a `main`.
