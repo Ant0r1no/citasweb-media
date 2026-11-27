@@ -25,6 +25,7 @@ Este documento es el que sigue la tarea programada cada lunes. Si cambias algo d
 6. **Crear cada carrusel:**
    - Crear `posts/AAAA-MM-DD-tema/post.json`; el formato está en `generator/render.py`. Son 5 o 6 diapositivas: portada con gancho, desarrollo y CTA con la palabra clave.
    - **Se publica como mini vídeo, no como fotos** (decisión del dueño, 27/11/2026): ejecutar `python3 generator/slideshow.py posts/.../post.json` → crea `video.mp4` (vertical, animado, con música y efectos) y `cover.jpg`. Revisar unos fotogramas y hacer commit y push a `main`.
+   - Cada vídeo sale con transición, animación de texto, fondo, barra y música distintos del anterior (se elige solo y se apunta en `posts/_estilos.json`; no borrar ese archivo). No forzar el mismo estilo en dos seguidos.
    - En el texto no poner "Desliza": es un vídeo.
    - Instagram + Facebook: añadir la entrada a `calendar/instagram.json` con `type: "REELS"`, `media: [.../video.mp4]` y `cover: .../cover.jpg`.
    - TikTok: `createScheduledPost` solo con tiktok, el mismo `video.mp4` como medio, `videoThumbnailUrl` con la portada y `commercialContentOwnBrand: true`.
