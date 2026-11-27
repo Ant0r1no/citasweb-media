@@ -141,7 +141,9 @@ def commit_push(paths, msg):
     if not os.environ.get("GITHUB_ACTIONS"):
         return
     os.system('git config user.name "citasweb-bot" && git config user.email "bot@users.noreply.github.com"')
-    os.system("git add " + " ".join(f'"{p}"' for p in paths))
+    # "git add -A" sobre la carpeta: así también se guardan archivos borrados (validar.txt)
+    # sin que un archivo inexistente haga fallar todo el add (y se pierda el estado publicado).
+    os.system("git add -A " + " ".join(f'"{Path(p).parent}"' for p in paths))
     os.system(f'git commit -q -m "{msg}" || true')
     for _ in range(3):
         if os.system("git pull -q --rebase origin main && git push -q origin main") == 0:
