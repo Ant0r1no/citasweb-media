@@ -9,7 +9,6 @@ Este documento es el que sigue la tarea programada cada lunes. Si cambias algo d
 - **Reparto de redes (desde la puesta en marcha del publicador propio):**
   - **TikTok → Metricool**, solo con `providers: [{"network":"tiktok"}]`. Plan gratis: **máximo 20 publicaciones publicadas al mes** (cada red cuenta por separado; los borradores no cuentan; lo que pase de 20 no se publica).
   - **Instagram → publicador propio** (`calendar/instagram.json`, ver `calendar/README.md`). Sin límite mensual práctico. Cada publicación nueva se añade al calendario con el mismo texto y medios (vídeo mp4 por URL raw de GitHub; imágenes en JPEG o se convierten solas), `ai` igual que la etiqueta de IA, y se hace commit + push.
-  - Hasta que el publicador esté probado con la clave de Instagram, lo programado en Metricool sigue yendo a las dos redes.
 - Mejores horas: **lunes 18:00, miércoles 10:00, jueves 18:00, viernes 10:00**.
 
 ## Pasos de cada ejecución
