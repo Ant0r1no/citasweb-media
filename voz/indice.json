@@ -1,0 +1,562 @@
+[
+ {
+  "n": 1,
+  "archivo": "voz/01.mp3",
+  "tipo": "gancho",
+  "texto": "Si tienes un negocio con citas, esto te interesa.",
+  "segundos": 3.34
+ },
+ {
+  "n": 2,
+  "archivo": "voz/02.mp3",
+  "tipo": "gancho",
+  "texto": "Para un segundo, que esto te va a ahorrar horas.",
+  "segundos": 2.92
+ },
+ {
+  "n": 3,
+  "archivo": "voz/03.mp3",
+  "tipo": "gancho",
+  "texto": "¿Te ha pasado esto alguna vez?",
+  "segundos": 1.74
+ },
+ {
+  "n": 4,
+  "archivo": "voz/04.mp3",
+  "tipo": "gancho",
+  "texto": "Esto le pasa a casi todos los autónomos.",
+  "segundos": 2.78
+ },
+ {
+  "n": 5,
+  "archivo": "voz/05.mp3",
+  "tipo": "gancho",
+  "texto": "Te voy a contar un truco que casi nadie usa.",
+  "segundos": 2.75
+ },
+ {
+  "n": 6,
+  "archivo": "voz/06.mp3",
+  "tipo": "gancho",
+  "texto": "Haz la cuenta conmigo.",
+  "segundos": 1.4
+ },
+ {
+  "n": 7,
+  "archivo": "voz/07.mp3",
+  "tipo": "gancho",
+  "texto": "Este error te está costando clientes.",
+  "segundos": 2.39
+ },
+ {
+  "n": 8,
+  "archivo": "voz/08.mp3",
+  "tipo": "gancho",
+  "texto": "Mira lo que pasa cuando no coges el teléfono.",
+  "segundos": 2.54
+ },
+ {
+  "n": 9,
+  "archivo": "voz/09.mp3",
+  "tipo": "gancho",
+  "texto": "Son las once de la noche y sigues contestando mensajes.",
+  "segundos": 3.35
+ },
+ {
+  "n": 10,
+  "archivo": "voz/10.mp3",
+  "tipo": "gancho",
+  "texto": "Tres cosas que tu agenda debería hacer sola.",
+  "segundos": 2.67
+ },
+ {
+  "n": 11,
+  "archivo": "voz/11.mp3",
+  "tipo": "gancho",
+  "texto": "Antes y después de tener reservas online.",
+  "segundos": 2.49
+ },
+ {
+  "n": 12,
+  "archivo": "voz/12.mp3",
+  "tipo": "gancho",
+  "texto": "Esto es lo que ve un cliente cuando te busca en Google.",
+  "segundos": 2.96
+ },
+ {
+  "n": 13,
+  "archivo": "voz/13.mp3",
+  "tipo": "gancho",
+  "texto": "Te lo explico en treinta segundos.",
+  "segundos": 2.19
+ },
+ {
+  "n": 14,
+  "archivo": "voz/14.mp3",
+  "tipo": "gancho",
+  "texto": "¿Sabes cuántas citas pierdes al mes?",
+  "segundos": 2.13
+ },
+ {
+  "n": 15,
+  "archivo": "voz/15.mp3",
+  "tipo": "gancho",
+  "texto": "Hoy te traigo algo distinto.",
+  "segundos": 1.96
+ },
+ {
+  "n": 16,
+  "archivo": "voz/16.mp3",
+  "tipo": "profesion",
+  "texto": "Si tienes una peluquería, escucha esto.",
+  "segundos": 2.74
+ },
+ {
+  "n": 17,
+  "archivo": "voz/17.mp3",
+  "tipo": "profesion",
+  "texto": "Barbero, esto va por ti.",
+  "segundos": 2.26
+ },
+ {
+  "n": 18,
+  "archivo": "voz/18.mp3",
+  "tipo": "profesion",
+  "texto": "Si tienes un centro de estética o haces uñas, mira esto.",
+  "segundos": 3.74
+ },
+ {
+  "n": 19,
+  "archivo": "voz/19.mp3",
+  "tipo": "profesion",
+  "texto": "Fisioterapeuta, esto te va a gustar.",
+  "segundos": 3.09
+ },
+ {
+  "n": 20,
+  "archivo": "voz/20.mp3",
+  "tipo": "profesion",
+  "texto": "Si tienes una clínica dental, presta atención.",
+  "segundos": 3.05
+ },
+ {
+  "n": 21,
+  "archivo": "voz/21.mp3",
+  "tipo": "profesion",
+  "texto": "Psicólogo, esto es para tu consulta.",
+  "segundos": 3.0
+ },
+ {
+  "n": 22,
+  "archivo": "voz/22.mp3",
+  "tipo": "profesion",
+  "texto": "Nutricionista, esto te interesa.",
+  "segundos": 2.74
+ },
+ {
+  "n": 23,
+  "archivo": "voz/23.mp3",
+  "tipo": "profesion",
+  "texto": "Si eres entrenador personal, mira esto.",
+  "segundos": 2.58
+ },
+ {
+  "n": 24,
+  "archivo": "voz/24.mp3",
+  "tipo": "profesion",
+  "texto": "Si das masajes, esto es para ti.",
+  "segundos": 2.66
+ },
+ {
+  "n": 25,
+  "archivo": "voz/25.mp3",
+  "tipo": "profesion",
+  "texto": "Tatuador, esto va por ti.",
+  "segundos": 2.4
+ },
+ {
+  "n": 26,
+  "archivo": "voz/26.mp3",
+  "tipo": "profesion",
+  "texto": "Si tienes una clínica veterinaria, escucha.",
+  "segundos": 3.18
+ },
+ {
+  "n": 27,
+  "archivo": "voz/27.mp3",
+  "tipo": "profesion",
+  "texto": "Si tienes un taller, esto te va a ahorrar llamadas.",
+  "segundos": 3.22
+ },
+ {
+  "n": 28,
+  "archivo": "voz/28.mp3",
+  "tipo": "profesion",
+  "texto": "Si tienes una empresa de limpieza, mira esto.",
+  "segundos": 2.87
+ },
+ {
+  "n": 29,
+  "archivo": "voz/29.mp3",
+  "tipo": "profesion",
+  "texto": "Si tienes una autoescuela, esto es para ti.",
+  "segundos": 2.92
+ },
+ {
+  "n": 30,
+  "archivo": "voz/30.mp3",
+  "tipo": "profesion",
+  "texto": "Si tienes un bar o un restaurante, atento.",
+  "segundos": 2.99
+ },
+ {
+  "n": 31,
+  "archivo": "voz/31.mp3",
+  "tipo": "profesion",
+  "texto": "Si trabajas a domicilio, esto te interesa.",
+  "segundos": 2.93
+ },
+ {
+  "n": 32,
+  "archivo": "voz/32.mp3",
+  "tipo": "profesion",
+  "texto": "Si das clases o formación, mira esto.",
+  "segundos": 2.87
+ },
+ {
+  "n": 33,
+  "archivo": "voz/33.mp3",
+  "tipo": "profesion",
+  "texto": "Da igual a qué te dediques: si trabajas con citas, esto es para ti.",
+  "segundos": 4.27
+ },
+ {
+  "n": 34,
+  "archivo": "voz/34.mp3",
+  "tipo": "problema",
+  "texto": "Estás trabajando y suena el teléfono.",
+  "segundos": 2.28
+ },
+ {
+  "n": 35,
+  "archivo": "voz/35.mp3",
+  "tipo": "problema",
+  "texto": "Cuando devuelves la llamada, ya ha reservado en otro sitio.",
+  "segundos": 3.29
+ },
+ {
+  "n": 36,
+  "archivo": "voz/36.mp3",
+  "tipo": "problema",
+  "texto": "Te escriben a cualquier hora preguntando si tienes hueco.",
+  "segundos": 3.61
+ },
+ {
+  "n": 37,
+  "archivo": "voz/37.mp3",
+  "tipo": "problema",
+  "texto": "El cliente que dice «ya te digo algo»… y desaparece.",
+  "segundos": 3.96
+ },
+ {
+  "n": 38,
+  "archivo": "voz/38.mp3",
+  "tipo": "problema",
+  "texto": "Un plantón es una hora de trabajo que no vuelve.",
+  "segundos": 3.29
+ },
+ {
+  "n": 39,
+  "archivo": "voz/39.mp3",
+  "tipo": "problema",
+  "texto": "Te preguntan el precio veinte veces al día.",
+  "segundos": 2.71
+ },
+ {
+  "n": 40,
+  "archivo": "voz/40.mp3",
+  "tipo": "problema",
+  "texto": "Apuntas las citas en una libreta, en el móvil y en la memoria.",
+  "segundos": 4.07
+ },
+ {
+  "n": 41,
+  "archivo": "voz/41.mp3",
+  "tipo": "problema",
+  "texto": "Si no te encuentran en Google, reservan con el de al lado.",
+  "segundos": 3.55
+ },
+ {
+  "n": 42,
+  "archivo": "voz/42.mp3",
+  "tipo": "problema",
+  "texto": "Los domingos los pasas cuadrando la semana por WhatsApp.",
+  "segundos": 3.53
+ },
+ {
+  "n": 43,
+  "archivo": "voz/43.mp3",
+  "tipo": "problema",
+  "texto": "Y al final, no desconectas nunca.",
+  "segundos": 2.67
+ },
+ {
+  "n": 44,
+  "archivo": "voz/44.mp3",
+  "tipo": "solucion",
+  "texto": "Con CitasWeb, tus clientes reservan solos.",
+  "segundos": 3.35
+ },
+ {
+  "n": 45,
+  "archivo": "voz/45.mp3",
+  "tipo": "solucion",
+  "texto": "Ven tus huecos libres y eligen día y hora.",
+  "segundos": 3.08
+ },
+ {
+  "n": 46,
+  "archivo": "voz/46.mp3",
+  "tipo": "solucion",
+  "texto": "Reservan en menos de un minuto, desde el móvil.",
+  "segundos": 3.11
+ },
+ {
+  "n": 47,
+  "archivo": "voz/47.mp3",
+  "tipo": "solucion",
+  "texto": "A cualquier hora, aunque tengas cerrado.",
+  "segundos": 2.65
+ },
+ {
+  "n": 48,
+  "archivo": "voz/48.mp3",
+  "tipo": "solucion",
+  "texto": "Reciben un recordatorio antes de su cita.",
+  "segundos": 2.83
+ },
+ {
+  "n": 49,
+  "archivo": "voz/49.mp3",
+  "tipo": "solucion",
+  "texto": "Si alguien cancela, el hueco vuelve a estar libre para otro.",
+  "segundos": 3.79
+ },
+ {
+  "n": 50,
+  "archivo": "voz/50.mp3",
+  "tipo": "solucion",
+  "texto": "Cada servicio con su precio y su duración.",
+  "segundos": 3.0
+ },
+ {
+  "n": 51,
+  "archivo": "voz/51.mp3",
+  "tipo": "solucion",
+  "texto": "Si sois varios, cada profesional tiene su propia agenda.",
+  "segundos": 3.66
+ },
+ {
+  "n": 52,
+  "archivo": "voz/52.mp3",
+  "tipo": "solucion",
+  "texto": "Tienes la ficha de cada cliente con sus notas.",
+  "segundos": 2.87
+ },
+ {
+  "n": 53,
+  "archivo": "voz/53.mp3",
+  "tipo": "solucion",
+  "texto": "Y tu propia web, para que te encuentren en Google.",
+  "segundos": 2.94
+ },
+ {
+  "n": 54,
+  "archivo": "voz/54.mp3",
+  "tipo": "solucion",
+  "texto": "También puedes usar tu propio dominio.",
+  "segundos": 2.35
+ },
+ {
+  "n": 55,
+  "archivo": "voz/55.mp3",
+  "tipo": "solucion",
+  "texto": "Tu negocio cierra. Tu agenda, no.",
+  "segundos": 2.85
+ },
+ {
+  "n": 56,
+  "archivo": "voz/56.mp3",
+  "tipo": "solucion",
+  "texto": "Tú sigues trabajando y la agenda se llena sola.",
+  "segundos": 3.16
+ },
+ {
+  "n": 57,
+  "archivo": "voz/57.mp3",
+  "tipo": "solucion",
+  "texto": "Menos llamadas, menos mensajes y menos plantones.",
+  "segundos": 3.77
+ },
+ {
+  "n": 58,
+  "archivo": "voz/58.mp3",
+  "tipo": "solucion",
+  "texto": "Y por fin desconectas cuando cierras.",
+  "segundos": 2.61
+ },
+ {
+  "n": 59,
+  "archivo": "voz/59.mp3",
+  "tipo": "oferta",
+  "texto": "Te la dejamos configurada con tus servicios.",
+  "segundos": 2.61
+ },
+ {
+  "n": 60,
+  "archivo": "voz/60.mp3",
+  "tipo": "oferta",
+  "texto": "Lista en veinticuatro, cuarenta y ocho horas.",
+  "segundos": 3.05
+ },
+ {
+  "n": 61,
+  "archivo": "voz/61.mp3",
+  "tipo": "oferta",
+  "texto": "La pruebas quince días gratis, sin tarjeta.",
+  "segundos": 3.03
+ },
+ {
+  "n": 62,
+  "archivo": "voz/62.mp3",
+  "tipo": "oferta",
+  "texto": "Sin permanencia.",
+  "segundos": 1.37
+ },
+ {
+  "n": 63,
+  "archivo": "voz/63.mp3",
+  "tipo": "oferta",
+  "texto": "Desde cincuenta euros al mes más IVA.",
+  "segundos": 2.53
+ },
+ {
+  "n": 64,
+  "archivo": "voz/64.mp3",
+  "tipo": "cierre",
+  "texto": "Comenta PELU y te enseño cómo quedaría la tuya.",
+  "segundos": 3.44
+ },
+ {
+  "n": 65,
+  "archivo": "voz/65.mp3",
+  "tipo": "cierre",
+  "texto": "Comenta BARBER y te enseño cómo quedaría la tuya.",
+  "segundos": 3.56
+ },
+ {
+  "n": 66,
+  "archivo": "voz/66.mp3",
+  "tipo": "cierre",
+  "texto": "Comenta BEAUTY y te enseño cómo quedaría la tuya.",
+  "segundos": 3.58
+ },
+ {
+  "n": 67,
+  "archivo": "voz/67.mp3",
+  "tipo": "cierre",
+  "texto": "Comenta FISIO y te enseño cómo quedaría la tuya.",
+  "segundos": 3.61
+ },
+ {
+  "n": 68,
+  "archivo": "voz/68.mp3",
+  "tipo": "cierre",
+  "texto": "Comenta DENTAL y te enseño cómo quedaría la tuya.",
+  "segundos": 3.66
+ },
+ {
+  "n": 69,
+  "archivo": "voz/69.mp3",
+  "tipo": "cierre",
+  "texto": "Comenta NUTRI y te enseño cómo quedaría la tuya.",
+  "segundos": 3.69
+ },
+ {
+  "n": 70,
+  "archivo": "voz/70.mp3",
+  "tipo": "cierre",
+  "texto": "Comenta ENTRENO y te enseño cómo quedaría la tuya.",
+  "segundos": 3.7
+ },
+ {
+  "n": 71,
+  "archivo": "voz/71.mp3",
+  "tipo": "cierre",
+  "texto": "Comenta RELAX y te enseño cómo quedaría la tuya.",
+  "segundos": 3.57
+ },
+ {
+  "n": 72,
+  "archivo": "voz/72.mp3",
+  "tipo": "cierre",
+  "texto": "Comenta TATTOO y te enseño cómo quedaría la tuya.",
+  "segundos": 3.77
+ },
+ {
+  "n": 73,
+  "archivo": "voz/73.mp3",
+  "tipo": "cierre",
+  "texto": "Comenta VET y te enseño cómo quedaría la tuya.",
+  "segundos": 3.73
+ },
+ {
+  "n": 74,
+  "archivo": "voz/74.mp3",
+  "tipo": "cierre",
+  "texto": "Comenta TALLER y te enseño cómo quedaría la tuya.",
+  "segundos": 4.06
+ },
+ {
+  "n": 75,
+  "archivo": "voz/75.mp3",
+  "tipo": "cierre",
+  "texto": "Comenta LIMPIEZA y te enseño cómo quedaría la tuya.",
+  "segundos": 3.75
+ },
+ {
+  "n": 76,
+  "archivo": "voz/76.mp3",
+  "tipo": "cierre",
+  "texto": "Comenta CLASE y te enseño cómo quedaría la tuya.",
+  "segundos": 3.42
+ },
+ {
+  "n": 77,
+  "archivo": "voz/77.mp3",
+  "tipo": "cierre",
+  "texto": "Comenta MESA y te enseño cómo quedaría la tuya.",
+  "segundos": 3.43
+ },
+ {
+  "n": 78,
+  "archivo": "voz/78.mp3",
+  "tipo": "cierre",
+  "texto": "Comenta SERVICIOS y te enseño cómo quedaría la tuya.",
+  "segundos": 3.8
+ },
+ {
+  "n": 79,
+  "archivo": "voz/79.mp3",
+  "tipo": "cierre",
+  "texto": "Comenta CITA y te enseño cómo funciona.",
+  "segundos": 3.04
+ },
+ {
+  "n": 80,
+  "archivo": "voz/80.mp3",
+  "tipo": "cierre",
+  "texto": "Síguenos, que cada día te traemos un truco nuevo.",
+  "segundos": 3.4
+ }
+]

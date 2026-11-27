@@ -54,7 +54,10 @@ Este documento es el que sigue la tarea programada cada lunes. Si cambias algo d
 ## Banco de voz del dueño
 - El dueño graba 80 frases sueltas (ganchos, profesiones, problemas, soluciones, oferta y cierres por palabra clave; guion en el documento «Banco de frases para grabar — voz de CitasWeb»).
 - Cuando llegue el audio: cortar cada frase, limpiarla igual que en la serie de Lucía y guardarla en `voz/NN.mp3` con su texto en `voz/indice.json`.
-- Con ese banco se montan vídeos con su voz combinando frases (gancho + profesión + 2-4 problema/solución + oferta + cierre con la palabra clave del sector), con generator/voicevideo.py. Alternarlos con los vídeos sin voz.
+- Banco YA grabado y cortado: `voz/01..80.mp3` + `voz/indice.json` (1-15 gancho, 16-33 profesión, 34-43 problema, 44-58 solución, 59-63 oferta, 64-80 cierre).
+- Montaje: `python3 generator/vozmix.py <slug> <sector> "<gancho en pantalla>" n1 n2 … nK` → crea `videos/<slug>/video.mp4` y `cover.jpg` (música y estilo varían por slug). Orden: gancho + profesión + 2-4 problema/solución + oferta + cierre (la última frase debe ser un cierre «Comenta X»; su palabra va a la pantalla final). Opcional `k="texto con *resalte*"` y `k='{"type":...}'` para escenas.
+- Coherencia: la profesión, el cierre, el sector y el gancho deben ser del MISMO sector. No repetir la misma combinación de frases; anotar las usadas en `voz/usadas.json`.
+- Meter 1-2 vídeos con voz por semana en IG/FB (y alguno en TikTok), alternados con los vídeos sin voz. Copiar el vídeo a la carpeta del post en `posts/` como cualquier reel.
 
 ## Estilo de los textos (el nuevo)
 - Gancho corto en la primera línea, 3 o 4 líneas en total.
