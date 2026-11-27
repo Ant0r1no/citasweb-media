@@ -24,9 +24,10 @@ Este documento es el que sigue la tarea programada cada lunes. Si cambias algo d
 5. **Rellenar los huecos.** Solo en meses con menos de 20 en TikTok (en Instagram no hay límite), y en las mejores horas que estén libres, se crean carruseles nuevos. Como mucho **4 por ejecución**. Nunca hay que pasar de 20 en TikTok en un mes. Revisar también `calendar/ESTADO.md` y avisar en el informe si hay publicaciones de Instagram con problemas.
 6. **Crear cada carrusel:**
    - Crear `posts/AAAA-MM-DD-tema/post.json`; el formato está en `generator/render.py`. Son 5 o 6 diapositivas: portada con gancho, desarrollo y CTA con la palabra clave.
-   - Ejecutar `python3 generator/render.py posts/.../post.json`, revisar las imágenes y hacer commit y push a `main`.
-   - Las URL de los medios son `https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/<carpeta>/slide-N.png`.
-   - Programarlo con `createScheduledPost`: proveedores instagram (POST) y tiktok (`autoAddMusic: true`), `commercialContentOwnBrand: true` y texto alternativo en cada imagen.
+   - **Se publica como mini vídeo, no como fotos** (decisión del dueño, 27/11/2026): ejecutar `python3 generator/slideshow.py posts/.../post.json` → crea `video.mp4` (vertical, animado, con música y efectos) y `cover.jpg`. Revisar unos fotogramas y hacer commit y push a `main`.
+   - En el texto no poner "Desliza": es un vídeo.
+   - Instagram + Facebook: añadir la entrada a `calendar/instagram.json` con `type: "REELS"`, `media: [.../video.mp4]` y `cover: .../cover.jpg`.
+   - TikTok: `createScheduledPost` solo con tiktok, el mismo `video.mp4` como medio, `videoThumbnailUrl` con la portada y `commercialContentOwnBrand: true`.
 7. **Informe final:** recordatorio del artículo que toca publicar esa semana, métricas, qué ha funcionado, qué se ha programado (fecha, tema y enlace de Metricool) y el recuento por mes. Enviarlo con PushNotification si está disponible y dejarlo también como resultado de la ejecución.
 
 ## Estilo de los textos (el nuevo)
