@@ -1,6 +1,6 @@
 # Estado del publicador de Instagram
 
-Última revisión: 27/11/2026 01:21 (hora de Madrid)
+Última revisión: 27/11/2026 05:03 (hora de Madrid)
 
 Cuenta: ⚪ Sin conectar (falta el secreto IG_ACCESS_TOKEN)
 
