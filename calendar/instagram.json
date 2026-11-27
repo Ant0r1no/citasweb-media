@@ -312,16 +312,11 @@
  {
   "id": "2027-01-06-blog-peluqueria",
   "when": "2027-01-06T10:00",
-  "type": "CAROUSEL",
+  "type": "REELS",
   "media": [
-   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-06-blog-peluqueria/slide-1.jpg",
-   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-06-blog-peluqueria/slide-2.jpg",
-   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-06-blog-peluqueria/slide-3.jpg",
-   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-06-blog-peluqueria/slide-4.jpg",
-   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-06-blog-peluqueria/slide-5.jpg",
-   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-06-blog-peluqueria/slide-6.jpg"
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-06-blog-peluqueria/video.mp4"
   ],
-  "cover": null,
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-01-06-blog-peluqueria/cover.jpg",
   "caption": "¿Vas a elegir programa de citas para tu peluquería o barbería? Guarda esto antes 💈✂️\n\nTe dejamos 4 de las 7 funciones que no pueden faltar. Las 7 completas, con los errores más comunes al empezar, están en nuestro blog.\n\n💬 Comenta \"PELU\" y te enseño cómo quedaría la tuya\n👉 https://citasweb.es/blog\n\n#peluqueria #barberia #barbershop #estilista #reservasonline",
   "ai": false,
   "status": "pending"
@@ -569,17 +564,12 @@
  {
   "id": "2027-02-05-plantones",
   "when": "2027-02-05T10:00",
-  "type": "CAROUSEL",
+  "type": "REELS",
   "media": [
-   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-02-05-plantones/slide-1.jpg",
-   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-02-05-plantones/slide-2.jpg",
-   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-02-05-plantones/slide-3.jpg",
-   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-02-05-plantones/slide-4.jpg",
-   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-02-05-plantones/slide-5.jpg",
-   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-02-05-plantones/slide-6.jpg"
+   "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-02-05-plantones/video.mp4"
   ],
-  "cover": null,
-  "caption": "3 plantones a la semana parecen poca cosa… hasta que haces la cuenta 😬\n\nDesliza y calcula lo que pierdes tú con tu precio medio. El arreglo es más simple de lo que parece.\n\n💬 Comenta \"CITA\" y te enseño cómo funciona\n👉 https://citasweb.es/\n\n#autonomos #pequeñosnegocios #reservasonline #emprendedores #agendaonline",
+  "cover": "https://raw.githubusercontent.com/Ant0r1no/citasweb-media/main/posts/2027-02-05-plantones/cover.jpg",
+  "caption": "3 plantones a la semana parecen poca cosa… hasta que haces la cuenta 😬\n\nMira y calcula lo que pierdes tú con tu precio medio. El arreglo es más simple de lo que parece.\n\n💬 Comenta \"CITA\" y te enseño cómo funciona\n👉 https://citasweb.es/\n\n#autonomos #pequeñosnegocios #reservasonline #emprendedores #agendaonline",
   "ai": false,
   "status": "pending"
  },
