@@ -19,7 +19,8 @@ Si falla: status "error" y "error" con el motivo (se reintenta hasta 3 veces en 
 
 Facebook: cada entrada se publica también en la página CitasWeb (campos fb_status, fb_post_id,
 fb_permalink). Pon "facebook": false en una entrada para que no salga en Facebook.
-La clave de la página se saca de IG_ACCESS_TOKEN si se generó con los permisos de páginas.
+Clave: secreto FB_PAGE_TOKEN (clave de página o de usuario con pages_manage_posts); si no existe,
+se intenta con IG_ACCESS_TOKEN. Sin clave válida, Facebook se salta sin dar error.
 """
 import hashlib
 import io
@@ -46,7 +47,8 @@ MAX_LATE = timedelta(hours=12)   # si se pasa más de esto sin publicar, se marc
 MAX_TRIES = 3
 FB_API = "https://graph.facebook.com/v26.0"
 FB_PAGE_ID = os.environ.get("FB_PAGE_ID", "").strip()   # vacío = se detecta la página "CitasWeb"
-FB_FROM = os.environ.get("FB_FROM", "2026-12-01")        # en Facebook solo se publica desde esta fecha
+FB_FROM = os.environ.get("FB_FROM", "2026-12-01")
+FB_TOKEN = os.environ.get("FB_PAGE_TOKEN", "").strip()  # secreto aparte para la página (opcional)        # en Facebook solo se publica desde esta fecha
 
 TOKEN = os.environ.get("IG_ACCESS_TOKEN", "").strip()
 DRY = os.environ.get("DRY_RUN") == "1"
@@ -222,15 +224,24 @@ class FB:
         return data
 
     def connect(self):
-        if not TOKEN:
-            self.why = "falta IG_ACCESS_TOKEN"
+        key = FB_TOKEN or TOKEN
+        if not key:
+            self.why = "falta FB_PAGE_TOKEN"
             return False
+        if FB_TOKEN:
+            try:  # ¿es ya una clave de página?
+                me = self.call("GET", "me", token=FB_TOKEN, fields="id,name,category")
+                if me.get("category"):
+                    self.page, self.name, self.token = me["id"], me["name"], FB_TOKEN
+                    return True
+            except (IGError, requests.RequestException):
+                pass
         try:
             if FB_PAGE_ID:
-                d = self.call("GET", FB_PAGE_ID, token=TOKEN, fields="id,name,access_token")
+                d = self.call("GET", FB_PAGE_ID, token=key, fields="id,name,access_token")
                 pages = [d]
             else:
-                pages = self.call("GET", "me/accounts", token=TOKEN, fields="id,name,access_token").get("data", [])
+                pages = self.call("GET", "me/accounts", token=key, fields="id,name,access_token").get("data", [])
                 pages = [p for p in pages if "citasweb" in p.get("name", "").lower()] or pages
             if not pages or not pages[0].get("access_token"):
                 self.why = "la clave no tiene acceso a la página (hay que regenerarla con permisos de páginas)"

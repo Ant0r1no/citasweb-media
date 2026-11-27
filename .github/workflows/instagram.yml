@@ -37,6 +37,7 @@ jobs:
       - name: Publicar lo que toca
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
           ONLY_ID: ${{ inputs.only_id }}
           DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
         run: python publisher/ig_publish.py
