@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths: ["calendar/instagram.json", "calendar/validar.txt", "publisher/**", ".github/workflows/instagram.yml"]
   schedule:
-    - cron: "7 * * * *"      # cada hora (UTC); el script decide qué toca según la hora de Madrid
+    - cron: "7,22,37,52 * * * *"   # cada 15 min (UTC); GitHub retrasa o salta muchas, por eso hay también una tarea programada que lo lanza a las horas de publicar
   workflow_dispatch:
     inputs:
       only_id:
