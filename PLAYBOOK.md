@@ -15,6 +15,7 @@ Este documento es el que sigue la tarea programada cada lunes. Si cambias algo d
   - **TikTok: hasta 20 al mes** (límite de Metricool), solo en los mejores días y horas.
 - **Mejores horas** (Metricool, noviembre 2026):
   - Instagram (y Facebook, que va con él): **10:00 todos los días** (lo mejor, de miércoles a viernes). Si ese día ya hay algo a las 10:00, usar las **18:00** (fuerte de martes a jueves). Fin de semana: 10:00.
+  - ⚠️ Instagram/Facebook SOLO a estas horas: **10:00, 11:00, 13:30 o 18:00**. Dos tareas programadas lanzan el publicador a las 10:02, 11:02, 13:32 y 18:02 (GitHub, por sí solo, se salta muchas ejecuciones); a otra hora la publicación saldría con retraso.
   - TikTok: **de lunes a viernes, 10:00 o 18:00**; los mejores, **miércoles y jueves**. Evitar sábado y domingo salvo que no quede otra. 20 al mes ≈ 5 por semana.
 
 ## Pasos de cada ejecución
