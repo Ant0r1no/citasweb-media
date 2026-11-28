@@ -1,1 +1,146 @@
-{"instagram": [], "facebook": []}
+{
+  "instagram": [
+    {
+      "nombre": "Fisioterapia Valencia Zaidía",
+      "ciudad": "Valencia",
+      "sector": "fisioterapia",
+      "url": "https://www.instagram.com/fisioterapiavalenciazaidia/",
+      "fecha": "2026-11-28"
+    },
+    {
+      "nombre": "Clínica Physis",
+      "ciudad": "Valencia",
+      "sector": "fisioterapia",
+      "url": "https://www.instagram.com/physis_valencia/",
+      "fecha": "2026-11-28"
+    },
+    {
+      "nombre": "HB Fisioterapia Valencia",
+      "ciudad": "Valencia",
+      "sector": "fisioterapia",
+      "url": "https://www.instagram.com/hbfisioterapiavalencia/",
+      "fecha": "2026-11-28"
+    },
+    {
+      "nombre": "Fisioclinic Vlc",
+      "ciudad": "Valencia",
+      "sector": "fisioterapia",
+      "url": "https://www.instagram.com/fisioclinicvlc/",
+      "fecha": "2026-11-28"
+    },
+    {
+      "nombre": "Miel & Canela",
+      "ciudad": "Zaragoza",
+      "sector": "uñas/estética",
+      "url": "https://www.instagram.com/mielycanelazaragoza/",
+      "fecha": "2026-11-28"
+    },
+    {
+      "nombre": "Glow Zaragoza",
+      "ciudad": "Zaragoza",
+      "sector": "centro de estética",
+      "url": "https://www.instagram.com/glow.zaragoza/",
+      "fecha": "2026-11-28"
+    },
+    {
+      "nombre": "Qué uñas!",
+      "ciudad": "Zaragoza",
+      "sector": "uñas",
+      "url": "https://www.instagram.com/nailszaragoza/",
+      "fecha": "2026-11-28"
+    },
+    {
+      "nombre": "Nails Clinic Zaragoza",
+      "ciudad": "Zaragoza",
+      "sector": "uñas",
+      "url": "https://www.instagram.com/nailsclinic/",
+      "fecha": "2026-11-28"
+    },
+    {
+      "nombre": "Autónomos y Emprendedores (diario)",
+      "ciudad": "España",
+      "sector": "medio de emprendimiento",
+      "url": "https://www.instagram.com/diarioaye/",
+      "fecha": "2026-11-28"
+    },
+    {
+      "nombre": "UATAE",
+      "ciudad": "España",
+      "sector": "asociación de autónomos",
+      "url": "https://www.instagram.com/uatae_es/",
+      "fecha": "2026-11-28"
+    }
+  ],
+  "facebook": [
+    {
+      "nombre": "Ayensa Fisioterapia",
+      "ciudad": "Zaragoza",
+      "sector": "fisioterapia",
+      "url": "https://www.facebook.com/Ayensafisioterapia/",
+      "fecha": "2026-11-28"
+    },
+    {
+      "nombre": "FisioLAR",
+      "ciudad": "Zaragoza",
+      "sector": "fisioterapia",
+      "url": "https://www.facebook.com/fisioLARzgz/",
+      "fecha": "2026-11-28"
+    },
+    {
+      "nombre": "Fisioterapia y Osteopatía Aspy",
+      "ciudad": "Zaragoza",
+      "sector": "fisioterapia",
+      "url": "https://www.facebook.com/fisiosteopatiaaspy/",
+      "fecha": "2026-11-28"
+    },
+    {
+      "nombre": "Fisio Lobera",
+      "ciudad": "Zaragoza",
+      "sector": "fisioterapia",
+      "url": "https://www.facebook.com/fisiolobera/",
+      "fecha": "2026-11-28"
+    },
+    {
+      "nombre": "Centro de Estética y Uñas Paulette",
+      "ciudad": "Valencia",
+      "sector": "estética/uñas",
+      "url": "https://www.facebook.com/pauletteestetica/",
+      "fecha": "2026-11-28"
+    },
+    {
+      "nombre": "Centro de Estética Mímate",
+      "ciudad": "Valencia",
+      "sector": "estética",
+      "url": "https://www.facebook.com/esteticamimatemalvarrosa/",
+      "fecha": "2026-11-28"
+    },
+    {
+      "nombre": "Centro Beltá Belleza",
+      "ciudad": "Valencia",
+      "sector": "estética",
+      "url": "https://www.facebook.com/CentroBeltaBelleza/",
+      "fecha": "2026-11-28"
+    },
+    {
+      "nombre": "NOYMA Centro de uñas y belleza",
+      "ciudad": "Valencia",
+      "sector": "uñas",
+      "url": "https://www.facebook.com/noymanails/",
+      "fecha": "2026-11-28"
+    },
+    {
+      "nombre": "UPTA España",
+      "ciudad": "España",
+      "sector": "asociación de autónomos",
+      "url": "https://www.facebook.com/UptaEs/",
+      "fecha": "2026-11-28"
+    },
+    {
+      "nombre": "Autónomos de Aragón ATA",
+      "ciudad": "Zaragoza",
+      "sector": "asociación de autónomos",
+      "url": "https://www.facebook.com/ata.aragon/",
+      "fecha": "2026-11-28"
+    }
+  ]
+}
