@@ -1,19 +1,18 @@
 # Estado del publicador (Instagram y Facebook)
 
-Última revisión: 28/11/2026 05:40 (hora de Madrid)
+Última revisión: 28/11/2026 11:13 (hora de Madrid)
 
 Cuenta: 🟢 Conectado como @citasweb.es (graph.facebook.com)  
-Facebook: 🟢 Facebook conectado: página CitasWeb · publicadas allí: 1
+Facebook: 🟢 Facebook conectado: página CitasWeb · publicadas allí: 2
 
 En espera de activar: **0**
 
-- Pendientes: **99** · Publicadas: **1** · Con problemas: **0**
+- Pendientes: **98** · Publicadas: **2** · Con problemas: **0**
 
 ## Próximas
 
 | Fecha | Tipo | Publicación |
 |---|---|---|
-| 2026-11-28 11:00 | REELS | 2026-11-28-barber-whatsapp-noche |
 | 2026-11-29 11:00 | REELS | 2026-11-29-pelu-domingo-libre |
 | 2026-11-30 13:30 | REELS | 2026-11-30-lucia-01 |
 | 2026-12-01 13:30 | REELS | 2026-12-01-lucia-02 |
@@ -28,9 +27,11 @@ En espera de activar: **0**
 | 2026-12-05 13:30 | REELS | 2026-12-05-lucia-06 |
 | 2026-12-06 13:30 | REELS | 2026-12-06-lucia-07 |
 | 2026-12-07 13:30 | REELS | 2026-12-07-lucia-08 |
+| 2026-12-07 18:00 | REELS | 2026-12-07-mc399799964 |
 
 ## Últimas publicadas
 
 | Fecha | Publicación | Enlace |
 |---|---|---|
+| 2026-11-28 11:13 | 2026-11-28-barber-whatsapp-noche | https://www.instagram.com/reel/DgSA4P4or50/ |
 | 2026-11-27 10:31 | 2026-11-27-test-agenda | https://www.instagram.com/p/DgPXUmopWYe/ |
